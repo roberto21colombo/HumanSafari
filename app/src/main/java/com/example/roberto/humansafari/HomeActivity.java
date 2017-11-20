@@ -9,6 +9,8 @@ import android.widget.ImageView;
 public class HomeActivity extends AppCompatActivity {
 
     ImageView imageButtonSafari;
+    ImageView imageViewMap;
+    ImageView imageViewInstructions;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,22 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(HomeActivity.this, ListCharacters.class));
+            }
+        });
+
+        imageViewMap = (ImageView) findViewById(R.id.imageViewMap);
+        imageViewMap.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, MapActivity.class));
+            }
+        });
+
+        imageViewInstructions = (ImageView) findViewById(R.id.imageViewInstructions);
+        imageViewInstructions.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, InstructionsActivity.class));
             }
         });
     }

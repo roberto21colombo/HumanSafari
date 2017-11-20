@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_disabled.xml",
+        "source": "/Users/roberto/.android/build-cache/d700c847ac459a5c163c53152b6dfe86db65ebd3/output/res/drawable-watch-v20/common_google_signin_btn_text_disabled.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml",
+        "source": "/Users/roberto/.android/build-cache/d700c847ac459a5c163c53152b6dfe86db65ebd3/output/res/drawable-watch-v20/common_google_signin_btn_text_dark_normal.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml",
+        "source": "/Users/roberto/.android/build-cache/d700c847ac459a5c163c53152b6dfe86db65ebd3/output/res/drawable-watch-v20/common_google_signin_btn_text_light_normal.xml"
+    }
+]
