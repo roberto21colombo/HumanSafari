@@ -26,7 +26,7 @@ import com.google.android.gms.tasks.OnSuccessListener;
 
 import org.w3c.dom.Text;
 
-public class ListCharacter extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
+public class ListCharacter extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, AdapterView.OnItemClickListener {
 
     boolean userPermission = false;
     Boolean googlePlayServiceConnected = false;
@@ -41,49 +41,31 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_character);
 
-        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 21);
-        } else {
-            userPermission = true;
-        }
-        if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
-        }mGoogleApiClient.connect();
+        checkPermission();
+        connectGoogleApiClient();
 
 
         mListView = (ListView) findViewById(R.id.mListView);
-
-
-
-        CustomAdapterCharacters customAdapterCharacters = new CustomAdapterCharacters(this, R.layout.raw_character, Model.getInstance().getCharacter());
-        mListView.setAdapter(customAdapterCharacters);
-
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                changePoint(i);
-                changeLastPosition(i);
-
-                startActivity(new Intent(ListCharacter.this, HomeActivity.class));
-            }
-        });
+        mListView.setAdapter(new CustomAdapterCharacters(this, R.layout.raw_character, Model.getInstance().getCharacter()));
+        mListView.setOnItemClickListener(this);
 
     }
 
 
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        changePlayerScore(i);
+        changeLastCharacterPosition(i);
+        startActivity(new Intent(ListCharacter.this, HomeActivity.class));
+    }
 
-
-
-
-    public void changePoint(int i){
-
+    public void changePlayerScore(int i){
         int characterPoint = Model.getInstance().getCharacter().get(i).getPoints();
         int playerPoint = Model.getInstance().getScore();
         Model.getInstance().setScore(characterPoint + playerPoint);
     }
 
-    public void changeLastPosition(int i) {
+    public void changeLastCharacterPosition(int i) {
         if (userPermission && googlePlayServiceConnected) {
 
             // TODO: Consider calling
@@ -98,6 +80,24 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
         Model.getInstance().getCharacter().get(i).setLastPosition(lastPosition);
 
     }
+
+    public void checkPermission(){
+        if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 21);
+        } else {
+            userPermission = true;
+        }
+    }
+
+    private void connectGoogleApiClient() {
+        if (mGoogleApiClient == null) {
+            mGoogleApiClient = new GoogleApiClient.Builder(this).addConnectionCallbacks(this)
+                    .addOnConnectionFailedListener(this).addApi(LocationServices.API).build();
+        }mGoogleApiClient.connect();
+    }
+
+
+
 
 
     @Override
