@@ -1,9 +1,12 @@
 package com.example.roberto.humansafari;
 
 import android.content.Context;
+import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.app.AlertDialog;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,16 +30,26 @@ public class CustomAdapterCharacters extends ArrayAdapter<Character>{
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        convertView = inflater.inflate(R.layout.raw_character, null);
+        convertView = inflater.inflate(R.layout.mio_lay, null);
 
+        /*
         TextView name = convertView.findViewById(R.id.editTextNameCharacter);
         TextView points = convertView.findViewById(R.id.editTextPoint);
         ImageView image = convertView.findViewById(R.id.imageView);
 
-        Character c = getItem(position);
+
+        final Character c = getItem(position);
         name.setText(c.getName());
         points.setText("" + c.getPoints());
+        convertView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new AlertDialog.Builder(getContext()).setTitle("touched").show();
+            }
+        });*/
 
+        TextView mTextView = convertView.findViewById(R.id.miotextView1);
+        mTextView.setText(getItem(position).getName());
 
         return convertView;
     }

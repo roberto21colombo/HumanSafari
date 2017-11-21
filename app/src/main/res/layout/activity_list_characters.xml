@@ -4,12 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.roberto.humansafari2.ListCharacters">
-
+    tools:context="com.example.roberto.humansafari.ListCharacters">
     <ListView
         android:layout_width="395dp"
         android:layout_height="587dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp"
-        android:id="@+id/listviewCharacters"/>
+        android:id="@+id/listViewCharacter"/>
+
+
 </android.support.constraint.ConstraintLayout>

@@ -10,8 +10,10 @@ import java.util.ArrayList;
 
 public class Model
 {
-    private ArrayList<Character> al;
     private static Model istanza;
+
+    private ArrayList<Character> al;
+    private int score = 0;
 
     private Model()
     {
@@ -44,5 +46,12 @@ public class Model
     public ArrayList<Character> getCharacter()
     {
         return al;
+    }
+
+    public int getScore(){
+        return score;
+    }
+    public void setScore(int i){
+        score = i;
     }
 }

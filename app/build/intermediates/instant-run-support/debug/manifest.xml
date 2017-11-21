@@ -41,18 +41,21 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAHOh_Sg8o32duEkeWUK34g3epYjGEzhT8" />
 
-        <activity android:name="com.example.roberto.humansafari.HomeActivity" />
-        <activity android:name="com.example.roberto.humansafari.ListCharacters" />
-        <activity android:name="com.example.roberto.humansafari.CameraActivity" />
-        <activity android:name="com.example.roberto.humansafari.LoginActivity" >
+        <activity android:name="com.example.roberto.humansafari.HomeActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.example.roberto.humansafari.ListCharacters" />
+        <activity android:name="com.example.roberto.humansafari.CameraActivity" />
+        <activity android:name="com.example.roberto.humansafari.LoginActivity" >
+        </activity>
         <activity android:name="com.example.roberto.humansafari.MapActivity" />
         <activity android:name="com.example.roberto.humansafari.InstructionsActivity" />
+        <activity android:name="com.example.roberto.humansafari.TestListViewActivity" >
+        </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"
