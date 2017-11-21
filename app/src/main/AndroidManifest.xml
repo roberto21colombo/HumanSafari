@@ -22,14 +22,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListCharacters" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".LoginActivity">
 
         </activity>
         <activity android:name=".MapActivity" />
         <activity android:name=".InstructionsActivity" />
-        <activity android:name=".TestListViewActivity">
+        <activity android:name=".ListCharacter">
 
         </activity>
     </application>

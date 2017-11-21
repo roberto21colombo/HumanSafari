@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         imageButtonSafari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, TestListViewActivity.class));
+                startActivity(new Intent(HomeActivity.this, ListCharacter.class));
             }
         });
 

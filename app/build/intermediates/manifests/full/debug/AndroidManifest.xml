@@ -48,13 +48,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.roberto.humansafari.ListCharacters" />
         <activity android:name="com.example.roberto.humansafari.CameraActivity" />
         <activity android:name="com.example.roberto.humansafari.LoginActivity" >
         </activity>
         <activity android:name="com.example.roberto.humansafari.MapActivity" />
         <activity android:name="com.example.roberto.humansafari.InstructionsActivity" />
-        <activity android:name="com.example.roberto.humansafari.TestListViewActivity" >
+        <activity android:name="com.example.roberto.humansafari.ListCharacter" >
         </activity>
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
