@@ -28,7 +28,6 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
     Boolean googlePlayServiceConnected = false;
     GoogleApiClient mGoogleApiClient = null;
 
-    LatLng p1, p2;
     ArrayList<Character> arrayListCharacter = null;
 
     @Override
@@ -58,10 +57,7 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         markFriends(map);
 
         LatLngBounds bounds = getLatLngBound();
-        int padding = 70; // offset from edges of the map in pixels
         map.moveCamera(CameraUpdateFactory.newLatLngZoom(bounds.getCenter(), 13));
-        //CameraUpdate cu = CameraUpdateFactory.newLatLngBounds(bounds, padding);
-        //map.moveCamera(cu);
 
 
     }
