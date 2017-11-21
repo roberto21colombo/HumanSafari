@@ -9,14 +9,12 @@ import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
-import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.location.LocationServices;
 
@@ -57,7 +55,13 @@ public class MapActivity extends AppCompatActivity implements OnMapReadyCallback
         markFriends(map);
 
         LatLngBounds bounds = getLatLngBound();
-        map.moveCamera(CameraUpdateFactory.newLatLngZoom(bounds.getCenter(), 13));
+
+        int width = getResources().getDisplayMetrics().widthPixels;
+        int height = getResources().getDisplayMetrics().heightPixels;
+        int padding = (int) (width * 0.25); // offset from edges of the map 12% of screen
+
+        map.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, width, height, padding));
+
 
 
     }
