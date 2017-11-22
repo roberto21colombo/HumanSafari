@@ -7,18 +7,21 @@ import com.google.android.gms.maps.model.LatLng;
  */
 
 public class Character {
+    int id;
     String name;
     int imgSrc;
     int points;
     LatLng lastPosition = null;
 
 
-    public Character(String name, int imgSrc, int points){
+    public Character(int id, String name, int imgSrc, int points){
+        this.id = id;
         this.name = name;
         this.imgSrc = imgSrc;
         this.points = points;
     }
-    public Character(String name, int imgSrc, int points, LatLng lastPosition){
+    public Character(int id, String name, int imgSrc, int points, LatLng lastPosition){
+        this.id = id;
         this.name = name;
         this.imgSrc = imgSrc;
         this.points = points;
@@ -35,6 +38,9 @@ public class Character {
     }
 
 
+    public int getId() {
+        return id;
+    }
 
     public String getName() {
         return name;

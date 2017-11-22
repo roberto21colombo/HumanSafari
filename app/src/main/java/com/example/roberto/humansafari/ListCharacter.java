@@ -78,7 +78,7 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
 
         }
         Model.getInstance().getCharacter().get(i).setLastPosition(lastPosition);
-
+        ServerConnections.changePosition(i, ListCharacter.this);
     }
 
     public void checkPermission(){

@@ -30,7 +30,7 @@ public class Model
     {
         al = new ArrayList<Character>();
 
-
+        /*
         al.add(new Character("Paolino", R.drawable.piero_pelu,5, new LatLng(45.62724412, 9.2930603)));
         al.add(new Character("Arturo", R.drawable.piero_pelu,5, new LatLng(45.61739941, 9.28894043)));
         al.add(new Character("Francesco", R.drawable.piero_pelu,10, new LatLng(45.61259649, 9.28482056)));
@@ -42,7 +42,7 @@ public class Model
         al.add(new Character("Dave", R.drawable.piero_pelu,30));
         al.add(new Character("Simone", R.drawable.piero_pelu,30));
         al.add(new Character("Lorenza", R.drawable.piero_pelu,50));
-
+        */
     }
 
     public static Model getInstance()
@@ -62,6 +62,8 @@ public class Model
             JSONArray jsonArray = new JSONArray(s);
             for(int i=0; i<jsonArray.length(); i++){
                 JSONObject characterObject = jsonArray.getJSONObject(i);
+
+                int id = characterObject.getInt("id");
                 String name = characterObject.getString("name");
                 int point = characterObject.getInt("points");
                 String lat = characterObject.getString("lat");
@@ -69,10 +71,10 @@ public class Model
 
 
                 if(lat.equals("null") || lng.equals("null")){
-                    al.add(new Character(name, 0, point));
+                    al.add(new Character(id, name, 0, point));
                 }else{
                     LatLng lastPosition = new LatLng(Double.parseDouble(lat), Double.parseDouble(lng));
-                    al.add(new Character(name, 0, point, lastPosition));
+                    al.add(new Character(id, name, 0, point, lastPosition));
                 }
 
 
