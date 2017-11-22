@@ -21,6 +21,8 @@ import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.tasks.OnSuccessListener;
 
+import static android.R.attr.name;
+
 /**
  * Created by roberto on 21/11/17.
  */
@@ -66,6 +68,12 @@ public class ServerConnections {
 
             }
         });
+        requestQueue.add(stringRequest);
+    }
+
+    public static void getUserPassword(String userId, Response.Listener<String> responseStringLisener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/getuserpassword.php?userid=" + userId;
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringLisener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
 }
