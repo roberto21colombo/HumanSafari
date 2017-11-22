@@ -1,5 +1,6 @@
 package com.example.roberto.humansafari;
 
+import android.app.DownloadManager;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,6 +8,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
+import com.android.volley.toolbox.Volley;
+
+import org.json.JSONObject;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -55,5 +65,21 @@ public class HomeActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         score.setText("Score: " + Model.getInstance().getScore());
+
+        String url = "http://www.aclitriuggio.it/wp-pinguino/hello_world.php";
+        RequestQueue requestQueue = Volley.newRequestQueue(HomeActivity.this);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("onResponse", response);
+                Model.getInstance().setCharacters(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(stringRequest);
     }
 }

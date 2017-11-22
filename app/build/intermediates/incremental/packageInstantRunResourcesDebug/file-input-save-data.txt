@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 21 17:42:18 CET 2017
+#Wed Nov 22 01:05:20 CET 2017
 20.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 493.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_

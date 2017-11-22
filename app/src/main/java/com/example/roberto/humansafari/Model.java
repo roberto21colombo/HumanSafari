@@ -1,6 +1,17 @@
 package com.example.roberto.humansafari;
 
+
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
+import com.google.android.gms.common.api.Response;
 import com.google.android.gms.maps.model.LatLng;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -18,6 +29,7 @@ public class Model
     private Model()
     {
         al = new ArrayList<Character>();
+
 
         al.add(new Character("Paolino", R.drawable.piero_pelu,5, new LatLng(45.62724412, 9.2930603)));
         al.add(new Character("Arturo", R.drawable.piero_pelu,5, new LatLng(45.61739941, 9.28894043)));
@@ -41,6 +53,33 @@ public class Model
         }
 
         return istanza;
+    }
+
+    public void setCharacters(String s){
+        try {
+            al.clear();
+
+            JSONArray jsonArray = new JSONArray(s);
+            for(int i=0; i<jsonArray.length(); i++){
+                JSONObject characterObject = jsonArray.getJSONObject(i);
+                String name = characterObject.getString("name");
+                int point = characterObject.getInt("points");
+                String lat = characterObject.getString("lat");
+                String lng = characterObject.getString("lng");
+
+
+                if(lat.equals("null") || lng.equals("null")){
+                    al.add(new Character(name, 0, point));
+                }else{
+                    LatLng lastPosition = new LatLng(Double.parseDouble(lat), Double.parseDouble(lng));
+                    al.add(new Character(name, 0, point, lastPosition));
+                }
+
+
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     public void setLastPositionCharacter(String name, LatLng newPosition){
