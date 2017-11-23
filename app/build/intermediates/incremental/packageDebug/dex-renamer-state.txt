@@ -1,4 +1,4 @@
-#Wed Nov 22 12:44:01 CET 2017
+#Thu Nov 23 17:03:08 CET 2017
 base.0=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9c0e5bdd42efbe19e886ad9b92b3c1930de897fe
 renamed.1=classes2.dex
 renamed.0=classes.dex

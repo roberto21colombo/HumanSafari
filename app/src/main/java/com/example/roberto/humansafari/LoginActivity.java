@@ -18,6 +18,7 @@ import com.android.volley.toolbox.Volley;
 public class LoginActivity extends AppCompatActivity {
 
     Button btnLogin;
+    TextView tvAddAccount;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,14 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            }
+        });
+
+        tvAddAccount = (TextView)findViewById(R.id.tvAddAccount);
+        tvAddAccount.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, AddUserActivity.class));
             }
         });
     }

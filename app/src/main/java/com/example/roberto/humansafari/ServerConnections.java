@@ -2,6 +2,7 @@ package com.example.roberto.humansafari;
 
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -76,4 +77,13 @@ public class ServerConnections {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringLisener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
+
+    public static void addUser(String name, String password, String confirmPassword,Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/insertifnotexist.php?userid=" + name + "&pass=" + password + "&conpass=" + confirmPassword;
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+        requestQueue.add(stringRequest);
+    }
+
+
+
 }

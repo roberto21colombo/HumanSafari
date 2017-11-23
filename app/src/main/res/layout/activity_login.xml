@@ -59,6 +59,7 @@
             android:layout_below="@+id/btnLogin"
             android:layout_margin="10dp"
             android:text="Non ho un account"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            android:id="@+id/tvAddAccount"/>
     </RelativeLayout>
 </android.support.constraint.ConstraintLayout>
