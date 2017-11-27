@@ -63,6 +63,7 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
         int characterPoint = Model.getInstance().getCharacter().get(i).getPoints();
         int playerPoint = Model.getInstance().getScore();
         Model.getInstance().setScore(characterPoint + playerPoint);
+        ServerConnections.setScore(ListCharacter.this);
     }
 
     public void changeLastCharacterPosition(int i) {

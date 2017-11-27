@@ -15,6 +15,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageView imageViewInstructions;
 
     TextView score;
+    TextView username;
 
 
     @Override
@@ -25,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
         Log.d("oooo","scrivi qualcosa");
 
         score = (TextView)findViewById(R.id.score);
+        username = (TextView)findViewById(R.id.username);
 
         imageButtonSafari = (ImageView) findViewById(R.id.imgButtonFound);
         imageButtonSafari.setOnClickListener(new View.OnClickListener() {
@@ -55,7 +57,7 @@ public class HomeActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         score.setText("Score: " + Model.getInstance().getScore());
-
+        username.setText("" + Model.getInstance().getUserName());
 
         ServerConnections.downloadCharacters(HomeActivity.this);
     }

@@ -50,20 +50,26 @@ public class LoginActivity extends AppCompatActivity {
 
     private void onClickBnLogin(){
         //Nome Utente inserito nell'editText
-        String username = ((EditText)findViewById(R.id.edUserName)).getText().toString();
+        final String username = ((EditText)findViewById(R.id.edUserName)).getText().toString();
 
         //Creo una coda di richiesta Volley
         RequestQueue requestQueue = Volley.newRequestQueue(LoginActivity.this);
         //Chiamo la mia classe ServerConnections passandogli lo userName, definendo l'onResponse, e la requesQueue
-        ServerConnections.getUserPassword(username, new Response.Listener<String>() {
+        ServerConnections.getUserInfo(username, new Response.Listener<String>() {
             @Override
             public void onResponse(String response) {
+                String[] userInfo = response.split(";");
+                String password = userInfo[0];
+                int score = Integer.parseInt(userInfo[1]);
                 //Prendo la psw inserita nell'editText e la casto a String.
                 // Accedo all'EditText passando dalla classe e non direttamente da this.
                 String editTextPsw = ((EditText) findViewById(R.id.edPassword)).getText().toString();
                 //Controllo che sia stata trovata una psw associata a quel nome utente
                 //Confronto che response (password associata a nomeUtente) corrisponda con quella inserita nell'editText
-                if (!response.equals("") && editTextPsw.equals(response)) {
+                if (!password.equals("") && editTextPsw.equals(password)) {
+                    //Aggiorno username e score nel Model
+                    Model.getInstance().setUserName(username);
+                    Model.getInstance().setScore(score);
                     startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                 } else {
                     Toast.makeText(LoginActivity.this, "Nome Utente o Password errati", Toast.LENGTH_LONG).show();

@@ -22,6 +22,11 @@
             tools:layout_editor_absoluteX="8dp"
             tools:layout_editor_absoluteY="8dp">
             <TextView
+                android:id="@+id/username"
+                android:text="Username"
+                android:layout_margin="20dp"
+                android:textSize="30dp"/>
+            <TextView
                 android:id="@+id/score"
                 android:text="Score: 0"
                 android:layout_margin="20dp"

@@ -25,6 +25,7 @@ public class Model
 
     private ArrayList<Character> al;
     private int score = 0;
+    private String userName = "";
 
     private Model()
     {
@@ -102,6 +103,13 @@ public class Model
     }
     public void setScore(int i){
         score = i;
+    }
+
+    public String getUserName(){
+        return userName;
+    }
+    public void setUserName(String userName){
+        this.userName = userName;
     }
 
 
