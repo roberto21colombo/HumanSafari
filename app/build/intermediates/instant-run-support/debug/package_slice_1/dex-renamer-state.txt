@@ -1,4 +1,4 @@
-#Mon Nov 27 19:17:38 CET 2017
+#Tue Nov 28 01:48:36 CET 2017
 base.0=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1
 renamed.0=classes.dex
 file.0=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/5/slice_1/classes.dex

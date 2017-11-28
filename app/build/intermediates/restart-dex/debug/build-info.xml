@@ -6,19 +6,19 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1511806655869"
+    timestamp="1511830114928"
     token="-9125923180666704299"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="530" />
+        duration="262" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="23" />
+        duration="25" />
     <task
         name="verifier"
         duration="1" />
@@ -29,7 +29,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1511806398655"
+        timestamp="1511828201935"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
@@ -70,7 +70,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1511806655869"
+        timestamp="1511830114928"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"

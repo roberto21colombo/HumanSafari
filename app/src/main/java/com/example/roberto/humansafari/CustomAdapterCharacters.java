@@ -1,6 +1,7 @@
 package com.example.roberto.humansafari;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -39,10 +40,13 @@ public class CustomAdapterCharacters extends ArrayAdapter<Character>{
         name.setText(c.getName());
         points.setText("" + c.getPoints());
 
-/*
-        TextView mTextView = convertView.findViewById(R.id.miotextView1);
-        mTextView.setText(getItem(position).getName());
-*/
+        if(c.isCatchable()){
+            convertView.setAlpha(100);
+            convertView.setBackgroundColor(Color.WHITE);
+        }else{
+            convertView.setAlpha(50);
+            convertView.setBackgroundColor(Color.LTGRAY);
+        }
 
         return convertView;
     }

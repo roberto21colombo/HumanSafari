@@ -102,6 +102,21 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void changeTime(int i, Context context){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/changetime.php?id=" + Model.getInstance().getCharacter().get(i).getId() + "&time=" + Model.getInstance().getCharacter().get(i).getTime();
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
 
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(stringRequest);
+    }
 
 }

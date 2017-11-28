@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -25,6 +26,9 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 
 import org.w3c.dom.Text;
+
+import java.util.Calendar;
+import java.util.concurrent.TimeUnit;
 
 public class ListCharacter extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, AdapterView.OnItemClickListener {
 
@@ -54,9 +58,17 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        changePlayerScore(i);
-        changeLastCharacterPosition(i);
-        startActivity(new Intent(ListCharacter.this, HomeActivity.class));
+        if(Model.getInstance().getCharacter().get(i).isCatchable()) {
+            changePlayerScore(i);
+            changeLastCharacterPosition(i);
+            changeTimeAbleCharacter(i);
+
+            startActivity(new Intent(ListCharacter.this, HomeActivity.class));
+        }else{
+            long deltaTime = Model.getInstance().getCharacter().get(i).getDeltaTime();
+            long seconds = TimeUnit.MILLISECONDS.toSeconds((int)deltaTime);
+            Toast.makeText(this, "Devi attendere " +(-seconds)+ " secondi.", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void changePlayerScore(int i){
@@ -81,6 +93,16 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
         Model.getInstance().getCharacter().get(i).setLastPosition(lastPosition);
         ServerConnections.changePosition(i, ListCharacter.this);
     }
+
+    public void changeTimeAbleCharacter(int i) {
+        long time = Calendar.getInstance().getTime().getTime() + 20000;
+        Model.getInstance().getCharacter().get(i).setTime(time);
+        ServerConnections.changeTime(i, ListCharacter.this);
+    }
+
+
+
+
 
     public void checkPermission(){
         if (ContextCompat.checkSelfPermission(this, android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {

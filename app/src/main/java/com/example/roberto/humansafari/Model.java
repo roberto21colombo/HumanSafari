@@ -69,13 +69,14 @@ public class Model
                 int point = characterObject.getInt("points");
                 String lat = characterObject.getString("lat");
                 String lng = characterObject.getString("lng");
+                long time = characterObject.getLong("time_able");
 
 
                 if(lat.equals("null") || lng.equals("null")){
-                    al.add(new Character(id, name, 0, point));
+                    al.add(new Character(id, name, 0, point, time));
                 }else{
                     LatLng lastPosition = new LatLng(Double.parseDouble(lat), Double.parseDouble(lng));
-                    al.add(new Character(id, name, 0, point, lastPosition));
+                    al.add(new Character(id, name, 0, point, lastPosition, time));
                 }
 
 

@@ -1,6 +1,14 @@
 package com.example.roberto.humansafari;
 
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.vision.barcode.Barcode;
+
+import java.security.Timestamp;
+import java.sql.ResultSet;
+import java.sql.Time;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by roberto on 05/10/17.
@@ -12,20 +20,26 @@ public class Character {
     int imgSrc;
     int points;
     LatLng lastPosition = null;
+    long time;
+
+    boolean catchable = true;
+    long deltaTime;
 
 
-    public Character(int id, String name, int imgSrc, int points){
+    public Character(int id, String name, int imgSrc, int points, long timestamp){
         this.id = id;
         this.name = name;
         this.imgSrc = imgSrc;
         this.points = points;
+        this.time = timestamp;
     }
-    public Character(int id, String name, int imgSrc, int points, LatLng lastPosition){
+    public Character(int id, String name, int imgSrc, int points, LatLng lastPosition, long timestamp){
         this.id = id;
         this.name = name;
         this.imgSrc = imgSrc;
         this.points = points;
         this.lastPosition = lastPosition;
+        this.time = timestamp;
     }
 
 
@@ -64,5 +78,30 @@ public class Character {
 
     public void setPoints(int points) {
         this.points = points;
+    }
+
+    public void setTime(long time){
+        this.time = time;
+    }
+
+    public long getTime(){
+        return time;
+    }
+
+    public boolean isCatchable(){
+        if(getDeltaTime() >= 0){
+            catchable = true;
+        }else{
+            catchable = false;
+        }
+        return catchable;
+    }
+
+    public long getDeltaTime(){
+        return Calendar.getInstance().getTime().getTime() - time;
+    }
+
+    public void flipCatchable(){
+        catchable = !catchable;
     }
 }
