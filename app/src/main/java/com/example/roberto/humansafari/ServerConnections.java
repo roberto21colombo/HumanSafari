@@ -119,4 +119,22 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void getUsers(Context context){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/getallusers.php";
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("onResponse", response);
+                Model.getInstance().setUsers(response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(stringRequest);
+    }
+
 }

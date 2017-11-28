@@ -9,23 +9,15 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Display;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.model.LatLng;
-import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.android.gms.tasks.OnSuccessListener;
-
-import org.w3c.dom.Text;
 
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
@@ -49,7 +41,7 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
         connectGoogleApiClient();
 
 
-        mListView = (ListView) findViewById(R.id.mListView);
+        mListView = (ListView) findViewById(R.id.listViewCharacters);
         mListView.setAdapter(new CustomAdapterCharacters(this, R.layout.raw_character, Model.getInstance().getCharacter()));
         mListView.setOnItemClickListener(this);
 
@@ -95,7 +87,7 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
     }
 
     public void changeTimeAbleCharacter(int i) {
-        long time = Calendar.getInstance().getTime().getTime() + 20000;
+        long time = Calendar.getInstance().getTime().getTime() + 30000;
         Model.getInstance().getCharacter().get(i).setTime(time);
         ServerConnections.changeTime(i, ListCharacter.this);
     }

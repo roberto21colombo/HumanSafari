@@ -52,6 +52,7 @@
         <activity android:name="com.example.roberto.humansafari.InstructionsActivity" />
         <activity android:name="com.example.roberto.humansafari.ListCharacter" />
         <activity android:name="com.example.roberto.humansafari.AddUserActivity" />
+        <activity android:name="com.example.roberto.humansafari.ListRankActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

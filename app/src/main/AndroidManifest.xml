@@ -16,7 +16,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAHOh_Sg8o32duEkeWUK34g3epYjGEzhT8" />
 
-        <activity android:name=".HomeActivity"></activity>
+        <activity android:name=".HomeActivity" />
         <activity android:name=".CameraActivity" />
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -27,8 +27,9 @@
         </activity>
         <activity android:name=".MapActivity" />
         <activity android:name=".InstructionsActivity" />
-        <activity android:name=".ListCharacter"></activity>
-        <activity android:name=".AddUserActivity"></activity>
+        <activity android:name=".ListCharacter" />
+        <activity android:name=".AddUserActivity" />
+        <activity android:name=".ListRankActivity"></activity>
     </application>
 
 </manifest>

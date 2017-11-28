@@ -4,12 +4,12 @@
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/abc_screen_simple.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
-        "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/abc_action_bar_view_list_nav_layout.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
@@ -32,20 +32,20 @@
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/cast_mini_controller.xml",
-        "source": "/Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/res/layout/cast_mini_controller.xml"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/notification_template_part_time.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/cast_help_text.xml",
-        "source": "/Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/res/layout/cast_help_text.xml"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/cast_mini_controller.xml",
+        "source": "/Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/res/layout/cast_mini_controller.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/cast_help_text.xml",
+        "source": "/Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/res/layout/cast_help_text.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/cast_expanded_controller_activity.xml",
@@ -86,6 +86,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/activity_list_rank.xml",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/activity_list_rank.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/notification_template_icon_group.xml",
@@ -218,6 +222,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/activity_camera.xml",
         "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/activity_camera.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/raw_rank.xml",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/raw_rank.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/mr_volume_control.xml",

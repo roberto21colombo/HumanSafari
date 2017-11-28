@@ -13,6 +13,7 @@ public class HomeActivity extends AppCompatActivity {
     ImageView imageButtonSafari;
     ImageView imageViewMap;
     ImageView imageViewInstructions;
+    ImageView imageViewRank;
 
     TextView score;
     TextView username;
@@ -51,6 +52,14 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(new Intent(HomeActivity.this, InstructionsActivity.class));
             }
         });
+
+        imageViewRank = (ImageView) findViewById(R.id.imageViewRank);
+        imageViewRank.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(HomeActivity.this, ListRankActivity.class));
+            }
+        });
     }
 
     @Override
@@ -60,5 +69,6 @@ public class HomeActivity extends AppCompatActivity {
         username.setText("" + Model.getInstance().getUserName());
 
         ServerConnections.downloadCharacters(HomeActivity.this);
+        ServerConnections.getUsers(HomeActivity.this);
     }
 }
