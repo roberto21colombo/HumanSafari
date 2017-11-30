@@ -2,7 +2,10 @@ package com.example.roberto.humansafari;
 
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.location.Location;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
@@ -19,6 +22,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
 
+import java.io.InputStream;
+import java.net.URL;
 import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
@@ -44,6 +49,8 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
         mListView = (ListView) findViewById(R.id.listViewCharacters);
         mListView.setAdapter(new CustomAdapterCharacters(this, R.layout.raw_character, Model.getInstance().getCharacter()));
         mListView.setOnItemClickListener(this);
+
+
 
     }
 

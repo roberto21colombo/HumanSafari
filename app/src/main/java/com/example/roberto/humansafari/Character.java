@@ -17,7 +17,7 @@ import java.util.Date;
 public class Character {
     int id;
     String name;
-    int imgSrc;
+    String img;
     int points;
     LatLng lastPosition = null;
     long time;
@@ -26,17 +26,17 @@ public class Character {
     long deltaTime;
 
 
-    public Character(int id, String name, int imgSrc, int points, long timestamp){
+    public Character(int id, String name, String img, int points, long timestamp){
         this.id = id;
         this.name = name;
-        this.imgSrc = imgSrc;
+        this.img = img;
         this.points = points;
         this.time = timestamp;
     }
-    public Character(int id, String name, int imgSrc, int points, LatLng lastPosition, long timestamp){
+    public Character(int id, String name, String img, int points, LatLng lastPosition, long timestamp){
         this.id = id;
         this.name = name;
-        this.imgSrc = imgSrc;
+        this.img = img;
         this.points = points;
         this.lastPosition = lastPosition;
         this.time = timestamp;
@@ -60,8 +60,8 @@ public class Character {
         return name;
     }
 
-    public int getImgSrc() {
-        return imgSrc;
+    public String getImgSrc() {
+        return img;
     }
 
     public int getPoints() {
@@ -73,7 +73,7 @@ public class Character {
     }
 
     public void setImgSrc(int imgSrc) {
-        this.imgSrc = imgSrc;
+        this.img = img;
     }
 
     public void setPoints(int points) {

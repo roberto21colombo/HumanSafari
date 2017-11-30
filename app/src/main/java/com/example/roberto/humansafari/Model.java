@@ -1,13 +1,6 @@
 package com.example.roberto.humansafari;
 
 
-import com.android.volley.Request;
-import com.android.volley.RequestQueue;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.JsonObjectRequest;
-import com.android.volley.toolbox.Volley;
-import com.google.android.gms.common.api.Response;
-import com.google.android.gms.drive.events.ChangeEvent;
 import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONArray;
@@ -36,19 +29,6 @@ public class Model
         alCharacter = new ArrayList<Character>();
         alUsers = new ArrayList<User>();
 
-        /*
-        al.add(new Character("Paolino", R.drawable.piero_pelu,5, new LatLng(45.62724412, 9.2930603)));
-        al.add(new Character("Arturo", R.drawable.piero_pelu,5, new LatLng(45.61739941, 9.28894043)));
-        al.add(new Character("Francesco", R.drawable.piero_pelu,10, new LatLng(45.61259649, 9.28482056)));
-        al.add(new Character("Carlitos", R.drawable.piero_pelu,10, new LatLng(45.60250902, 9.27417755)));
-        al.add(new Character("Genoveffo", R.drawable.piero_pelu,10, new LatLng(45.60034718, 9.28688049)));
-        al.add(new Character("Antonio", R.drawable.piero_pelu,20, new LatLng(45.60214871, 9.27400589)));
-        al.add(new Character("Biennio", R.drawable.piero_pelu,20, new LatLng(45.59890591, 9.28482056)));
-        al.add(new Character("Roberto", R.drawable.piero_pelu,30, new LatLng(45.59476204, 9.27666664)));
-        al.add(new Character("Dave", R.drawable.piero_pelu,30));
-        al.add(new Character("Simone", R.drawable.piero_pelu,30));
-        al.add(new Character("Lorenza", R.drawable.piero_pelu,50));
-        */
     }
 
     public static Model getInstance()
@@ -72,16 +52,17 @@ public class Model
                 int id = characterObject.getInt("id");
                 String name = characterObject.getString("name");
                 int point = characterObject.getInt("points");
+                String img = characterObject.getString("img");
                 String lat = characterObject.getString("lat");
                 String lng = characterObject.getString("lng");
                 long time = characterObject.getLong("time_able");
 
 
                 if(lat.equals("null") || lng.equals("null")){
-                    alCharacter.add(new Character(id, name, 0, point, time));
+                    alCharacter.add(new Character(id, name, img, point, time));
                 }else{
                     LatLng lastPosition = new LatLng(Double.parseDouble(lat), Double.parseDouble(lng));
-                    alCharacter.add(new Character(id, name, 0, point, lastPosition, time));
+                    alCharacter.add(new Character(id, name, img, point, lastPosition, time));
                 }
 
 

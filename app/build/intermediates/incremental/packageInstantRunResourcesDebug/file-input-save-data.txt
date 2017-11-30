@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Tue Nov 28 11:12:59 CET 2017
+#Thu Nov 30 18:05:41 CET 2017
 20.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 143.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 493.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
@@ -37,7 +37,7 @@
 217.set=ANDROID_RESOURCE
 192.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout/mr_volume_control.xml
 363.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_19_dark.png
-534.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/ic_group_expand_08.png
+534.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/cast_ic_mini_controller_stop_large.xml
 517.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 76.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 396.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/googleg_disabled_color_18.png
@@ -284,7 +284,7 @@
 237.set=ANDROID_RESOURCE
 194.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout-v11/notification_template_big_media.xml
 365.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/quantum_ic_closed_caption_grey600_36.png
-536.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_radio.xml
+536.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_text_disabled.xml
 519.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 115.set=ANDROID_RESOURCE
 78.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
@@ -306,7 +306,7 @@
 52.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/quantum_ic_pause_grey600_48.png
 329.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 355.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_ic_star_black_48dp.png
-526.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_16_dark.png
+526.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/cast_mini_controller_progress_drawable.xml
 68.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 85.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/color/abc_secondary_text_material_light.xml
 467.set=ANDROID_RESOURCE
@@ -455,7 +455,7 @@
 40.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 163.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 360.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connected_01_light.png
-531.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_spinner.xml
+531.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_disconnected_light.png
 73.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 517.set=ANDROID_RESOURCE
 393.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/mipmap-xxhdpi-v4/ic_launcher_round.png
@@ -551,6 +551,7 @@
 257.set=ANDROID_RESOURCE
 196.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_22_light.png
 367.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connected_11_light.png
+538.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/quantum_ic_refresh_white_24.png
 135.set=ANDROID_RESOURCE
 510.set=ANDROID_RESOURCE
 231.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
@@ -571,7 +572,7 @@
 112.set=ANDROID_RESOURCE
 54.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/crown_icon.png
 357.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout/notification_template_icon_group.xml
-528.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_edit_text_material.xml
+528.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/color/common_google_signin_btn_tint.xml
 87.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/ic_group_expand_03.png
 487.set=ANDROID_RESOURCE
 410.set=ANDROID_RESOURCE
@@ -708,7 +709,7 @@
 165.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 207.set=ANDROID_RESOURCE
 362.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_ic_arrow_drop_right_black_24dp.xml
-533.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/cast_ic_mini_controller_stop_large.xml
+533.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/cast_ic_expanded_controller_rewind30.xml
 516.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 75.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 537.set=ANDROID_RESOURCE
@@ -926,6 +927,7 @@
 196.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 90.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_13_dark.png
 367.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
+538.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 214.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_list_longpressed_holo.9.png
 99.set=ANDROID_RESOURCE
 22.set=ANDROID_RESOURCE
@@ -969,7 +971,7 @@
 227.set=ANDROID_RESOURCE
 193.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/piero_pelu.jpg
 364.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_dialog_close_light.png
-535.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/common_google_signin_btn_text_disabled.xml
+535.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxxhdpi-v4/ic_group_expand_08.png
 518.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 105.set=ANDROID_RESOURCE
 77.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
@@ -990,7 +992,7 @@
 51.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/notification_tile_bg.xml
 328.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 354.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/binocularflat.png
-525.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/cast_mini_controller_progress_drawable.xml
+525.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/circle.xml
 67.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 84.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_media_play_light.png
 457.set=ANDROID_RESOURCE
@@ -1123,7 +1125,7 @@
 282.set=ANDROID_RESOURCE
 162.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 160.set=ANDROID_RESOURCE
-530.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_disconnected_light.png
+530.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connected_02_dark.png
 72.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 507.set=ANDROID_RESOURCE
 392.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png
@@ -1151,6 +1153,7 @@
 208.set=ANDROID_RESOURCE
 278.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout/mr_chooser_list_item.xml
 449.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/mr_button_connecting_light.xml
+538.set=ANDROID_RESOURCE
 450.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 10.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 88.set=ANDROID_RESOURCE
@@ -1224,7 +1227,7 @@
 247.set=ANDROID_RESOURCE
 195.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/common_google_signin_btn_icon_light_normal_background.9.png
 366.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-v21/abc_ratingbar_indicator_material.xml
-537.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/quantum_ic_refresh_white_24.png
+537.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout/abc_list_menu_item_radio.xml
 125.set=ANDROID_RESOURCE
 79.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 500.set=ANDROID_RESOURCE
@@ -1250,7 +1253,7 @@
 159.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 53.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connected_19_light.png
 356.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_btn_colored_borderless_text_material.xml
-527.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/color/common_google_signin_btn_tint.xml
+527.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_16_dark.png
 69.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 86.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_20_dark.png
 477.set=ANDROID_RESOURCE
@@ -1387,11 +1390,11 @@
 41.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 164.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 361.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/quantum_ic_pause_white_24.png
-532.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/cast_ic_expanded_controller_rewind30.xml
+532.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/color-v23/abc_tint_spinner.xml
 74.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
 527.set=ANDROID_RESOURCE
 394.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout-v21/notification_template_custom_big.xml
-count=538
+count=539
 257.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_22_dark.png
 428.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_07_light.png
 77.set=ANDROID_RESOURCE
@@ -1499,7 +1502,7 @@ count=538
 122.set=ANDROID_RESOURCE
 55.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connected_08_dark.png
 358.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connecting_19_light.png
-529.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable-xxhdpi-v4/ic_mr_button_connected_02_dark.png
+529.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/drawable/abc_edit_text_material.xml
 88.file=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_/res/layout/mr_controller_volume_item.xml
 497.set=ANDROID_RESOURCE
 530.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/resources-debug.ap_
