@@ -39,6 +39,7 @@ public class ServerConnections {
             public void onResponse(String response) {
                 Log.d("onResponse", response);
                 Model.getInstance().setCharacters(response);
+                Model.getInstance().setDown("downChar", true);
             }
         }, new Response.ErrorListener() {
             @Override
@@ -46,7 +47,8 @@ public class ServerConnections {
 
             }
         });
-            requestQueue.add(stringRequest);
+
+        requestQueue.add(stringRequest);
     }
 
     public static void changePosition(int i, final Context context){
@@ -127,6 +129,43 @@ public class ServerConnections {
             public void onResponse(String response) {
                 Log.d("onResponse", response);
                 Model.getInstance().setUsers(response);
+                Model.getInstance().setDown("downUsr", true);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(stringRequest);
+    }
+
+    public static void addFound(Context context, int indexCharacter){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/addfound.php?user=" + Model.getInstance().getUserName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(stringRequest);
+    }
+
+    public static void getHistorical(Context context){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/gethistorical.php";
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("onResponse", response);
+                Model.getInstance().setHistorical(response);
+                Model.getInstance().setDown("downHist", true);
             }
         }, new Response.ErrorListener() {
             @Override

@@ -61,6 +61,7 @@ public class ListCharacter extends AppCompatActivity implements GoogleApiClient.
             changePlayerScore(i);
             changeLastCharacterPosition(i);
             changeTimeAbleCharacter(i);
+            ServerConnections.addFound(ListCharacter.this, i);
 
             startActivity(new Intent(ListCharacter.this, HomeActivity.class));
         }else{

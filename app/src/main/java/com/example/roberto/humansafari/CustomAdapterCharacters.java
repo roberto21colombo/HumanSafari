@@ -58,13 +58,9 @@ public class CustomAdapterCharacters extends ArrayAdapter<Character>{
             new ImageDownloaderTask(new WeakReference(imageView)).execute(url);
         }
 
-        if(c.isCatchable()){
-            convertView.setAlpha(100);
-            convertView.setBackgroundColor(Color.WHITE);
-        }else{
-            convertView.setAlpha(50);
-            convertView.setBackgroundColor(Color.LTGRAY);
-        }
+
+        setBackgroundView(c.isCatchable(), position, convertView);
+
 
         return convertView;
     }
@@ -90,7 +86,7 @@ public class CustomAdapterCharacters extends ArrayAdapter<Character>{
                 ImageView imageView = imageViewReference.get();
                 if (imageView != null) {
                     if (bitmap != null) {
-                        imageView.setImageBitmap(bitmap);
+                        imageView.setImageBitmap(getCroppedBitmap(bitmap));
                     } else {
                         Drawable placeholder = imageView.getContext().getResources().getDrawable(R.drawable.binocularflat);
                         imageView.setImageDrawable(placeholder);
@@ -112,7 +108,21 @@ public class CustomAdapterCharacters extends ArrayAdapter<Character>{
         }
     }
 
-    public Bitmap getCroppedBitmap(Bitmap bitmap) {
+    private void setBackgroundView(Boolean isCatchable, int position, View view){
+        if(isCatchable){
+            view.setAlpha(100);
+            if(position%2==0){
+                view.setBackgroundColor(Color.parseColor("#616161"));
+            }else{
+                view.setBackgroundColor(Color.parseColor("#9E9E9E"));
+            }
+        }else{
+            view.setAlpha(50);
+            view.setBackgroundColor(Color.LTGRAY);
+        }
+    }
+
+    private Bitmap getCroppedBitmap(Bitmap bitmap) {
         Bitmap output = Bitmap.createBitmap(bitmap.getWidth(),
                 bitmap.getHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(output);

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+    <ImageView
+        android:layout_margin="5dp"
+        android:id="@+id/imageViewCharacter"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:src="@drawable/binocularflat"
+        android:layout_weight="0.30" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_margin="5dp"
+        android:id="@+id/editTextNameUser"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:fontFamily="cursive"
+        android:text="name User"
+        android:textSize="25sp"
+        android:layout_weight="0.35"/>
+
+    <TextView
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_margin="5dp"
+        android:layout_weight="0.35"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="aaaa-mm-gg hh:mm:ss"
+        android:textSize="20sp" />
+</LinearLayout>

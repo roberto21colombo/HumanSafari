@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -33,7 +34,11 @@ public class HomeActivity extends AppCompatActivity {
         imageButtonSafari.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, ListCharacter.class));
+                if(Model.getInstance().getDown("downChar")) {
+                    startActivity(new Intent(HomeActivity.this, ListCharacter.class));
+                }else{
+                    Toast.makeText(HomeActivity.this, "Download in corso, attendere...", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -41,7 +46,11 @@ public class HomeActivity extends AppCompatActivity {
         imageViewMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, MapActivity.class));
+                if(Model.getInstance().getDown("downChar")) {
+                    startActivity(new Intent(HomeActivity.this, MapActivity.class));
+                }else{
+                    Toast.makeText(HomeActivity.this, "Download in corso, attendere...", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -49,7 +58,11 @@ public class HomeActivity extends AppCompatActivity {
         imageViewInstructions.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, InstructionsActivity.class));
+                if(Model.getInstance().getDown("downHist")) {
+                    startActivity(new Intent(HomeActivity.this, FoundHistoricalActivity.class));
+                }else{
+                    Toast.makeText(HomeActivity.this, "Download in corso, attendere...", Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -57,7 +70,11 @@ public class HomeActivity extends AppCompatActivity {
         imageViewRank.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(HomeActivity.this, ListRankActivity.class));
+                if(Model.getInstance().getDown("downUsr")) {
+                    startActivity(new Intent(HomeActivity.this, ListRankActivity.class));
+                }else{
+                    Toast.makeText(HomeActivity.this, "Download in corso, attendere...", Toast.LENGTH_LONG).show();
+                }
             }
         });
     }
@@ -68,7 +85,12 @@ public class HomeActivity extends AppCompatActivity {
         score.setText("Score: " + Model.getInstance().getScore());
         username.setText("" + Model.getInstance().getUserName());
 
+
+        Model.getInstance().setDown("downChar", false);
+        Model.getInstance().setDown("downUsr", false);
+        Model.getInstance().setDown("downHist", false);
         ServerConnections.downloadCharacters(HomeActivity.this);
         ServerConnections.getUsers(HomeActivity.this);
+        ServerConnections.getHistorical(HomeActivity.this);
     }
 }

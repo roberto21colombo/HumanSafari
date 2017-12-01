@@ -40,6 +40,17 @@ public class CustomAdapterRank extends ArrayAdapter<User>{
         name.setText(u.getName());
         score.setText("" + u.getScore());
 
+        setBackgroundView(position, convertView);
+
         return convertView;
+    }
+
+    private void setBackgroundView(int position, View view){
+        view.setAlpha(100);
+        if(position%2==0){
+            view.setBackgroundColor(Color.parseColor("#616161"));
+        }else{
+            view.setBackgroundColor(Color.parseColor("#9E9E9E"));
+        }
     }
 }
