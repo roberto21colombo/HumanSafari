@@ -64,6 +64,10 @@
         "source": "/Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/res/drawable-xxhdpi-v4/ic_mr_button_connected_00_dark.png"
     },
     {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/design_ic_visibility_off.png",
+        "source": "/Users/roberto/.android/build-cache/6a06d56646586eeea304f1246fd8a32fd2becc48/output/res/drawable-xxhdpi-v4/design_ic_visibility_off.png"
+    },
+    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_mr_button_connecting_22_light.png",
         "source": "/Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/res/drawable-xxhdpi-v4/ic_mr_button_connecting_22_light.png"
     },
@@ -250,6 +254,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_media_pause_dark.png",
         "source": "/Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/res/drawable-xxhdpi-v4/ic_media_pause_dark.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/design_ic_visibility.png",
+        "source": "/Users/roberto/.android/build-cache/6a06d56646586eeea304f1246fd8a32fd2becc48/output/res/drawable-xxhdpi-v4/design_ic_visibility.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4/ic_mr_button_connecting_00_light.png",

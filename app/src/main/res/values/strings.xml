@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HumanSafari</string>
+    <string name="path_file">/humansafari/myGames.txt</string>
 </resources>

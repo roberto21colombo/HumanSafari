@@ -1,5 +1,9 @@
 [
     {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/roberto/.android/build-cache/6a06d56646586eeea304f1246fd8a32fd2becc48/output/res/color-v23/design_tint_password_toggle.xml"
+    },
+    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
         "source": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/color-v23/abc_tint_default.xml"
     },

@@ -32,7 +32,8 @@ import static android.R.attr.required;
 public class ServerConnections {
 
     public static void downloadCharacters(Context context) {
-        String url = "http://www.aclitriuggio.it/wp-pinguino/getcharacters.php";
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/getcharacters.php";
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -58,7 +59,8 @@ public class ServerConnections {
         double lat = c.getLastPosition().latitude;
         double lng = c.getLastPosition().longitude;
 
-        String url = "http://www.aclitriuggio.it/wp-pinguino/updatelastposition.php?id=" + id + "&lat=" + lat + "&lng=" + lng;
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/updatelastposition.php?id=" + id + "&lat=" + lat + "&lng=" + lng;
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -76,19 +78,22 @@ public class ServerConnections {
     }
 
     public static void getUserInfo(String userId, Response.Listener<String> responseStringLisener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/getuserinfo.php?userid=" + userId;
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/getuserinfo.php?userid=" + userId;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringLisener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
 
     public static void addUser(String name, String password, String confirmPassword, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/insertifnotexist.php?userid=" + name + "&pass=" + password + "&conpass=" + confirmPassword;
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/insertifnotexist.php?userid=" + name + "&pass=" + password + "&conpass=" + confirmPassword;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
 
     public static void setScore(Context context){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/setscore.php?username=" + Model.getInstance().getUserName() + "&score=" + Model.getInstance().getScore();
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/setscore.php?username=" + Model.getInstance().getUserName() + "&score=" + Model.getInstance().getScore();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -105,7 +110,8 @@ public class ServerConnections {
     }
 
     public static void changeTime(int i, Context context){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/changetime.php?id=" + Model.getInstance().getCharacter().get(i).getId() + "&time=" + Model.getInstance().getCharacter().get(i).getTime();
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/changetime.php?id=" + Model.getInstance().getCharacter().get(i).getId() + "&time=" + Model.getInstance().getCharacter().get(i).getTime();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -122,7 +128,8 @@ public class ServerConnections {
     }
 
     public static void getUsers(Context context){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/getallusers.php";
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/getallusers.php";
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -141,7 +148,8 @@ public class ServerConnections {
     }
 
     public static void addFound(Context context, int indexCharacter){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/addfound.php?user=" + Model.getInstance().getUserName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/addfound.php?user=" + Model.getInstance().getUserName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -158,7 +166,8 @@ public class ServerConnections {
     }
 
     public static void getHistorical(Context context){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/gethistorical.php";
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/gethistorical.php";
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
