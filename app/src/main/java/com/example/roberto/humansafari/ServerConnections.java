@@ -185,4 +185,22 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void addGame(Context context, String name, String codCharacter, String date){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/addgame.php?name="+name+"&codcharacter="+codCharacter+"&date="+date;
+        RequestQueue requestQueue = Volley.newRequestQueue(context);
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                Log.d("onResponse", response);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        });
+        requestQueue.add(stringRequest);
+    }
+
 }

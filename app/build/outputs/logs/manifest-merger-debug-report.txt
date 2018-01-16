@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
@@ -34,7 +34,7 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.0] /Users/roberto/.a
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-35:19
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-37:19
 MERGED from [com.android.support:design:23.1.0] /Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.android/build-cache/181b23d51c80263b37a1908904e97563c988aa73/output/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.android/build-cache/f044edf5afe3d9492c0bd0dd734fb7edba2d8fa0/output/AndroidManifest.xml:5:5-20
@@ -155,10 +155,18 @@ category#android.intent.category.LAUNCHER
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:31:17-77
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:31:27-74
-activity#com.example.roberto.humansafari.ChooseGameActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:9-65
+activity#com.example.roberto.humansafari.PlayerChooseGameActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:9-62
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:19-53
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:19-59
+activity#com.example.roberto.humansafari.MasterChooseGameActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:9-62
+	android:name
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:19-59
+activity#com.example.roberto.humansafari.CreateGameActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-55
+	android:name
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:19-53
 uses-sdk
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:23.1.0] /Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/AndroidManifest.xml:20:5-43

@@ -54,7 +54,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.roberto.humansafari.ChooseGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.PlayerChooseGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.MasterChooseGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.CreateGameActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

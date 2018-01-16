@@ -1,13 +1,18 @@
 package com.example.roberto.humansafari;
 
 
+import android.content.Context;
+
 import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.File;
+import java.io.FileOutputStream;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
 
@@ -159,6 +164,14 @@ public class Model
         else{ return downHist;}
     }
 
+    public void saveInternalStorage(String dir, String fileName, String text){
+        String data = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) + "-" + (Calendar.getInstance().get(Calendar.MONTH)+1) + "-" + Calendar.getInstance().get(Calendar.YEAR);
+
+        //Creo il file corrispondente
+        // /data/user/0/com.example.roberto.humansafari/files/myfile
+        File file = new File(dir, fileName);
+    }
+
     public class CustomComparatorUsers implements Comparator<User> {
         @Override
         public int compare(User u1, User u2) {
@@ -188,6 +201,7 @@ public class Model
             }
         }
     }
+
 }
 
 
