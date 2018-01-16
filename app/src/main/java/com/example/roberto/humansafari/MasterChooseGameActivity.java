@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import java.io.BufferedReader;
@@ -14,8 +15,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.List;
 
-public class MasterChooseGameActivity extends AppCompatActivity {
+public class MasterChooseGameActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     FloatingActionButton btnAddButton;
     ListView listViewGames;
@@ -34,7 +36,14 @@ public class MasterChooseGameActivity extends AppCompatActivity {
             }
         });
 
+        ArrayList<String[]> arrayList = readFromInternalStorage();
+        listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game, arrayList));
 
+        listViewGames.setOnItemClickListener(this);
+
+    }
+
+    private ArrayList<String[]> readFromInternalStorage(){
         //Creo Arraylist dove ogni elemento è una partita espresso come array di stringa [NomePartita,NomeGiocatore,Data]
         ArrayList<String[]> arrayList = new ArrayList<String[]>();
         try {
@@ -56,8 +65,11 @@ public class MasterChooseGameActivity extends AppCompatActivity {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //Assegno l'adapter alla list view
-        listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game, arrayList));
+        return arrayList;
+    }
 
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        startActivity(new Intent(MasterChooseGameActivity.this, MasterMainActivity.class));
     }
 }

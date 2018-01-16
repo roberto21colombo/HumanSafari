@@ -11,7 +11,7 @@
                     "endOffset": 119
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 2,
                         "startColumn": 4,
@@ -30,7 +30,7 @@
                     "endOffset": 188
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
@@ -49,7 +49,7 @@
                     "endOffset": 258
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
@@ -68,7 +68,7 @@
                     "endOffset": 332
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
@@ -87,7 +87,7 @@
                     "endOffset": 408
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
@@ -106,7 +106,7 @@
                     "endOffset": 467
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 4,
@@ -125,7 +125,7 @@
                     "endOffset": 538
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 4,
@@ -144,7 +144,7 @@
                     "endOffset": 606
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "file": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 4,
@@ -159,17 +159,17 @@
                     "startLine": 10,
                     "startColumn": 4,
                     "startOffset": 611,
-                    "endColumn": 69,
-                    "endOffset": 676
+                    "endColumn": 59,
+                    "endOffset": 666
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 4,
+                        "startLine": 2,
                         "startColumn": 4,
-                        "startOffset": 285,
-                        "endColumn": 69,
-                        "endOffset": 350
+                        "startOffset": 55,
+                        "endColumn": 59,
+                        "endOffset": 110
                     }
                 }
             },
@@ -177,18 +177,18 @@
                 "to": {
                     "startLine": 11,
                     "startColumn": 4,
-                    "startOffset": 681,
-                    "endColumn": 70,
-                    "endOffset": 747
+                    "startOffset": 671,
+                    "endColumn": 69,
+                    "endOffset": 736
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 5,
+                        "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 355,
-                        "endColumn": 70,
-                        "endOffset": 421
+                        "startOffset": 115,
+                        "endColumn": 69,
+                        "endOffset": 180
                     }
                 }
             },
@@ -196,18 +196,18 @@
                 "to": {
                     "startLine": 12,
                     "startColumn": 4,
-                    "startOffset": 752,
-                    "endColumn": 71,
-                    "endOffset": 819
+                    "startOffset": 741,
+                    "endColumn": 70,
+                    "endOffset": 807
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 6,
+                        "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 426,
-                        "endColumn": 71,
-                        "endOffset": 493
+                        "startOffset": 185,
+                        "endColumn": 70,
+                        "endOffset": 251
                     }
                 }
             },
@@ -215,18 +215,18 @@
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 824,
-                    "endColumn": 57,
-                    "endOffset": 877
+                    "startOffset": 812,
+                    "endColumn": 71,
+                    "endOffset": 879
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 7,
+                        "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 498,
-                        "endColumn": 57,
-                        "endOffset": 551
+                        "startOffset": 256,
+                        "endColumn": 71,
+                        "endOffset": 323
                     }
                 }
             },
@@ -234,18 +234,18 @@
                 "to": {
                     "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 882,
+                    "startOffset": 884,
                     "endColumn": 57,
-                    "endOffset": 935
+                    "endOffset": 937
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 8,
+                        "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 556,
+                        "startOffset": 328,
                         "endColumn": 57,
-                        "endOffset": 609
+                        "endOffset": 381
                     }
                 }
             },
@@ -253,18 +253,18 @@
                 "to": {
                     "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 940,
-                    "endColumn": 105,
-                    "endOffset": 1041
+                    "startOffset": 942,
+                    "endColumn": 57,
+                    "endOffset": 995
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 9,
+                        "startLine": 7,
                         "startColumn": 4,
-                        "startOffset": 614,
-                        "endColumn": 105,
-                        "endOffset": 715
+                        "startOffset": 386,
+                        "endColumn": 57,
+                        "endOffset": 439
                     }
                 }
             },
@@ -272,18 +272,18 @@
                 "to": {
                     "startLine": 16,
                     "startColumn": 4,
-                    "startOffset": 1046,
-                    "endColumn": 63,
-                    "endOffset": 1105
+                    "startOffset": 1000,
+                    "endColumn": 105,
+                    "endOffset": 1101
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 10,
+                        "startLine": 8,
                         "startColumn": 4,
-                        "startOffset": 720,
-                        "endColumn": 63,
-                        "endOffset": 779
+                        "startOffset": 444,
+                        "endColumn": 105,
+                        "endOffset": 545
                     }
                 }
             },
@@ -291,9 +291,28 @@
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 1110,
+                    "startOffset": 1106,
+                    "endColumn": 63,
+                    "endOffset": 1165
+                },
+                "from": {
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 550,
+                        "endColumn": 63,
+                        "endOffset": 609
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1170,
                     "endColumn": 68,
-                    "endOffset": 1174
+                    "endOffset": 1234
                 },
                 "from": {
                     "file": "/Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -308,11 +327,11 @@
             },
             {
                 "to": {
-                    "startLine": 18,
+                    "startLine": 19,
                     "startColumn": 4,
-                    "startOffset": 1179,
+                    "startOffset": 1239,
                     "endColumn": 68,
-                    "endOffset": 1243
+                    "endOffset": 1303
                 },
                 "from": {
                     "file": "/Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -327,41 +346,41 @@
             },
             {
                 "to": {
-                    "startLine": 19,
+                    "startLine": 20,
                     "startColumn": 4,
-                    "startOffset": 1248,
+                    "startOffset": 1308,
                     "endColumn": 62,
-                    "endOffset": 1306
+                    "endOffset": 1366
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 13,
+                        "startLine": 10,
                         "startColumn": 4,
-                        "startOffset": 1014,
+                        "startOffset": 614,
                         "endColumn": 62,
-                        "endOffset": 1072
+                        "endOffset": 672
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 20,
+                    "startLine": 21,
                     "startColumn": 4,
-                    "startOffset": 1311,
-                    "endLine": 23,
+                    "startOffset": 1371,
+                    "endLine": 24,
                     "endColumn": 12,
-                    "endOffset": 1488
+                    "endOffset": 1548
                 },
                 "from": {
-                    "file": "/Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/res/values-sw600dp/values-sw600dp.xml",
+                    "file": "/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/res/values-sw600dp-v13/values-sw600dp-v13.xml",
                     "position": {
-                        "startLine": 16,
+                        "startLine": 11,
                         "startColumn": 4,
-                        "startOffset": 1307,
-                        "endLine": 19,
+                        "startOffset": 677,
+                        "endLine": 14,
                         "endColumn": 12,
-                        "endOffset": 1484
+                        "endOffset": 854
                     }
                 }
             }

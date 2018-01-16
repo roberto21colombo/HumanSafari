@@ -11,11 +11,7 @@
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- Optional permission for Analytics to run. -->
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
-
-    <meta-data
-        android:name="android.support.VERSION"
-        android:value="26.0.0-alpha1" /> <!-- Permissions required for GCM -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Permissions required for GCM -->
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
     <permission
@@ -57,6 +53,10 @@
         <activity android:name="com.example.roberto.humansafari.PlayerChooseGameActivity" />
         <activity android:name="com.example.roberto.humansafari.MasterChooseGameActivity" />
         <activity android:name="com.example.roberto.humansafari.CreateGameActivity" />
+        <activity
+            android:name="com.example.roberto.humansafari.MasterMainActivity"
+            android:label="@string/title_activity_master_main"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

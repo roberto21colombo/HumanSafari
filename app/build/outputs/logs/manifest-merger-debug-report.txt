@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
@@ -34,8 +34,9 @@ MERGED from [com.google.android.gms:play-services-maps:11.0.0] /Users/roberto/.a
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-37:19
-MERGED from [com.android.support:design:23.1.0] /Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/AndroidManifest.xml:22:5-20
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-41:19
+MERGED from [com.android.support:design:23.2.0] /Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.android/build-cache/f0976e094f8e235b41bb21f31a4ee7282122243c/output/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.android/build-cache/181b23d51c80263b37a1908904e97563c988aa73/output/AndroidManifest.xml:9:5-20
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.android/build-cache/f044edf5afe3d9492c0bd0dd734fb7edba2d8fa0/output/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.0] /Users/roberto/.android/build-cache/1c78cea946ccff1dd6c0941d6075717f9928fc2d/output/AndroidManifest.xml:23:5-26:19
@@ -45,9 +46,9 @@ MERGED from [com.google.android.gms:play-services-auth:11.0.0] /Users/roberto/.a
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/AndroidManifest.xml:4:5-8:19
 MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.android/build-cache/102e00a4e0c1a4047cce1038f31657b0ef5f5446/output/AndroidManifest.xml:18:5-19
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.android/build-cache/6cf47774aeeaacc4cdafe820e75b5e85193afca6/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.android/build-cache/1a47aca23e863096f50345894f995e6a081db53f/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.android/build-cache/d85984a298ad4eafcabd3cc97ea14c7d70bd7244/output/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.android/build-cache/5f9a31698ab148e9ae18c75d8b4c1f1f9173dcd4/output/AndroidManifest.xml:23:5-20
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.android/build-cache/e81629f5ebff4052952d874e48bf45526ad9dcc8/output/AndroidManifest.xml:22:5-23:19
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.0] /Users/roberto/.android/build-cache/391711b07edd543270fa23076da80b944265af23/output/AndroidManifest.xml:18:5-19
 MERGED from [com.google.firebase:firebase-config:11.0.0] /Users/roberto/.android/build-cache/6242eb46e7c7edc4ece3b42a305592ebbb0f688f/output/AndroidManifest.xml:18:5-19
@@ -84,12 +85,12 @@ MERGED from [com.google.android.gms:play-services-wearable:11.0.0] /Users/robert
 MERGED from [com.google.android.gms:play-services-base:11.0.0] /Users/roberto/.android/build-cache/f13ae8ff84d03f5edaf69976480e0fe89f3e8d52/output/AndroidManifest.xml:18:5-20:19
 MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.android/build-cache/fee76fb56f07017051ee26ec32030e08ef1b2d92/output/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.android/build-cache/40ec720e321f345a0043015f4a4a002a972d77eb/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.android/build-cache/d57bcc692036a7ce942bff02b84e47f2b6fbaeea/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.android/build-cache/e9b4b4dc90a45a24fb25af7f49af3841f602c9a7/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.android/build-cache/3d05dc636d36a95f939312c01ec9fb37f62c0740/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.android/build-cache/95bc9c43c88ec3b0966b5fea43ec4c15ba30ae4b/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.android/build-cache/42bbe87c253dcf14461271ba33f7e3a73fd5f5fd/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.android/build-cache/8fca1116a509589c6c203d8524bc0a9f077695db/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.android/build-cache/e39f5874ec3eb78eaac5dd4b72de148b4b08adc6/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.android/build-cache/d77a69d99079a5d48b91439807b012377e5bbadb/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.android/build-cache/1974038a7ae6277670b5b63dcbdbebdcde8dac12/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.android/build-cache/fb8e939dea9bb8e3d07ad9ca3f190757bf62accf/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.android/build-cache/0605c4918fbaa6a066c2fda57217302dce7cce2a/output/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.android/build-cache/210db031b7f9b0fba2d7733c0e32c842ad96cc59/output/AndroidManifest.xml:25:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.android/build-cache/c78060a4c0f1828fdf3933ef5dc5fe9c93c9aeab/output/AndroidManifest.xml:9:5-20
 	android:label
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:11:9-41
@@ -164,13 +165,22 @@ ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:19-59
 activity#com.example.roberto.humansafari.CreateGameActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-55
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-56
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:19-53
+activity#com.example.roberto.humansafari.MasterMainActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:9-40:75
+	android:label
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:13-63
+	android:theme
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:40:13-63
+	android:name
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:38:13-47
 uses-sdk
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support:design:23.1.0] /Users/roberto/.android/build-cache/d044ad6b28a986ec98fdd85a64d26f4f1fc56efc/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.1.0] /Users/roberto/.android/build-cache/aa3f431ca6289fb9735e740f4562f34b5c3ea90b/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:23.2.0] /Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:recyclerview-v7:23.2.0] /Users/roberto/.android/build-cache/f2483ddc127280c65a48be95dba71d940393eade/output/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.android/build-cache/f0976e094f8e235b41bb21f31a4ee7282122243c/output/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.android/build-cache/181b23d51c80263b37a1908904e97563c988aa73/output/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.android/build-cache/f044edf5afe3d9492c0bd0dd734fb7edba2d8fa0/output/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-ads:11.0.0] /Users/roberto/.android/build-cache/2405ddc54563fbba89978c84eb23bb1d495c93ed/output/AndroidManifest.xml:17:5-43
@@ -183,9 +193,9 @@ MERGED from [com.google.android.gms:play-services-auth-base:11.0.0] /Users/rober
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.android/build-cache/102e00a4e0c1a4047cce1038f31657b0ef5f5446/output/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.android/build-cache/ff119c15e638d3713cf441d842b1cac9e0e33f54/output/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.android/build-cache/6cf47774aeeaacc4cdafe820e75b5e85193afca6/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.android/build-cache/1a47aca23e863096f50345894f995e6a081db53f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.android/build-cache/d85984a298ad4eafcabd3cc97ea14c7d70bd7244/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.android/build-cache/5f9a31698ab148e9ae18c75d8b4c1f1f9173dcd4/output/AndroidManifest.xml:21:5-43
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.android/build-cache/e81629f5ebff4052952d874e48bf45526ad9dcc8/output/AndroidManifest.xml:20:5-43
 MERGED from [com.google.android.gms:play-services-clearcut:11.0.0] /Users/roberto/.android/build-cache/391711b07edd543270fa23076da80b944265af23/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.firebase:firebase-config:11.0.0] /Users/roberto/.android/build-cache/6242eb46e7c7edc4ece3b42a305592ebbb0f688f/output/AndroidManifest.xml:17:5-43
@@ -229,15 +239,15 @@ MERGED from [com.google.android.gms:play-services-wearable:11.0.0] /Users/robert
 MERGED from [com.google.android.gms:play-services-base:11.0.0] /Users/roberto/.android/build-cache/f13ae8ff84d03f5edaf69976480e0fe89f3e8d52/output/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.android/build-cache/fee76fb56f07017051ee26ec32030e08ef1b2d92/output/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.android/build-cache/40ec720e321f345a0043015f4a4a002a972d77eb/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.android/build-cache/d57bcc692036a7ce942bff02b84e47f2b6fbaeea/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.android/build-cache/e9b4b4dc90a45a24fb25af7f49af3841f602c9a7/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.android/build-cache/3d05dc636d36a95f939312c01ec9fb37f62c0740/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.android/build-cache/95bc9c43c88ec3b0966b5fea43ec4c15ba30ae4b/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.android/build-cache/42bbe87c253dcf14461271ba33f7e3a73fd5f5fd/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.android/build-cache/8fca1116a509589c6c203d8524bc0a9f077695db/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.android/build-cache/e39f5874ec3eb78eaac5dd4b72de148b4b08adc6/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.android/build-cache/d77a69d99079a5d48b91439807b012377e5bbadb/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.android/build-cache/1974038a7ae6277670b5b63dcbdbebdcde8dac12/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.android/build-cache/fb8e939dea9bb8e3d07ad9ca3f190757bf62accf/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.android/build-cache/0605c4918fbaa6a066c2fda57217302dce7cce2a/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.android/build-cache/210db031b7f9b0fba2d7733c0e32c842ad96cc59/output/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.android/build-cache/c78060a4c0f1828fdf3933ef5dc5fe9c93c9aeab/output/AndroidManifest.xml:7:5-43
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/AndroidManifest.xml:23:9-75
 	android:targetSdkVersion
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
@@ -320,20 +330,6 @@ service#com.google.android.gms.cast.framework.ReconnectionService
 ADDED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/AndroidManifest.xml:7:9-92
 	android:name
 		ADDED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.android/build-cache/67aaa295758e945495a72ff50955803be13716c2/output/AndroidManifest.xml:7:18-90
-meta-data#android.support.VERSION
-ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.android/build-cache/6cf47774aeeaacc4cdafe820e75b5e85193afca6/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.android/build-cache/1a47aca23e863096f50345894f995e6a081db53f/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.android/build-cache/d57bcc692036a7ce942bff02b84e47f2b6fbaeea/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.android/build-cache/e9b4b4dc90a45a24fb25af7f49af3841f602c9a7/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.android/build-cache/3d05dc636d36a95f939312c01ec9fb37f62c0740/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.android/build-cache/95bc9c43c88ec3b0966b5fea43ec4c15ba30ae4b/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.android/build-cache/42bbe87c253dcf14461271ba33f7e3a73fd5f5fd/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.android/build-cache/8fca1116a509589c6c203d8524bc0a9f077695db/output/AndroidManifest.xml:25:5-27:41
-	android:value
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/AndroidManifest.xml:27:9-38
-	android:name
-		ADDED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.android/build-cache/1b02fe84864cfd1c257c91f092cd2d7c4bdca85f/output/AndroidManifest.xml:26:9-47
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:11.0.0] /Users/roberto/.android/build-cache/adebd0ac1d02ec43754ce399fdc6246e0a664e76/output/AndroidManifest.xml:23:9-27:19
 	android:exported
