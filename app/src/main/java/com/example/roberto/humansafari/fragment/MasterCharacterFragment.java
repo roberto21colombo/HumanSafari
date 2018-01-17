@@ -54,5 +54,8 @@ public class MasterCharacterFragment extends Fragment implements AdapterView.OnI
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         //TODO onclick sul personaggio, aprire pagina di modifica
+        Intent intent = new Intent(getActivity(), NewCharacterActivity.class);
+        intent.putExtra("character", i);
+        getActivity().startActivity(intent);
     }
 }

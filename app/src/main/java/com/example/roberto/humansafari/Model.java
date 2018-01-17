@@ -79,7 +79,7 @@ public class Model
 
             }
 
-            Collections.sort(alCharacter, new CustomComparatorCharacters());
+            Collections.sort(alCharacter, new CustomComparatorCharacter());
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -197,20 +197,7 @@ public class Model
         }
     }
 
-    public class CustomComparatorCharacters implements Comparator<Character> {
-        @Override
-        public int compare(Character u1, Character u2) {
-            if(u1.getPoints() == u2.getPoints()){
-                return 0;
-            }else{
-                if(u1.getPoints() > u2.getPoints()){
-                    return 1;
-                }else{
-                    return -1;
-                }
-            }
-        }
-    }
+
 
 }
 

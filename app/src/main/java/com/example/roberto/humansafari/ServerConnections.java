@@ -76,6 +76,13 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void modCharacter(String oldName, String name, String point, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/modcharacter.php?oldname=" + oldName + "&name=" + name + "&point=" + point + "&game=" + Model.getInstance().getGameName();
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+        requestQueue.add(stringRequest);
+    }
+
     public static void setScore(Context context){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
                 "/setscore.php?username=" + Model.getInstance().getUserName() + "&score=" + Model.getInstance().getScore();
