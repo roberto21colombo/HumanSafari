@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.roberto.humansafari.HomeActivity"
+    tools:context="com.example.roberto.humansafari.activity.HomeActivity"
     android:background="@drawable/blackboard">
 
     <TableLayout

@@ -12,6 +12,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="11a5547411517c36b57dc3f58e79f1b22705261d">
+        <dex dex="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0b5f44d22034258e157c4ff8b68cf057da6a5c7d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/roberto/.android/build-cache/f0976e094f8e235b41bb21f31a4ee7282122243c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
+        <dex dex="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3762ebe3d2960e539b6b62c04f7e96cce6efdf00/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/Users/roberto/.android/build-cache/ae719552b1f7a48a8b8f1804945c05c9f61f3ac0/output/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -27,24 +45,6 @@
         revision="26.0.2"
         sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
         <dex dex="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9c0e5bdd42efbe19e886ad9b92b3c1930de897fe/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="5909881a832816912396675111e106dfe8d0ca31">
-        <dex dex="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0b5f44d22034258e157c4ff8b68cf057da6a5c7d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/roberto/.android/build-cache/f0976e094f8e235b41bb21f31a4ee7282122243c/output/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="26.0.2"
-        sha1="bc599eb9531da9d18bc58ec4eb0b1a1d895f6839">
-        <dex dex="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_3762ebe3d2960e539b6b62c04f7e96cce6efdf00/classes.dex" />
     </item>
 
 </items>

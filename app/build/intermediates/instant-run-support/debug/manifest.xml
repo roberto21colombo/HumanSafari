@@ -35,26 +35,26 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAHOh_Sg8o32duEkeWUK34g3epYjGEzhT8" />
 
-        <activity android:name="com.example.roberto.humansafari.HomeActivity" />
-        <activity android:name="com.example.roberto.humansafari.CameraActivity" />
-        <activity android:name="com.example.roberto.humansafari.LoginActivity" />
-        <activity android:name="com.example.roberto.humansafari.MapActivity" />
-        <activity android:name="com.example.roberto.humansafari.FoundHistoricalActivity" />
-        <activity android:name="com.example.roberto.humansafari.ListCharacter" />
-        <activity android:name="com.example.roberto.humansafari.JoinGameActivity" />
-        <activity android:name="com.example.roberto.humansafari.ListRankActivity" />
-        <activity android:name="com.example.roberto.humansafari.MainActivity" >
+        <activity android:name="com.example.roberto.humansafari.activity.HomeActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.CameraActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.LoginActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.MapActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.FoundHistoricalActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.ListCharacterActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.JoinGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.ListRankActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.roberto.humansafari.PlayerChooseGameActivity" />
-        <activity android:name="com.example.roberto.humansafari.MasterChooseGameActivity" />
-        <activity android:name="com.example.roberto.humansafari.CreateGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.PlayerChooseGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.ListGameMasterActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.CreateGameActivity" />
         <activity
-            android:name="com.example.roberto.humansafari.MasterMainActivity"
+            android:name="com.example.roberto.humansafari.activity.MasterMainActivity"
             android:label="@string/title_activity_master_main"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->

@@ -30,6 +30,7 @@ public class Model
     private int score = 0;
     private String userName = "";
     private String historical = "";
+    private String gameName = "";
 
     private boolean downChar, downUsr, downHist;
 
@@ -64,6 +65,7 @@ public class Model
                 String img = characterObject.getString("img");
                 String lat = characterObject.getString("lat");
                 String lng = characterObject.getString("lng");
+                int fk_game = characterObject.getInt("fk_game");
                 long time = characterObject.getLong("time_able");
 
 
@@ -150,6 +152,14 @@ public class Model
             }
         }
         return null;
+    }
+
+    public String getGameName() {
+        return gameName;
+    }
+
+    public void setGameName(String gameName) {
+        this.gameName = gameName;
     }
 
     public void setDown(String who, boolean what){

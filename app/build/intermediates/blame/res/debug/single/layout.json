@@ -256,6 +256,10 @@
         "source": "/Users/roberto/.android/build-cache/69c4f4ccbcbef82e04303374ab580d14ae166770/output/res/layout/place_autocomplete_item_prediction.xml"
     },
     {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/activity_list_game_master.xml",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/activity_list_game_master.xml"
+    },
+    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/notification_action.xml",
         "source": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/layout/notification_action.xml"
     },
