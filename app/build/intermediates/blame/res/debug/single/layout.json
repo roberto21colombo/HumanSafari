@@ -168,6 +168,10 @@
         "source": "/Users/roberto/.android/build-cache/6a06d56646586eeea304f1246fd8a32fd2becc48/output/res/layout/design_bottom_navigation_item.xml"
     },
     {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/activity_new_character.xml",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/activity_new_character.xml"
+    },
+    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
         "source": "/Users/roberto/.android/build-cache/25ca67962ebba7eddc3b387c7608316392f96e20/output/res/layout/abc_action_bar_title_item.xml"
     },

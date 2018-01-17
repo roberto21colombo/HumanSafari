@@ -57,6 +57,7 @@
             android:name="com.example.roberto.humansafari.activity.MasterMainActivity"
             android:label="@string/title_activity_master_main"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.example.roberto.humansafari.activity.NewCharacterActivity" />
         <!-- Include the AdActivity and InAppPurchaseActivity configChanges and themes. -->
         <activity
             android:name="com.google.android.gms.ads.AdActivity"

@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
@@ -38,7 +37,7 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
         setContentView(R.layout.activity_list_game_master);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
-        btnAddButton = (FloatingActionButton) findViewById(R.id.btnMaterialAdd);
+        btnAddButton = (FloatingActionButton) findViewById(R.id.btnNewCharacter);
         btnAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

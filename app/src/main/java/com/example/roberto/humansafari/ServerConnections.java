@@ -28,6 +28,8 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+
+
     public static void changePosition(int i, final Context context){
         Character c = Model.getInstance().getCharacter().get(i);
         int id = c.getId();
@@ -63,6 +65,13 @@ public class ServerConnections {
     public static void addUser(String name, String password, String confirmPassword, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
                 "/insertifnotexist.php?userid=" + name + "&pass=" + password + "&conpass=" + confirmPassword;
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+        requestQueue.add(stringRequest);
+    }
+
+    public static void addCharacter(String name, String point, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/addcharacter.php?name=" + name + "&point=" + point + "&game=" + Model.getInstance().getGameName();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }

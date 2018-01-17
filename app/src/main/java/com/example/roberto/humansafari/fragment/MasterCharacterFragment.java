@@ -1,8 +1,9 @@
 package com.example.roberto.humansafari.fragment;
 
-import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +14,7 @@ import android.widget.ListView;
 import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
+import com.example.roberto.humansafari.activity.NewCharacterActivity;
 import com.example.roberto.humansafari.adapter.CustomAdapterCharacters;
 
 import java.util.ArrayList;
@@ -25,6 +27,7 @@ public class MasterCharacterFragment extends Fragment implements AdapterView.OnI
     private static final String TAG = "Personaggi ";
 
     ListView mListView;
+    FloatingActionButton btnAddCharacter;
 
     @Nullable
     @Override
@@ -32,10 +35,18 @@ public class MasterCharacterFragment extends Fragment implements AdapterView.OnI
         View view = inflater.inflate(R.layout.fragment_master_characters, container, false);
 
         mListView = view.findViewById(R.id.listViewCharacters);
+        btnAddCharacter = view.findViewById(R.id.btnNewCharacter);
+        btnAddCharacter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getActivity().startActivity(new Intent(getActivity(), NewCharacterActivity.class));
+            }
+        });
         ArrayList<Character> mArrayList = Model.getInstance().getCharacter();
 
         mListView.setAdapter(new CustomAdapterCharacters(getActivity(), R.layout.raw_character, mArrayList));
         mListView.setOnItemClickListener(this);
+
 
         return view;
     }

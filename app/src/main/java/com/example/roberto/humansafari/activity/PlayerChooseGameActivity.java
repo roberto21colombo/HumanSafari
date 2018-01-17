@@ -29,7 +29,7 @@ public class PlayerChooseGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_game_master);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
-        btnAddButton = (FloatingActionButton) findViewById(R.id.btnMaterialAdd);
+        btnAddButton = (FloatingActionButton) findViewById(R.id.btnNewCharacter);
         btnAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

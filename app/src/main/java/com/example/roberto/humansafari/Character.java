@@ -25,6 +25,10 @@ public class Character {
     boolean catchable = true;
     long deltaTime;
 
+    public Character(String name, int points){
+        this.name = name;
+        this.points = points;
+    }
 
     public Character(int id, String name, String img, int points, long timestamp){
         this.id = id;
