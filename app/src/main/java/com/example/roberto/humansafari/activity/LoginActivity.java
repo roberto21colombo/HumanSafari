@@ -70,7 +70,7 @@ public class LoginActivity extends AppCompatActivity {
                 //Confronto che response (password associata a nomeUtente) corrisponda con quella inserita nell'editText
                 if (!password.equals("") && editTextPsw.equals(password)) {
                     //Aggiorno username e score nel Model
-                    Model.getInstance().setUserName(username);
+                    Model.getInstance().setPlayerName(username);
                     Model.getInstance().setScore(score);
                     startActivity(new Intent(LoginActivity.this, HomeActivity.class));
                 } else {

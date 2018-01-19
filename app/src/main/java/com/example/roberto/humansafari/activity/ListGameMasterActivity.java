@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
@@ -96,7 +97,7 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
                         Model.getInstance().setCharacters(response);
                         Model.getInstance().setDown("downChar", true);
                         //Una volta salvati i dati chiamo l'activity successiva
-                        startActivity(new Intent(ListGameMasterActivity.this, MasterMainActivity.class));
+
                     }
                 },
                 new Response.ErrorListener() {
@@ -106,6 +107,21 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
                     }
                 },
                 Volley.newRequestQueue(this));
+
+
+        ServerConnections.getUsers(new Response.Listener<String>(){
+            @Override
+            public void onResponse(String response) {
+                Model.getInstance().setUsers(response);
+
+                startActivity(new Intent(ListGameMasterActivity.this, MasterMainActivity.class));
+            }
+        }, new Response.ErrorListener(){
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }, Volley.newRequestQueue(this));
         //TODO scarico le informazioni della partita: Giocatori
         //TODO memorizzo Giocatori nel Model
 

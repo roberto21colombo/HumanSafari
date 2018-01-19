@@ -1,5 +1,6 @@
 package com.example.roberto.humansafari.activity;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -50,27 +51,26 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
         mListView.setOnItemClickListener(this);
 
 
-
     }
 
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        if(Model.getInstance().getCharacter().get(i).isCatchable()) {
+        if (Model.getInstance().getCharacter().get(i).isCatchable()) {
             changePlayerScore(i);
             changeLastCharacterPosition(i);
             changeTimeAbleCharacter(i);
             ServerConnections.addFound(ListCharacterActivity.this, i);
 
             startActivity(new Intent(ListCharacterActivity.this, HomeActivity.class));
-        }else{
+        } else {
             long deltaTime = Model.getInstance().getCharacter().get(i).getDeltaTime();
-            long seconds = TimeUnit.MILLISECONDS.toSeconds((int)deltaTime);
-            Toast.makeText(this, "Devi attendere " +(-seconds)+ " secondi.", Toast.LENGTH_LONG).show();
+            long seconds = TimeUnit.MILLISECONDS.toSeconds((int) deltaTime);
+            Toast.makeText(this, "Devi attendere " + (-seconds) + " secondi.", Toast.LENGTH_LONG).show();
         }
     }
 
-    public void changePlayerScore(int i){
+    public void changePlayerScore(int i) {
         int characterPoint = Model.getInstance().getCharacter().get(i).getPoints();
         int playerPoint = Model.getInstance().getScore();
         Model.getInstance().setScore(characterPoint + playerPoint);
@@ -80,7 +80,16 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
     public void changeLastCharacterPosition(int i) {
         if (userPermission && googlePlayServiceConnected) {
 
-            // TODO: Consider calling
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
             Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
             if (mLastLocation != null) {
                 double lat = mLastLocation.getLatitude();

@@ -1,8 +1,6 @@
 package com.example.roberto.humansafari;
 
 import android.content.Context;
-import android.content.Intent;
-import android.graphics.PorterDuff;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -12,7 +10,6 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.roberto.humansafari.activity.MasterMainActivity;
 
 /**
  * Created by roberto on 21/11/17.
@@ -62,9 +59,9 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void addUser(String name, String password, String confirmPassword, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+    public static void addPlayer(String name, String game, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/insertifnotexist.php?userid=" + name + "&pass=" + password + "&conpass=" + confirmPassword;
+                "/addplayer.php?name=" + name + "&game=" + game;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
@@ -85,7 +82,7 @@ public class ServerConnections {
 
     public static void setScore(Context context){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/setscore.php?username=" + Model.getInstance().getUserName() + "&score=" + Model.getInstance().getScore();
+                "/setscore.php?username=" + Model.getInstance().getPlayerName() + "&score=" + Model.getInstance().getScore();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override
@@ -119,29 +116,17 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void getUsers(Context context){
+    public static void getUsers(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/getallusers.php";
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d("onResponse", response);
-                Model.getInstance().setUsers(response);
-                Model.getInstance().setDown("downUsr", true);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+                "/getallusers.php?game="+Model.getInstance().getGameName();
 
-            }
-        });
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
 
     public static void addFound(Context context, int indexCharacter){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/addfound.php?user=" + Model.getInstance().getUserName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
+                "/addfound.php?user=" + Model.getInstance().getPlayerName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override

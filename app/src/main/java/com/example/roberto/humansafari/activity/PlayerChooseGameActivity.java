@@ -2,11 +2,16 @@ package com.example.roberto.humansafari.activity;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
+import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.adapter.CustomAdapterGames;
 import com.example.roberto.humansafari.R;
 
@@ -18,7 +23,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-public class PlayerChooseGameActivity extends AppCompatActivity {
+public class PlayerChooseGameActivity extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     FloatingActionButton btnAddButton;
     ListView listViewGames;
@@ -29,6 +34,7 @@ public class PlayerChooseGameActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_game_master);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
+        listViewGames.setOnItemClickListener(this);
         btnAddButton = (FloatingActionButton) findViewById(R.id.btnNewCharacter);
         btnAddButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -62,5 +68,16 @@ public class PlayerChooseGameActivity extends AppCompatActivity {
         //Assegno l'adapter alla list view
         listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game, arrayList));
 
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+        String name = ((TextView)view.findViewById(R.id.rawPlayerName)).getText().toString();
+        String game = ((TextView)view.findViewById(R.id.rawGameName)).getText().toString();
+
+        Model.getInstance().setPlayerName(name);
+        Model.getInstance().setGameName(game);
+
+        startActivity(new Intent(PlayerChooseGameActivity.this, HomeActivity.class));
     }
 }

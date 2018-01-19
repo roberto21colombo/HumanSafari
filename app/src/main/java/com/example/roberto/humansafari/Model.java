@@ -1,8 +1,6 @@
 package com.example.roberto.humansafari;
 
 
-import android.content.Context;
-
 import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONArray;
@@ -10,7 +8,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -28,7 +25,7 @@ public class Model
     private ArrayList<User> alUsers;
 
     private int score = 0;
-    private String userName = "";
+    private String playerName = "";
     private String historical = "";
     private String gameName = "";
 
@@ -105,11 +102,11 @@ public class Model
         score = i;
     }
 
-    public String getUserName(){
-        return userName;
+    public String getPlayerName(){
+        return playerName;
     }
-    public void setUserName(String userName){
-        this.userName = userName;
+    public void setPlayerName(String userName){
+        this.playerName = userName;
     }
 
     //Data la Stringa Json degli Users li inserisce nell'ArrayList e li ordina per punteggio
@@ -121,8 +118,8 @@ public class Model
             for(int i=0; i<jsonArray.length(); i++){
                 JSONObject userObject = jsonArray.getJSONObject(i);
 
-                String name = userObject.getString("userid");
-                int score = userObject.getInt("score");
+                String name = userObject.getString("playername");
+                int score = userObject.getInt("points");
 
                 alUsers.add(new User(name, score));
             }

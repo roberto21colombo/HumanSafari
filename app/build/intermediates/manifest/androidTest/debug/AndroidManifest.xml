@@ -13,7 +13,7 @@
         android:label="Tests for com.example.roberto.humansafari"
         android:targetPackage="com.example.roberto.humansafari" />
 
-    <application>
+    <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 

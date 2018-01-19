@@ -87,14 +87,14 @@ public class HomeActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         score.setText("Score: " + Model.getInstance().getScore());
-        username.setText("" + Model.getInstance().getUserName());
+        username.setText("" + Model.getInstance().getPlayerName());
 
 
         Model.getInstance().setDown("downChar", false);
         Model.getInstance().setDown("downUsr", false);
         Model.getInstance().setDown("downHist", false);
         //ServerConnections.downloadCharacters(HomeActivity.this, Model.getInstance().getGameName());
-        ServerConnections.getUsers(HomeActivity.this);
+        //ServerConnections.getUsers(HomeActivity.this);
         ServerConnections.getHistorical(HomeActivity.this);
     }
 }
