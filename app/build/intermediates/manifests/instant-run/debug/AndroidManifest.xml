@@ -60,6 +60,7 @@
             android:label="@string/title_activity_master_main"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name="com.example.roberto.humansafari.activity.NewCharacterActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.CharacterLogin" />
 
         <receiver android:name="com.google.android.gms.cast.framework.media.MediaIntentReceiver" />
 

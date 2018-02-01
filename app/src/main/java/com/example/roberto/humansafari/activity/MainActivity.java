@@ -10,7 +10,7 @@ import com.example.roberto.humansafari.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    Button btnPlay, btnManage;
+    Button btnPlay, btnManage, btnHide;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +30,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, ListGameMasterActivity.class));
+            }
+        });
+
+        btnHide = (Button)findViewById(R.id.btnNasconditi);
+        btnHide.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, CharacterLogin.class));
             }
         });
     }

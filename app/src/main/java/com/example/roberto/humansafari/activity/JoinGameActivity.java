@@ -66,7 +66,7 @@ public class JoinGameActivity extends AppCompatActivity implements View.OnClickL
                         Log.d("onResponse", response);
                         Model.getInstance().setPlayerName(playerName);
                         Model.getInstance().setGameName(gameName);
-                        Intent intent = new Intent(JoinGameActivity.this, HomeActivity.class);
+                        Intent intent = new Intent(JoinGameActivity.this, PlayerChooseGameActivity.class);
                         startActivity(intent);
                     }
                 },

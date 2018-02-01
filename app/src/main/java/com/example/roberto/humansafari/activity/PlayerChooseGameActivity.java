@@ -5,13 +5,18 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Model;
+import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.adapter.CustomAdapterGames;
 import com.example.roberto.humansafari.R;
 
@@ -78,6 +83,26 @@ public class PlayerChooseGameActivity extends AppCompatActivity implements Adapt
         Model.getInstance().setPlayerName(name);
         Model.getInstance().setGameName(game);
 
+        //TODO Scaricare i personaggi relativi alla partita
+        ServerConnections.downloadCharacters(
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("onResponse", response);
+                        //Salvo le informazioni nel model
+                        Model.getInstance().setCharacters(response);
+                        Model.getInstance().setDown("downChar", true);
+                        //Una volta salvati i dati chiamo l'activity successiva
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("errorResponse", error.toString());
+                    }
+                },
+                Volley.newRequestQueue(this));
         startActivity(new Intent(PlayerChooseGameActivity.this, HomeActivity.class));
     }
 }

@@ -1,7 +1,0 @@
-#Wed Jan 17 15:54:10 CET 2018
-base.0=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9c0e5bdd42efbe19e886ad9b92b3c1930de897fe
-renamed.1=classes.dex
-renamed.0=classes2.dex
-file.1=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0b5f44d22034258e157c4ff8b68cf057da6a5c7d/classes.dex
-base.1=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_0b5f44d22034258e157c4ff8b68cf057da6a5c7d
-file.0=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_9c0e5bdd42efbe19e886ad9b92b3c1930de897fe/classes.dex

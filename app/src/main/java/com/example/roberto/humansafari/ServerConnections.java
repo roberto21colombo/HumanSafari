@@ -180,4 +180,12 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void getCharacterInfo(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue, String gameName, String codCharacter, String nameCharacter){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/getcharacterinfo.php?game="+gameName+"&codcharacter="+codCharacter+"&namecharacter="+nameCharacter;
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+        requestQueue.add(stringRequest);
+    }
+
 }

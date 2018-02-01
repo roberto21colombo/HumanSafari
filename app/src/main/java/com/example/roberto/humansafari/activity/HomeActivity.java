@@ -17,7 +17,7 @@ public class HomeActivity extends AppCompatActivity {
 
     ImageView imageButtonSafari;
     ImageView imageViewMap;
-    ImageView imageViewInstructions;
+    ImageView imageViewListCharacters;
     ImageView imageViewRank;
 
     TextView score;
@@ -58,12 +58,12 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-        imageViewInstructions = (ImageView) findViewById(R.id.imageViewInstructions);
-        imageViewInstructions.setOnClickListener(new View.OnClickListener() {
+        imageViewListCharacters = (ImageView) findViewById(R.id.imageViewListCharacters);
+        imageViewListCharacters.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(Model.getInstance().getDown("downHist")) {
-                    startActivity(new Intent(HomeActivity.this, FoundHistoricalActivity.class));
+                    startActivity(new Intent(HomeActivity.this, ListCharacterActivity.class));
                 }else{
                     Toast.makeText(HomeActivity.this, "Download in corso, attendere...", Toast.LENGTH_LONG).show();
                 }

@@ -8,10 +8,12 @@
     tools:context="com.example.roberto.humansafari.activity.MainActivity">
 
     <LinearLayout
+        android:layout_width="387dp"
+        android:layout_height="565dp"
+        android:layout_marginBottom="8dp"
         android:gravity="center_horizontal"
-        android:layout_width="380dp"
-        android:layout_height="552dp"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageView
             android:id="@+id/imageView2"
@@ -20,39 +22,38 @@
             app:srcCompat="@drawable/humansafarihalf" />
 
         <Button
-            android:layout_marginTop="40dp"
             android:id="@+id/btnPlay"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:text="Uniscti e Gioca"
-            android:textSize="25dp"
+            android:layout_marginTop="40dp"
             android:background="#2195f1"
+            android:text="Gioca"
+            android:textSize="25dp"
             tools:layout_editor_absoluteX="81dp"
             tools:layout_editor_absoluteY="302dp" />
 
 
         <Button
-            android:layout_marginTop="30dp"
             android:id="@+id/btnManage"
             android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:text="Crea/Gestisci"
-            android:textSize="25dp"
+            android:layout_marginTop="30dp"
             android:background="#2195f1"
+            android:text="Organizza"
+            android:textSize="25dp"
             tools:layout_editor_absoluteX="81dp"
             tools:layout_editor_absoluteY="420dp" />
-        <TextView
-            android:layout_marginRight="30dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="40dp"
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
+
+        <Button
+            android:id="@+id/btnNasconditi"
+            android:layout_width="220dp"
             android:layout_height="wrap_content"
-            android:text="Sono un Personaggio"
-            android:textColor="@android:color/black"
-            android:textSize="15dp"
-            tools:layout_editor_absoluteX="227dp"
-            tools:layout_editor_absoluteY="498dp" />
+            android:layout_marginTop="30dp"
+            android:background="#2195f1"
+            android:text="Nasconditi"
+            android:textSize="25dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="420dp" />
 
     </LinearLayout>
 

@@ -3252,6 +3252,10 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout_activity_character_login.xml.flat",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/activity_character_login.xml"
+    },
+    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_quantum_ic_pause_circle_filled_white_36.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xxxhdpi-v4/quantum_ic_pause_circle_filled_white_36.png"
     },
