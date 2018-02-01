@@ -4,6 +4,25 @@
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/res/values-v11/values-v11.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "3",
+                        "endColumns": "10",
+                        "endOffsets": "150"
+                    },
+                    "to": {
+                        "startLines": "192",
+                        "startColumns": "4",
+                        "startOffsets": "14031",
+                        "endLines": "193",
+                        "endColumns": "10",
+                        "endOffsets": "14126"
+                    }
+                },
+                {
                     "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/values-v11/values-v11.xml",
                     "from": {
                         "startLines": "2,8,14,20,26,32,38,39,43,47,48,52,56,57,61,66,71,76,78,80,81,82,135,189",

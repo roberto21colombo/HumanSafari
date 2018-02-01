@@ -16,12 +16,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/abc_ic_star_half_black_36dp.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_notification_template_part_time.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/notification_template_part_time.xml"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_quantum_ic_forward_30_grey600_36.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-hdpi-v4/quantum_ic_forward_30_grey600_36.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_notification_template_part_time.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/notification_template_part_time.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_vol_type_tv_dark.png.flat",
@@ -44,12 +44,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-hdpi-v17_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-ldrtl-hdpi-v17/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable_mr_button_connected_light.xml.flat",
@@ -92,12 +92,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xxhdpi-v4/ic_mr_button_connected_14_light.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_ic_group_expand_09.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xxxhdpi-v4/ic_group_expand_09.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_btn_radio_to_on_mtrl_015.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxxhdpi-v4/abc_btn_radio_to_on_mtrl_015.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/color_abc_tint_switch_thumb.xml.flat",
@@ -140,12 +140,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xxxhdpi-v4/quantum_ic_refresh_white_24.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/abc_ic_star_half_black_48dp.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-ldrtl-xxhdpi-v17/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_quantum_ic_skip_previous_grey600_36.png.flat",
@@ -172,32 +172,32 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_toolbar.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/abc_screen_toolbar.xml"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_quantum_ic_keyboard_arrow_down_white_36.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xhdpi-v4/quantum_ic_keyboard_arrow_down_white_36.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_toolbar.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/abc_screen_toolbar.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_ic_mr_button_grey.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xxxhdpi-v4/ic_mr_button_grey.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_quantum_ic_replay_30_white_36.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-mdpi-v4/quantum_ic_replay_30_white_36.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_cast_abc_scrubber_control_off_mtrl_alpha.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xxhdpi-v4/cast_abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_mr_volume_control.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/layout/mr_volume_control.xml"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_quantum_ic_replay_30_white_36.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-mdpi-v4/quantum_ic_replay_30_white_36.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_place_autocomplete_progress.xml.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.0.aar/9b332c98958bc0fb3aa38c5e3b813551/res/layout/place_autocomplete_progress.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_mr_volume_control.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/layout/mr_volume_control.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable_mr_vol_type_audiotrack_light.xml.flat",
@@ -208,12 +208,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.0.aar/1a2fa37787ac5dc61ef11186b0b6629a/res/drawable-mdpi-v4/ic_plusone_tall_off_client.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_audiotrack_dark.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_audiotrack_dark.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_abc_textfield_search_activated_mtrl_alpha.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-hdpi-v4/abc_textfield_search_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -252,12 +252,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxxhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_simple.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/abc_screen_simple.xml"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_quantum_ic_pause_grey600_36.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xxxhdpi-v4/quantum_ic_pause_grey600_36.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_simple.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/abc_screen_simple.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_quantum_ic_cast_white_36.png.flat",
@@ -412,12 +412,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/layout/abc_alert_dialog_title_material.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_quantum_ic_volume_off_white_36.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xhdpi-v4/quantum_ic_volume_off_white_36.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_media_pause_dark.png.flat",
@@ -468,20 +468,20 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.0.aar/9b332c98958bc0fb3aa38c5e3b813551/res/drawable-mdpi-v4/powered_by_google_light.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_ic_audiotrack_light.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-mdpi-v4/ic_audiotrack_light.png"
-    },
-    {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_02_dark.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xxhdpi-v4/ic_mr_button_connecting_02_dark.png"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/anim_abc_fade_in.xml.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/anim/abc_fade_in.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxhdpi-v4/abc_textfield_default_mtrl_alpha.9.png"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_02_dark.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xxhdpi-v4/ic_mr_button_connecting_02_dark.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_ic_audiotrack_light.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-mdpi-v4/ic_audiotrack_light.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_abc_screen_simple_overlay_action_mode.xml.flat",
@@ -512,20 +512,20 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-hdpi-v4/ic_mr_button_disconnected_dark.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_cast_abc_scrubber_primary_mtrl_alpha.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-hdpi-v4/cast_abc_scrubber_primary_mtrl_alpha.9.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.0.aar/bf6208e84c21d471be2ad0cb205f30cb/res/drawable-xhdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_05_dark.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_05_dark.png"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_cast_abc_scrubber_primary_mtrl_alpha.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-hdpi-v4/cast_abc_scrubber_primary_mtrl_alpha.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_05_dark.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_05_dark.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
@@ -540,32 +540,32 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-hdpi-v4/ic_audiotrack_light.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.0.aar/bf6208e84c21d471be2ad0cb205f30cb/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_04_dark.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xxhdpi-v4/ic_mr_button_connecting_04_dark.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-v21/abc_action_bar_item_background_material.xml"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_common_google_signin_btn_icon_dark_normal_background.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.0.aar/bf6208e84c21d471be2ad0cb205f30cb/res/drawable-hdpi-v4/common_google_signin_btn_icon_dark_normal_background.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_quantum_ic_replay_30_white_24.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xxhdpi-v4/quantum_ic_replay_30_white_24.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/color_abc_tint_edittext.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/color/abc_tint_edittext.xml"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-v21_abc_action_bar_item_background_material.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-v21/abc_action_bar_item_background_material.xml"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_places_ic_clear.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-places-11.0.0.aar/9b332c98958bc0fb3aa38c5e3b813551/res/drawable-xxhdpi-v4/places_ic_clear.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_abc_ic_commit_search_api_mtrl_alpha.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-xxhdpi-v4/abc_ic_commit_search_api_mtrl_alpha.png"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/color_abc_tint_edittext.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/color/abc_tint_edittext.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_01_light.png.flat",
@@ -576,12 +576,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.0.aar/c65a21f7272f2881bf6751ee8a01bd50/res/drawable-mdpi-v4/cast_ic_notification_2.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_04_light.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_04_light.png"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_quantum_ic_art_track_grey600_48.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xxxhdpi-v4/quantum_ic_art_track_grey600_48.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_04_light.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_04_light.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_20_light.png.flat",
@@ -728,12 +728,12 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_13_light.png"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/color_abc_secondary_text_material_light.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/color/abc_secondary_text_material_light.xml"
-    },
-    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_10_light.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_10_light.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/color_abc_secondary_text_material_light.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/color/abc_secondary_text_material_light.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_mr_button_connected_22_dark.png.flat",
@@ -818,6 +818,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_mr_button_connecting_22_light.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/drawable-xhdpi-v4/ic_mr_button_connecting_22_light.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_zxing_capture.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/res/layout/zxing_capture.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_quantum_ic_stop_grey600_48.png.flat",
@@ -1050,6 +1054,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_ic_menu_share_mtrl_alpha.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/drawable-mdpi-v4/abc_ic_menu_share_mtrl_alpha.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_zxing_barcode_scanner.xml.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/res/layout/zxing_barcode_scanner.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/interpolator_mr_fast_out_slow_in.xml.flat",
@@ -1630,6 +1638,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_quantum_ic_play_circle_filled_white_36.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-mdpi-v4/quantum_ic_play_circle_filled_white_36.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/raw_zxing_beep.ogg.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/res/raw/zxing_beep.ogg"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_mr_button_connected_11_dark.png.flat",

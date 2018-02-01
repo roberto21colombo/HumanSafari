@@ -39,7 +39,8 @@
             android:label="@string/title_activity_master_main"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".activity.NewCharacterActivity" />
-        <activity android:name=".activity.CharacterLogin"></activity>
+        <activity android:name=".activity.CharacterLogin" />
+        <activity android:name=".activity.QrcodeActivity"></activity>
     </application>
 
 </manifest>

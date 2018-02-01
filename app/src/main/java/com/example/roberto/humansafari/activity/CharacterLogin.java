@@ -36,7 +36,7 @@ public class CharacterLogin extends AppCompatActivity {
             public void onClick(View view) {
                 String gameName = etGameName.getText().toString();
                 String characterCode = etCharacterCod.getText().toString();
-                String characterName = etEtCharacterName.getText().toString();
+                final String characterName = etEtCharacterName.getText().toString();
                 ServerConnections.getCharacterInfo(new Response.Listener<String>(){
                     @Override
                     public void onResponse(String response) {
@@ -45,8 +45,11 @@ public class CharacterLogin extends AppCompatActivity {
                         }else if(response.equals("nomepersonaggio")){
                             Toast.makeText(CharacterLogin.this, "Personaggio non trovato", Toast.LENGTH_LONG).show();
                         }else{
-                            Toast.makeText(CharacterLogin.this, "Punteggio: "+response , Toast.LENGTH_LONG).show();
-                            //startActivity(new Intent(CharacterLogin.this, CameraActivity.class));
+                            Intent intent = new Intent(CharacterLogin.this, QrcodeActivity.class);
+                            intent.putExtra("name", characterName);
+                            intent.putExtra("points", response);
+                            //Toast.makeText(CharacterLogin.this, "Punteggio: "+response , Toast.LENGTH_LONG).show();
+                            startActivity(intent);
                         }
                     }
                 },

@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
 MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/AndroidManifest.xml:2:1-9:12
@@ -64,6 +64,7 @@ MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.gradle/cache
 MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.2.0.aar/c722b4358d94ee8a5d11e27201ffa24e/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:2:1-11:12
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:17:1-55:12
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/f02b6207bc6f6497afcbd6b3f33ad074/AndroidManifest.xml:17:1-25:12
@@ -72,20 +73,20 @@ MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.grad
 MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/071dbed0e7e4fd2c2c7e51632d517046/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/a69076fddce3db387c253787be84dc8f/AndroidManifest.xml:17:1-27:12
 MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/3efc59309a6589ab6f6bd51e15af31a8/AndroidManifest.xml:17:1-27:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
 	package
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:11-69
@@ -122,7 +123,7 @@ MERGED from [com.google.firebase:firebase-iid:11.0.0] /Users/roberto/.gradle/cac
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-43:19
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-44:19
 MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:5:5-20
@@ -221,6 +222,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/robe
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:9:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:45:5-53:19
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:45:5-53:19
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:23:5-20
@@ -326,9 +329,13 @@ ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:19-64
 activity#com.example.roberto.humansafari.activity.CharacterLogin
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:9-70
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:9-61
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:19-58
+activity#com.example.roberto.humansafari.activity.QrcodeActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:43:9-70
+	android:name
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:43:19-58
 uses-sdk
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
@@ -453,6 +460,8 @@ MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/robe
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:7:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:19:5-43
+MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:19:5-43
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:21:5-43
@@ -761,3 +770,57 @@ ADDED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto
 		ADDED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:20:66-119
 	android:name
 		ADDED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:20:20-65
+uses-permission#android.permission.CAMERA
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:21:22-62
+uses-feature#android.hardware.camera
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:24:5-26:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:26:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:25:9-47
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:29:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:28:9-53
+uses-feature#android.hardware.camera.autofocus
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:32:5-34:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:34:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:33:9-57
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:35:5-37:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:37:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:36:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:38:5-40:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:40:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:39:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:41:5-43:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:43:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:42:9-45
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:46:9-52:63
+	android:screenOrientation
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:49:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:48:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:50:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:52:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:51:13-54
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:47:13-74
