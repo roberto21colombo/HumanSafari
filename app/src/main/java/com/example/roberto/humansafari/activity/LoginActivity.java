@@ -1,4 +1,7 @@
+/*
+
 package com.example.roberto.humansafari.activity;
+
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -85,3 +88,4 @@ public class LoginActivity extends AppCompatActivity {
         }, requestQueue);
     }
 }
+*/

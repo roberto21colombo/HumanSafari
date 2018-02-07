@@ -1,16 +1,16 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
-MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:17:1-24:12
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.0.aar/c65a21f7272f2881bf6751ee8a01bd50/AndroidManifest.xml:16:1-19:12
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:recyclerview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.0.aar/1e56cb900d40ac9901b904d24215dfe0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.android.gms:play-services-ads:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.0.0.aar/8a92423ab99b9649aa645bfa07583589/AndroidManifest.xml:16:1-18:12
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.0.aar/aada17deb5643bddf40c316fdca0f877/AndroidManifest.xml:16:1-27:12
 MERGED from [com.google.android.gms:play-services-analytics:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.0.aar/83904832b8973625a8a5389a185bd9d5/AndroidManifest.xml:16:1-27:12
@@ -60,33 +60,34 @@ MERGED from [com.google.firebase:firebase-common:11.0.0] /Users/roberto/.gradle/
 MERGED from [com.google.android.gms:play-services-gass:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-gass-11.0.0.aar/076c1136ff3e246c90ba803cb9406fb1/AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.0.aar/7cb8f3dc1a05ef58e6789ad601bd613d/AndroidManifest.xml:2:1-5:12
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:16:1-23:12
-MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/0a421f7b48a589b5a496e3d6617b9f35/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.2.0.aar/c722b4358d94ee8a5d11e27201ffa24e/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/fa6c6865ab68707a73823c45a12ffde1/AndroidManifest.xml:17:1-26:12
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:2:1-11:12
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:17:1-55:12
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:17:1-24:12
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/f02b6207bc6f6497afcbd6b3f33ad074/AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/f7c99a6ec1bde89edc9d2d431c67620b/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bc5fa2bae082d3727de04de00980e8dc/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/071dbed0e7e4fd2c2c7e51632d517046/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/a69076fddce3db387c253787be84dc8f/AndroidManifest.xml:17:1-27:12
-MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/3efc59309a6589ab6f6bd51e15af31a8/AndroidManifest.xml:17:1-27:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:17:1-31:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:3:5-46
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-46:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-45:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:11-69
@@ -123,9 +124,9 @@ MERGED from [com.google.firebase:firebase-iid:11.0.0] /Users/roberto/.gradle/cac
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:6:22-64
 application
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-44:19
-MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:22:5-20
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-43:19
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:29:5-20
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/AndroidManifest.xml:4:5-8:19
@@ -134,8 +135,10 @@ MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.g
 MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.0.aar/c65a21f7272f2881bf6751ee8a01bd50/AndroidManifest.xml:18:5-19
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:26:5-20
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.0.aar/aada17deb5643bddf40c316fdca0f877/AndroidManifest.xml:23:5-26:19
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.0.aar/aada17deb5643bddf40c316fdca0f877/AndroidManifest.xml:23:5-26:19
 MERGED from [com.google.android.gms:play-services-analytics:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-11.0.0.aar/83904832b8973625a8a5389a185bd9d5/AndroidManifest.xml:26:5-19
@@ -214,32 +217,32 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.
 MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.0.aar/7cb8f3dc1a05ef58e6789ad601bd613d/AndroidManifest.xml:4:5-19
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:19:5-21:19
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/0a421f7b48a589b5a496e3d6617b9f35/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/0a421f7b48a589b5a496e3d6617b9f35/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.2.0.aar/c722b4358d94ee8a5d11e27201ffa24e/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.2.0.aar/c722b4358d94ee8a5d11e27201ffa24e/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:9:5-20
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:9:5-20
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:45:5-53:19
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:45:5-53:19
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:22:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:23:5-20
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/f02b6207bc6f6497afcbd6b3f33ad074/AndroidManifest.xml:22:5-23:19
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/f02b6207bc6f6497afcbd6b3f33ad074/AndroidManifest.xml:22:5-23:19
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/f7c99a6ec1bde89edc9d2d431c67620b/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/f7c99a6ec1bde89edc9d2d431c67620b/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bc5fa2bae082d3727de04de00980e8dc/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bc5fa2bae082d3727de04de00980e8dc/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/071dbed0e7e4fd2c2c7e51632d517046/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/071dbed0e7e4fd2c2c7e51632d517046/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/a69076fddce3db387c253787be84dc8f/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/a69076fddce3db387c253787be84dc8f/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/3efc59309a6589ab6f6bd51e15af31a8/AndroidManifest.xml:25:5-20
-MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/3efc59309a6589ab6f6bd51e15af31a8/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:29:5-20
 	android:supportsRtl
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:13:9-35
 	android:label
@@ -262,86 +265,82 @@ activity#com.example.roberto.humansafari.activity.HomeActivity
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:19:9-59
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:19:19-56
-activity#com.example.roberto.humansafari.activity.CameraActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:20:9-61
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:20:19-58
 activity#com.example.roberto.humansafari.activity.LoginActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:9-60
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:20:9-60
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:19-57
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:20:19-57
 activity#com.example.roberto.humansafari.activity.MapActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:22:9-58
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:9-58
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:22:19-55
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:19-55
 activity#com.example.roberto.humansafari.activity.FoundHistoricalActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:9-70
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:22:9-70
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:19-67
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:22:19-67
 activity#com.example.roberto.humansafari.activity.ListCharacterActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:9-68
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:9-68
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:19-65
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:19-65
 activity#com.example.roberto.humansafari.activity.JoinGameActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:9-63
+	android:name
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:19-60
+activity#com.example.roberto.humansafari.activity.ListRankActivity
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:25:9-63
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:25:19-60
-activity#com.example.roberto.humansafari.activity.ListRankActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:26:9-63
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:26:19-60
 activity#com.example.roberto.humansafari.activity.MainActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:9-33:20
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:26:9-32:20
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:19-56
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:26:19-56
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:28:13-32:29
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:13-31:29
 action#android.intent.action.MAIN
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:29:17-69
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:28:17-69
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:29:25-66
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:28:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:31:17-77
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:30:17-77
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:31:27-74
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:30:27-74
 activity#com.example.roberto.humansafari.activity.PlayerChooseGameActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:9-71
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:19-68
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:33:19-68
 activity#com.example.roberto.humansafari.activity.ListGameMasterActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:9-69
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:9-69
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:19-66
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:19-66
 activity#com.example.roberto.humansafari.activity.CreateGameActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-65
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:9-65
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:19-62
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:19-62
 activity#com.example.roberto.humansafari.activity.MasterMainActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:9-40:66
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-39:66
 	android:label
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:13-63
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:38:13-63
 	android:theme
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:40:13-63
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:13-63
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:38:13-56
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:13-56
 activity#com.example.roberto.humansafari.activity.NewCharacterActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:9-67
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:40:9-67
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:19-64
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:40:19-64
 activity#com.example.roberto.humansafari.activity.CharacterLogin
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:9-61
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:9-61
+	android:name
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:19-58
+activity#com.example.roberto.humansafari.activity.QrcodeActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:9-70
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:19-58
-activity#com.example.roberto.humansafari.activity.QrcodeActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:43:9-70
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:43:19-58
 uses-sdk
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:design:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-23.2.0.aar/95b397e1946e9b90c9b0533b3cb634f1/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:21:5-23:62
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-11.0.0.aar/1f5f23fc7d3f18be93e671ce171a7190/AndroidManifest.xml:4:5-43
 MERGED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/AndroidManifest.xml:3:5-43
@@ -350,10 +349,10 @@ MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.g
 MERGED from [com.google.android.gms:play-services-cast:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.0.aar/c65a21f7272f2881bf6751ee8a01bd50/AndroidManifest.xml:17:5-43
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:mediarouter-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:recyclerview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.0.aar/1e56cb900d40ac9901b904d24215dfe0/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:recyclerview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-23.2.0.aar/1e56cb900d40ac9901b904d24215dfe0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.0.0.aar/8a92423ab99b9649aa645bfa07583589/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-11.0.0.aar/8a92423ab99b9649aa645bfa07583589/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-ads-lite:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-11.0.0.aar/aada17deb5643bddf40c316fdca0f877/AndroidManifest.xml:22:5-43
@@ -452,36 +451,38 @@ MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.
 MERGED from [com.google.android.gms:play-services-tasks:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tasks-11.0.0.aar/7cb8f3dc1a05ef58e6789ad601bd613d/AndroidManifest.xml:3:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:17:5-43
 MERGED from [com.google.android.gms:play-services-basement:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-basement-11.0.0.aar/337f30471d55f861972b339032fe43c6/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/0a421f7b48a589b5a496e3d6617b9f35/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-v4:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-25.2.0.aar/0a421f7b48a589b5a496e3d6617b9f35/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.2.0.aar/c722b4358d94ee8a5d11e27201ffa24e/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:cardview-v7:23.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-23.2.0.aar/c722b4358d94ee8a5d11e27201ffa24e/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/fa6c6865ab68707a73823c45a12ffde1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/fa6c6865ab68707a73823c45a12ffde1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/roberto/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/2609258ac4d608441f69e44347a09588/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:7:5-43
 MERGED from [com.android.volley:volley:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/volley-1.0.0.aar/50c11a33d995d25d7b0460e074a8deaa/AndroidManifest.xml:7:5-43
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:19:5-43
 MERGED from [com.journeyapps:zxing-android-embedded:3.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/zxing-android-embedded-3.2.0.aar/10994865e97807a2ef57dd078f6fb15e/AndroidManifest.xml:19:5-43
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-25.2.0.aar/343f3443e617e3d930996376c8d3ce00/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:21:5-43
-MERGED from [com.android.support:support-vector-drawable:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-25.2.0.aar/7749eeb6c00ec0172e21dbc197df2256/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/f02b6207bc6f6497afcbd6b3f33ad074/AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:palette-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/palette-v7-25.2.0.aar/f02b6207bc6f6497afcbd6b3f33ad074/AndroidManifest.xml:20:5-43
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/f7c99a6ec1bde89edc9d2d431c67620b/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-fragment:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-25.2.0.aar/f7c99a6ec1bde89edc9d2d431c67620b/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bc5fa2bae082d3727de04de00980e8dc/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-core-utils:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-25.2.0.aar/bc5fa2bae082d3727de04de00980e8dc/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/071dbed0e7e4fd2c2c7e51632d517046/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-media-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-25.2.0.aar/071dbed0e7e4fd2c2c7e51632d517046/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/a69076fddce3db387c253787be84dc8f/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-ui:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-25.2.0.aar/a69076fddce3db387c253787be84dc8f/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/3efc59309a6589ab6f6bd51e15af31a8/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-compat:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-25.2.0.aar/3efc59309a6589ab6f6bd51e15af31a8/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:21:5-23:58
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:appcompat-v7:25.2.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/AndroidManifest.xml:23:9-75
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
@@ -490,6 +491,36 @@ INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafa
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.0.0-alpha1.aar/3eceaf5979ca236851ee74e7985e5fec/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-v4-26.0.0-alpha1.aar/9056c5bcf8b8fd562a84cd8765a0ef3e/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/fa6c6865ab68707a73823c45a12ffde1/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.0.0-alpha1.aar/fa6c6865ab68707a73823c45a12ffde1/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:cardview-v7:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/cardview-v7-26.0.0-alpha1.aar/43a999f782d874a6f15b892c0b293106/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-fragment-26.0.0-alpha1.aar/ecc51464a49abd4e9ba08e3480bd48bb/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.0.0-alpha1.aar/b8dc5782739b257dd3a9bb500ea34b0a/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.0.0-alpha1.aar/4d29fe08523bf3f159e8234ba4286462/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.0.0-alpha1.aar/a546d822541f88da46c4258c97a2ee6b/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.0.0-alpha1.aar/27a89dc334414f5686c4c5c508a1e9c3/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.0.0-alpha1.aar/bb54f5914af36090485fdc773a26699d/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.0.0-alpha1.aar/befe2136174a84c05bb9486c4b49afd2/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.0.0-alpha1.aar/9a599b3ea28303f143dc6effda7cabb9/AndroidManifest.xml:26:9-47
 receiver#com.google.android.gms.cast.framework.media.MediaIntentReceiver
 ADDED from [com.google.android.gms:play-services-cast-framework:11.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/AndroidManifest.xml:5:9-99
 	android:name

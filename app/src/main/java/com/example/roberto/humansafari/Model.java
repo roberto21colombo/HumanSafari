@@ -101,6 +101,7 @@ public class Model
     public void setScore(int i){
         score = i;
     }
+    public void addScore(int i){ score = score + i; }
 
     public String getPlayerName(){
         return playerName;
@@ -129,7 +130,6 @@ public class Model
             e.printStackTrace();
         }
     }
-
     public ArrayList<User> getUsers(){
         return alUsers;
     }
@@ -137,11 +137,11 @@ public class Model
     public void setHistorical(String s){
         historical = s;
     }
-
     public String getHistorical() {
         return historical;
     }
 
+    //Dato l'id di un personaggio ritorna l'oggetto character
     public Character getCharacterWithId(int id){
         for(Character c : alCharacter){
             if(c.getId() == id){
@@ -150,11 +150,19 @@ public class Model
         }
         return null;
     }
+    //Dato il nome di un personaggio presente nella partita corrente, ritorna la sua posizione all'interno dell'arraylist
+    public int getCharaterPositionWithName(String name){
+        for(int i = 0; i<alCharacter.size(); i++){
+            if(alCharacter.get(i).getName().equals(name)){
+                return i;
+            }
+        }
+        return -1;
+    }
 
     public String getGameName() {
         return gameName;
     }
-
     public void setGameName(String gameName) {
         this.gameName = gameName;
     }
@@ -164,7 +172,6 @@ public class Model
         if(who.equals("downUsr")){ downUsr=what; }
         if(who.equals("downHist")){ downHist=what; }
     }
-
     public boolean getDown(String who){
         if(who.equals("downChar")){ return downChar; }
         else if(who.equals("downUsr")){ return downUsr; }

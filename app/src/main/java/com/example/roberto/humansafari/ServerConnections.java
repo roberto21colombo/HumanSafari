@@ -27,34 +27,23 @@ public class ServerConnections {
 
 
 
-    public static void changePosition(int i, final Context context){
+    public static void changePosition(Response.Listener<String> responsStringListener, Response.ErrorListener errorListener, RequestQueue requestQueue, int i){
         Character c = Model.getInstance().getCharacter().get(i);
         int id = c.getId();
-        final String name = c.getName();
+        //final String name = c.getName();
         double lat = c.getLastPosition().latitude;
         double lng = c.getLastPosition().longitude;
 
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
                 "/updatelastposition.php?id=" + id + "&lat=" + lat + "&lng=" + lng;
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d("onResponse", response);
-                Toast.makeText(context, "Aggiornata Posizione di " + name, Toast.LENGTH_SHORT).show();
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responsStringListener, errorListener);
 
-            }
-        });
         requestQueue.add(stringRequest);
     }
 
-    public static void getUserInfo(String userId, Response.Listener<String> responseStringLisener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+    public static void getUserInfo(String name, String game, Response.Listener<String> responseStringLisener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/getuserinfo.php?userid=" + userId;
+                "/getuserinfo.php?playername=" + name + "&gamename=" + game;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringLisener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
@@ -80,21 +69,10 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void setScore(Context context){
+    public static void setScore(Response.Listener<String> responsStringListener, Response.ErrorListener errorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/setscore.php?username=" + Model.getInstance().getPlayerName() + "&score=" + Model.getInstance().getScore();
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        });
+                "/setscore.php?username=" + Model.getInstance().getPlayerName() + "&score=" + Model.getInstance().getScore() + "&game=" + Model.getInstance().getGameName();
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responsStringListener, errorListener);
         requestQueue.add(stringRequest);
     }
 
@@ -124,21 +102,10 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void addFound(Context context, int indexCharacter){
+    public static void addFound(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue, int indexCharacter){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
                 "/addfound.php?user=" + Model.getInstance().getPlayerName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        });
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
 

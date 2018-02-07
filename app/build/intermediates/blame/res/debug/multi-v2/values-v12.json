@@ -4,7 +4,7 @@
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
             "map": [
                 {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-25.2.0.aar/c9c4ab5bbb118c5413f9801010448d0a/res/values-v12/values-v12.xml",
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/values-v12/values-v12.xml",
                     "from": {
                         "startLines": "2,5,8,9",
                         "startColumns": "4,4,4,4",

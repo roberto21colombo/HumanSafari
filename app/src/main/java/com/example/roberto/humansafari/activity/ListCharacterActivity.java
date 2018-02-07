@@ -59,8 +59,8 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
         if (Model.getInstance().getCharacter().get(i).isCatchable()) {
             changePlayerScore(i);
             changeLastCharacterPosition(i);
-            changeTimeAbleCharacter(i);
-            ServerConnections.addFound(ListCharacterActivity.this, i);
+            //changeTimeAbleCharacter(i);
+            //ServerConnections.addFound(ListCharacterActivity.this, i);
 
             startActivity(new Intent(ListCharacterActivity.this, HomeActivity.class));
         } else {
@@ -74,7 +74,7 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
         int characterPoint = Model.getInstance().getCharacter().get(i).getPoints();
         int playerPoint = Model.getInstance().getScore();
         Model.getInstance().setScore(characterPoint + playerPoint);
-        ServerConnections.setScore(ListCharacterActivity.this);
+        //ServerConnections.setScore(ListCharacterActivity.this);
     }
 
     public void changeLastCharacterPosition(int i) {
@@ -99,14 +99,16 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
 
         }
         Model.getInstance().getCharacter().get(i).setLastPosition(lastPosition);
-        ServerConnections.changePosition(i, ListCharacterActivity.this);
+        //ServerConnections.changePosition(i, ListCharacterActivity.this);
     }
 
+    /*
     public void changeTimeAbleCharacter(int i) {
         long time = Calendar.getInstance().getTime().getTime() + 30000;
         Model.getInstance().getCharacter().get(i).setTime(time);
         ServerConnections.changeTime(i, ListCharacterActivity.this);
     }
+    */
 
 
 

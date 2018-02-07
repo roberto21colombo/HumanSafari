@@ -14,11 +14,16 @@ import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.adapter.CustomAdapterGames;
 import com.example.roberto.humansafari.R;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -83,6 +88,37 @@ public class PlayerChooseGameActivity extends AppCompatActivity implements Adapt
         Model.getInstance().setPlayerName(name);
         Model.getInstance().setGameName(game);
 
+        ServerConnections.getUserInfo(name, game,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("onResponse", response);
+                        try {
+                            JSONArray jsonArray = new JSONArray(response);
+
+                            String playerName = jsonArray.getString(0);
+                            String gameName = jsonArray.getString(1);
+                            int point = jsonArray.getInt(2);
+
+                            Model.getInstance().setPlayerName(playerName);
+                            Model.getInstance().setGameName(gameName);
+                            Model.getInstance().setScore(point);
+
+                            startActivity(new Intent(PlayerChooseGameActivity.this, HomeActivity.class));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("errorResponse", error.toString());
+                    }
+                },
+                Volley.newRequestQueue(this));
+
         //TODO Scaricare i personaggi relativi alla partita
         ServerConnections.downloadCharacters(
                 new Response.Listener<String>() {
@@ -103,6 +139,6 @@ public class PlayerChooseGameActivity extends AppCompatActivity implements Adapt
                     }
                 },
                 Volley.newRequestQueue(this));
-        startActivity(new Intent(PlayerChooseGameActivity.this, HomeActivity.class));
+
     }
 }
