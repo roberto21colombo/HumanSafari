@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.roberto.humansafari.activity.CharacterLogin">
+    tools:context="com.example.roberto.humansafari.activity.CharacterLogin"
+    android:background="#2195f2">
 
     <LinearLayout
         android:layout_width="370dp"
@@ -44,7 +45,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:text="Codice Personaggi"
             android:textColor="@android:color/white"
             android:textSize="20dp" />
@@ -61,7 +62,7 @@
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:text="Nome personaggio"
             android:textColor="@android:color/white"
             android:textSize="20dp" />
@@ -77,9 +78,14 @@
 
         <Button
             android:id="@+id/btnLoginCharacter"
-            android:layout_width="wrap_content"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:text="accedi" />
+            android:textColor="#2195f1"
+            android:background="@android:color/white"
+            android:text="Accedi"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="302dp" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

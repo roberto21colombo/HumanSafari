@@ -1,0 +1,46 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/main_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="#2195f2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="cursive"
+        android:text="Unisciti ad una Partita"
+        android:textSize="40dp" />
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/lvGames"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnNewCharacter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:src="@drawable/plus"
+        app:backgroundTint="#F44336"
+        app:elevation="12dp"
+        app:layout_anchor="@id/lvGames"
+        app:layout_anchorGravity="bottom|right" />
+
+
+
+</android.support.design.widget.CoordinatorLayout>

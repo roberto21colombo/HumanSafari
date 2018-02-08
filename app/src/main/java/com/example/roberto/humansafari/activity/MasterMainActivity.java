@@ -5,7 +5,9 @@ import android.support.v7.app.AppCompatActivity;
 
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.widget.TextView;
 
+import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.fragment.MasterCharacterFragment;
 import com.example.roberto.humansafari.fragment.MasterMapsFragment;
 import com.example.roberto.humansafari.fragment.MasterPlayersFragment;
@@ -20,6 +22,7 @@ public class MasterMainActivity extends AppCompatActivity {
 
     private ViewPager mViewPager;
 
+    TextView tvGameName, tvCodCharacter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +34,11 @@ public class MasterMainActivity extends AppCompatActivity {
 
         TabLayout tabLayout = (TabLayout)findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
+
+        tvGameName = (TextView)findViewById(R.id.tvGameName);
+        tvCodCharacter = (TextView)findViewById(R.id.tvCodCharacter);
+        tvGameName.setText(Model.getInstance().getGameName());
+        tvCodCharacter.setText(Model.getInstance().getCodCharacters());
     }
 
     public void setupViewPager(ViewPager viewPager){

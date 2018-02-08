@@ -49,11 +49,11 @@ public class CustomAdapterRank extends ArrayAdapter<User>{
     }
 
     private void setBackgroundView(int position, View view){
-        view.setAlpha(100);
+        //view.setAlpha(100);
         if(position%2==0){
-            view.setBackgroundColor(Color.parseColor("#616161"));
+            view.setBackgroundColor(Color.parseColor("#BBDEFB"));
         }else{
-            view.setBackgroundColor(Color.parseColor("#9E9E9E"));
+            view.setBackgroundColor(Color.parseColor("#E3F2FD"));
         }
     }
 }

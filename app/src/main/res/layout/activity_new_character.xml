@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.roberto.humansafari.activity.NewCharacterActivity">
+    tools:context="com.example.roberto.humansafari.activity.NewCharacterActivity"
+    android:background="#2195f2">
 
     <LinearLayout
         android:textColor="@android:color/white"
@@ -13,7 +14,8 @@
         android:orientation="vertical"
         tools:layout_editor_absoluteY="8dp"
         tools:layout_editor_absoluteX="8dp"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        >
 
         <TextView
             android:id="@+id/tvTitle"
@@ -59,10 +61,15 @@
             android:hint="Punti"/>
         <Button
             android:id="@+id/btnAddCharacter"
-            android:layout_marginTop="30dp"
-            android:layout_width="wrap_content"
+            android:text="Aggiungi"
+            android:layout_width="100dp"
             android:layout_height="wrap_content"
-            android:text="Aggiungi"/>
+            android:layout_marginTop="50dp"
+            android:textColor="#2195f1"
+            android:background="@android:color/white"
+            android:textSize="20dp"
+            tools:layout_editor_absoluteX="81dp"
+            tools:layout_editor_absoluteY="302dp" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

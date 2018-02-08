@@ -1,60 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    tools:context="com.example.roberto.humansafari.activity.MainActivity">
+    tools:context="com.example.roberto.humansafari.activity.MainActivity"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    app:layout_constraintBottom_toBottomOf="parent">
 
-    <LinearLayout
-        android:layout_width="387dp"
-        android:layout_height="565dp"
-        android:layout_marginBottom="8dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent">
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/humansafarihalf" />
 
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="289dp"
-            app:srcCompat="@drawable/humansafarihalf" />
-
-        <Button
-            android:id="@+id/btnPlay"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
-            android:background="#2195f1"
-            android:text="Gioca"
-            android:textSize="25dp"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="302dp" />
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#2195f1"
+        android:text="Gioca"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="302dp" />
 
 
-        <Button
-            android:id="@+id/btnManage"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="#2195f1"
-            android:text="Organizza"
-            android:textSize="25dp"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="420dp" />
+    <Button
+        android:id="@+id/btnManage"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#2195f1"
+        android:text="Organizza"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="420dp" />
 
-        <Button
-            android:id="@+id/btnNasconditi"
-            android:layout_width="220dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:background="#2195f1"
-            android:text="Nasconditi"
-            android:textSize="25dp"
-            tools:layout_editor_absoluteX="81dp"
-            tools:layout_editor_absoluteY="420dp" />
+    <Button
+        android:id="@+id/btnNasconditi"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="#2195f1"
+        android:text="Nasconditi"
+        android:textSize="25dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="420dp" />
 
-    </LinearLayout>
+</LinearLayout>
 
-</android.support.constraint.ConstraintLayout>

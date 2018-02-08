@@ -2,19 +2,16 @@ package com.example.roberto.humansafari.activity;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.ServerConnections;
@@ -23,7 +20,6 @@ import com.example.roberto.humansafari.R;
 
 import org.json.JSONArray;
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -41,7 +37,7 @@ public class PlayerChooseGameActivity extends AppCompatActivity implements Adapt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_game_master);
+        setContentView(R.layout.activity_list_game);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
         listViewGames.setOnItemClickListener(this);
@@ -76,13 +72,13 @@ public class PlayerChooseGameActivity extends AppCompatActivity implements Adapt
             e.printStackTrace();
         }
         //Assegno l'adapter alla list view
-        listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game, arrayList));
+        listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game_player, arrayList));
 
     }
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        String name = ((TextView)view.findViewById(R.id.rawPlayerName)).getText().toString();
+        String name = ((TextView)view.findViewById(R.id.rawPlayer)).getText().toString();
         String game = ((TextView)view.findViewById(R.id.rawGameName)).getText().toString();
 
         Model.getInstance().setPlayerName(name);

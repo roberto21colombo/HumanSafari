@@ -10,7 +10,6 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
@@ -35,7 +34,7 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_list_game_master);
+        setContentView(R.layout.activity_list_game);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
         btnAddButton = (FloatingActionButton) findViewById(R.id.btnNewCharacter);
@@ -49,7 +48,7 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
         //Leggo dallo storage quali partite l'utente aveva già creato e carico l'array list
         ArrayList<String[]> arrayList = readFromInternalStorage();
         //Mostro la lista di partite con l'adapter
-        listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game, arrayList));
+        listViewGames.setAdapter(new CustomAdapterGames(this, R.layout.raw_game_master, arrayList));
         listViewGames.setOnItemClickListener(this);
 
     }
@@ -82,9 +81,11 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         //Leggo il nome della partita che vuole gestire
-        String gameName = ((TextView)view.findViewById(R.id.rawGameName)).getText().toString();
+        String gameName = readFromInternalStorage().get(i)[0];
+        String codChar = readFromInternalStorage().get(i)[1];
         //Salvo il nomepartita nel model
         Model.getInstance().setGameName(gameName);
+        Model.getInstance().setCodCharacters(codChar);
 
 
         //Scarico le informazioni dei character

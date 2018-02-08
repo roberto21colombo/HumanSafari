@@ -805,6 +805,21 @@
             ]
         },
         {
+            "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/values-bn-rBD_values-bn-rBD.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/values-bn-rBD/values-bn-rBD.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,160,276,394,520,624,713,809,920,1020,1121,1225,1324,1435,1557,1645,1727,1824,1925,2012",
+                        "endColumns": "104,115,117,125,103,88,95,110,99,100,103,98,110,121,87,81,96,100,86,96",
+                        "endOffsets": "155,271,389,515,619,708,804,915,1015,1116,1220,1319,1430,1552,1640,1722,1819,1920,2007,2104"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/values-nl_values-nl.arsc.flat",
             "map": [
                 {
@@ -975,21 +990,6 @@
                         "startOffsets": "11607,11666,11713,11864",
                         "endColumns": "58,46,150,111",
                         "endOffsets": "11661,11708,11859,11971"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/values-bn-rBD_values-bn-rBD.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/values-bn-rBD/values-bn-rBD.xml",
-                    "from": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,160,276,394,520,624,713,809,920,1020,1121,1225,1324,1435,1557,1645,1727,1824,1925,2012",
-                        "endColumns": "104,115,117,125,103,88,95,110,99,100,103,98,110,121,87,81,96,100,86,96",
-                        "endOffsets": "155,271,389,515,619,708,804,915,1015,1116,1220,1319,1430,1552,1640,1722,1819,1920,2007,2104"
                     }
                 }
             ]
@@ -1202,6 +1202,22 @@
             ]
         },
         {
+            "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/values-v25_values-v25.arsc.flat",
+            "map": [
+                {
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/values-v25/values-v25.xml",
+                    "from": {
+                        "startLines": "2,3,4,6",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,126,209,308",
+                        "endLines": "2,3,5,7",
+                        "endColumns": "70,82,12,12",
+                        "endOffsets": "121,204,303,414"
+                    }
+                }
+            ]
+        },
+        {
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/values-tr_values-tr.arsc.flat",
             "map": [
                 {
@@ -1372,22 +1388,6 @@
                         "startOffsets": "10538,10611,10736,10806,10874,10960",
                         "endColumns": "72,124,69,67,85,119",
                         "endOffsets": "10606,10731,10801,10869,10955,11075"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/values-v25_values-v25.arsc.flat",
-            "map": [
-                {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/values-v25/values-v25.xml",
-                    "from": {
-                        "startLines": "2,3,4,6",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,126,209,308",
-                        "endLines": "2,3,5,7",
-                        "endColumns": "70,82,12,12",
-                        "endOffsets": "121,204,303,414"
                     }
                 }
             ]

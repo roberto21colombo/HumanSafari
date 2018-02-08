@@ -28,6 +28,7 @@ public class Model
     private String playerName = "";
     private String historical = "";
     private String gameName = "";
+    private String codCharacters = "";
 
     private boolean downChar, downUsr, downHist;
 
@@ -165,6 +166,14 @@ public class Model
     }
     public void setGameName(String gameName) {
         this.gameName = gameName;
+    }
+
+    public String getCodCharacters() {
+        return codCharacters;
+    }
+
+    public void setCodCharacters(String codCharacters) {
+        this.codCharacters = codCharacters;
     }
 
     public void setDown(String who, boolean what){
