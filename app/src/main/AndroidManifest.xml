@@ -31,13 +31,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.PlayerChooseGameActivity" />
+        <activity android:name=".activity.ListGamePlayerActivity" />
         <activity android:name=".activity.ListGameMasterActivity" />
         <activity android:name=".activity.CreateGameActivity" />
-        <activity
-            android:name=".activity.MasterMainActivity"
-            android:label="@string/title_activity_master_main"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".activity.MasterMainActivity"/>
+        <activity android:name=".activity.PlayerMainActivity"/>
         <activity android:name=".activity.NewCharacterActivity" />
         <activity android:name=".activity.CharacterLogin" />
         <activity android:name=".activity.QrcodeActivity"></activity>

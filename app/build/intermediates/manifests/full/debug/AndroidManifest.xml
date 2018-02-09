@@ -76,13 +76,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.roberto.humansafari.activity.PlayerChooseGameActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.ListGamePlayerActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.ListGameMasterActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.CreateGameActivity" />
-        <activity
-            android:name="com.example.roberto.humansafari.activity.MasterMainActivity"
-            android:label="@string/title_activity_master_main"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name="com.example.roberto.humansafari.activity.MasterMainActivity" />
+        <activity android:name="com.example.roberto.humansafari.activity.PlayerMainActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.NewCharacterActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.CharacterLogin" />
         <activity android:name="com.example.roberto.humansafari.activity.QrcodeActivity" />

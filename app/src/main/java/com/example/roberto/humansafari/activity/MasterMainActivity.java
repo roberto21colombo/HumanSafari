@@ -12,13 +12,13 @@ import com.example.roberto.humansafari.fragment.MasterCharacterFragment;
 import com.example.roberto.humansafari.fragment.MasterMapsFragment;
 import com.example.roberto.humansafari.fragment.MasterPlayersFragment;
 import com.example.roberto.humansafari.R;
-import com.example.roberto.humansafari.adapter.SectionsPageAdapter;
+import com.example.roberto.humansafari.adapter.SectionsPageAdapterMaster;
 
 public class MasterMainActivity extends AppCompatActivity {
 
     private static final String TAG = "MasterMainActivity";
 
-    public SectionsPageAdapter mSectionsPageAdapter;
+    public SectionsPageAdapterMaster mSectionsPageAdapterMaster;
 
     private ViewPager mViewPager;
 
@@ -28,7 +28,7 @@ public class MasterMainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_master_main);
 
-        mSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
+        mSectionsPageAdapterMaster = new SectionsPageAdapterMaster(getSupportFragmentManager());
         mViewPager = (ViewPager)findViewById(R.id.container);
         setupViewPager(mViewPager);
 
@@ -42,7 +42,7 @@ public class MasterMainActivity extends AppCompatActivity {
     }
 
     public void setupViewPager(ViewPager viewPager){
-        SectionsPageAdapter adapter = new SectionsPageAdapter(getSupportFragmentManager());
+        SectionsPageAdapterMaster adapter = new SectionsPageAdapterMaster(getSupportFragmentManager());
         adapter.addFragment(new MasterCharacterFragment(), "Personaggi");
         adapter.addFragment(new MasterPlayersFragment(), "Giocatori");
         adapter.addFragment(new MasterMapsFragment(), "Mappa");

@@ -17,14 +17,12 @@ import android.widget.Toast;
 
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
-import com.example.roberto.humansafari.ServerConnections;
-import com.example.roberto.humansafari.adapter.CustomAdapterCharacters;
+import com.example.roberto.humansafari.adapter.CustomAdapterMasterCharacters;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
 
-import java.util.Calendar;
 import java.util.concurrent.TimeUnit;
 
 public class ListCharacterActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, AdapterView.OnItemClickListener {
@@ -47,7 +45,7 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
 
 
         mListView = (ListView) findViewById(R.id.listViewCharacters);
-        mListView.setAdapter(new CustomAdapterCharacters(this, R.layout.raw_character, Model.getInstance().getCharacter()));
+        mListView.setAdapter(new CustomAdapterMasterCharacters(this, R.layout.raw_master_character, Model.getInstance().getCharacter()));
         mListView.setOnItemClickListener(this);
 
 

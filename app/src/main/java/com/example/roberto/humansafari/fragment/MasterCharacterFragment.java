@@ -15,7 +15,7 @@ import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.activity.NewCharacterActivity;
-import com.example.roberto.humansafari.adapter.CustomAdapterCharacters;
+import com.example.roberto.humansafari.adapter.CustomAdapterMasterCharacters;
 
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class MasterCharacterFragment extends Fragment implements AdapterView.OnI
         });
         ArrayList<Character> mArrayList = Model.getInstance().getCharacter();
 
-        mListView.setAdapter(new CustomAdapterCharacters(getActivity(), R.layout.raw_character, mArrayList));
+        mListView.setAdapter(new CustomAdapterMasterCharacters(getActivity(), R.layout.raw_master_character, mArrayList));
         mListView.setOnItemClickListener(this);
 
 
