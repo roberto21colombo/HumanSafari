@@ -185,7 +185,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
                 public void onErrorResponse(VolleyError error) {
 
                 }
-            }, Volley.newRequestQueue(HomeActivity.this), i);
+            }, Volley.newRequestQueue(HomeActivity.this), "");
     }
 
 

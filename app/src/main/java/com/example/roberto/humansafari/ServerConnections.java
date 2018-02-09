@@ -102,9 +102,9 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void addFound(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue, int indexCharacter){
+    public static void addFound(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue, String nameCharacter){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/addfound.php?user=" + Model.getInstance().getPlayerName() + "&character=" + Model.getInstance().getCharacter().get(indexCharacter).getId();
+                "/addfound.php?player=" + Model.getInstance().getPlayerName() + "&character=" + nameCharacter + "&game=" + Model.getInstance().getGameName() ;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }

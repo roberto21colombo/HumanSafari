@@ -125,7 +125,6 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                         Model.getInstance().setCharacters(response);
                         Model.getInstance().setDown("downChar", true);
                         //Una volta salvati i dati chiamo l'activity successiva
-                        //TODO crasha quando chiama la nuova activity
                         startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
                     }
                 },

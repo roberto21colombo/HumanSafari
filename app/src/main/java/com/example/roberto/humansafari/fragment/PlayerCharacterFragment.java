@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
@@ -39,21 +40,21 @@ import java.util.ArrayList;
  * Created by roberto on 16/01/18.
  */
 
-public class PlayerCharacterFragment extends Fragment implements AdapterView.OnItemClickListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener  {
+public class PlayerCharacterFragment extends Fragment implements AdapterView.OnItemClickListener  {
     private static final String TAG = "Lista";
 
     ListView mListView;
     FloatingActionButton btnFindCharacter;
 
-    GoogleApiClient mGoogleApiClient = null;
 
-    Boolean userPermission = false;
-    Boolean googlePlayServiceConnected = false;
+
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_player_characters, container, false);
+
+
 
         mListView = view.findViewById(R.id.listViewCharacters);
         btnFindCharacter = view.findViewById(R.id.btnFindCharacter);
@@ -84,7 +85,7 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
         //TODO onclick sul personaggio, aprire mappa
     }
 
-
+    /*
     //Metodo che viene chiamato quando il qrcode legge qualcosa
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -103,130 +104,15 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
                 //myGoogleApi = new MyGoogleApi(HomeActivity.this);
                 changePlayerScore(Integer.parseInt(pointCharacter));
                 changeCharacterPosition(indexCharacterList);
-                addFound(indexCharacterList);
+                addFound(nameCharacter);
 
             }
         }
 
         super.onActivityResult(requestCode, resultCode, data);
     }
+*/
 
 
-    public void changePlayerScore(int score) {
-        Model.getInstance().addScore(score);
-        ServerConnections.setScore(
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
 
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-
-                    }
-                }, Volley.newRequestQueue(getContext()));
-
-    }
-
-    public void changeCharacterPosition(int i) {
-
-        LatLng position = getPosition();
-        Model.getInstance().getCharacter().get(i).setLastPosition(position);
-        ServerConnections.changePosition(
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-
-                    }
-                }, Volley.newRequestQueue(getContext()), i);
-    }
-
-    public void addFound(int i) {
-        ServerConnections.addFound(
-                new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-
-                    }
-                }, Volley.newRequestQueue(getContext()), i);
-    }
-
-    public LatLng getPosition() {
-
-        if (userPermission && googlePlayServiceConnected) {
-
-
-            if (ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                // TODO: Consider calling
-                //    ActivityCompat#requestPermissions
-                // here to request the missing permissions, and then overriding
-                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
-                //                                          int[] grantResults)
-                // to handle the case where the user grants the permission. See the documentation
-                // for ActivityCompat#requestPermissions for more details.
-                return null;
-            }
-
-            Location mLastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
-            if (mLastLocation != null) {
-                double lat = mLastLocation.getLatitude();
-                double lng = mLastLocation.getLongitude();
-                return new LatLng(lat, lng);
-            }
-
-        }
-
-        return new LatLng(0,0);
-    }
-
-    public void checkPermission(){
-        if (ContextCompat.checkSelfPermission(getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            ActivityCompat.requestPermissions(getActivity(), new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, 21);
-        } else {
-            userPermission = true;
-        }
-    }@Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if(requestCode == 21){
-            // If request is cancelled, the result arrays are empty.
-            if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                userPermission = true;
-            }
-            return;
-        }
-    }
-
-    public void connectGoogleApiClient() {
-        if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(getContext())
-                    .addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this)
-                    .addApi(LocationServices.API)
-                    .build();
-        }
-        mGoogleApiClient.connect();
-    }@Override
-    public void onConnected(@Nullable Bundle bundle) {
-        googlePlayServiceConnected = true;
-    }@Override
-    public void onConnectionSuspended(int i) {
-        googlePlayServiceConnected = false;
-    }@Override
-    public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
-        googlePlayServiceConnected = false;
-    }
 }
