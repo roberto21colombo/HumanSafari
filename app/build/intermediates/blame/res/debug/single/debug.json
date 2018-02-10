@@ -216,20 +216,20 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/drawable/abc_ic_search_api_material.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
-    },
-    {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_ic_plusone_small_off_client.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.0.aar/1a2fa37787ac5dc61ef11186b0b6629a/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_plusone_medium_off_client.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.0.aar/1a2fa37787ac5dc61ef11186b0b6629a/res/drawable-hdpi-v4/ic_plusone_medium_off_client.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable_common_google_signin_btn_text_dark_focused.xml.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-11.0.0.aar/bf6208e84c21d471be2ad0cb205f30cb/res/drawable/common_google_signin_btn_text_dark_focused.xml"
     },
     {
-        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_plusone_medium_off_client.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.0.aar/1a2fa37787ac5dc61ef11186b0b6629a/res/drawable-hdpi-v4/ic_plusone_medium_off_client.png"
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-tvdpi-v4_ic_plusone_small_off_client.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-plus-11.0.0.aar/1a2fa37787ac5dc61ef11186b0b6629a/res/drawable-tvdpi-v4/ic_plusone_small_off_client.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout_mr_playback_control.xml.flat",
@@ -734,6 +734,10 @@
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_cast_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/drawable-xhdpi-v4/cast_abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable_refresh.png.flat",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/drawable/refresh.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable_mr_media_play_light.xml.flat",

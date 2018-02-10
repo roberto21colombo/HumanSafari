@@ -7,43 +7,54 @@
     android:paddingBottom="5dp"
     android:layout_marginTop="10dp">
     <ImageView
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="5dp"
         android:id="@+id/imageViewCharacter"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
         android:src="@drawable/binocularflat"
-        android:layout_weight="0.25" />
+        />
 
-    <TextView
-        android:gravity="center"
-        android:layout_marginLeft="5dp"
-        android:id="@+id/textViewNameCharacter"
-        android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:fontFamily="cursive"
-        android:text="name User"
-        android:textSize="25sp"
-        android:layout_weight="0.25"/>
+    <LinearLayout
+        android:layout_width="180dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical">
+        <TextView
+            android:layout_gravity="center"
+            android:textColor="@android:color/black"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textViewNameCharacter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:text="name User"
+            android:textSize="20sp" />
 
-    <TextView
-        android:gravity="center"
-        android:layout_marginLeft="5dp"
-        android:id="@+id/textViewNameUser"
-        android:layout_width="wrap_content"
-        android:layout_height="65dp"
-        android:fontFamily="cursive"
-        android:text="name User"
-        android:textSize="25sp"
-        android:layout_weight="0.25"/>
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/textViewNameUser"
+            android:fontFamily="cursive"
+            android:text="name User"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
 
     <TextView
         android:id="@+id/textViewDate"
         android:layout_width="wrap_content"
-        android:layout_height="65dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
         android:layout_marginLeft="5dp"
-        android:layout_weight="0.25"
         android:fontFamily="cursive"
-        android:gravity="center"
         android:text="aaaa-mm-gg hh:mm:ss"
+        android:textColor="@android:color/black"
         android:textSize="20sp" />
 </LinearLayout>

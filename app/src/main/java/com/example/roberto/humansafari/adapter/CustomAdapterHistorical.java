@@ -29,6 +29,7 @@ import java.io.InputStream;
 import java.lang.ref.WeakReference;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by roberto on 05/10/17.
@@ -39,9 +40,12 @@ public class CustomAdapterHistorical extends ArrayAdapter<String[]>{
     TextView textViewUserName;
     TextView textViewDate;
 
+    ArrayList<String[]> myobjects;
+
     public CustomAdapterHistorical(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<String[]> objects) {
         super(context, resource, objects);
-
+        this.myobjects = objects;
+        Collections.reverse(myobjects);
     }
 
     @NonNull
@@ -80,7 +84,11 @@ public class CustomAdapterHistorical extends ArrayAdapter<String[]>{
     }
 
 
-
+    public void updateObject(ArrayList<String[]> objects){
+        myobjects.clear();
+        myobjects.addAll(objects);
+        Collections.reverse(myobjects);
+    }
 
 
     private class ImageDownloaderTask extends AsyncTask<String, Void, Bitmap>{
