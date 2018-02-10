@@ -132,7 +132,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
         Model.getInstance().setDown("downHist", false);
         //ServerConnections.downloadCharacters(HomeActivity.this, Model.getInstance().getGameName());
         //ServerConnections.getUsers(HomeActivity.this);
-        ServerConnections.getHistorical(HomeActivity.this);
+        //ServerConnections.getHistorical(HomeActivity.this);
     }
 
     public void changePlayerScore(int score) {

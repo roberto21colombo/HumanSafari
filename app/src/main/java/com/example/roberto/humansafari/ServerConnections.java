@@ -109,23 +109,10 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void getHistorical(Context context){
+    public static void getHistorical(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue ){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/gethistorical.php";
-        RequestQueue requestQueue = Volley.newRequestQueue(context);
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d("onResponse", response);
-                Model.getInstance().setHistorical(response);
-                Model.getInstance().setDown("downHist", true);
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        });
+                "/gethistorical.php?game=" + Model.getInstance().getGameName();
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
 

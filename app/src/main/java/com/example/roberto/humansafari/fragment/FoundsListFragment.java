@@ -9,8 +9,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
+import com.example.roberto.humansafari.ServerConnections;
+import com.example.roberto.humansafari.activity.HomeActivity;
 import com.example.roberto.humansafari.adapter.CustomAdapterHistorical;
 
 import org.json.JSONArray;
@@ -31,26 +36,26 @@ public class FoundsListFragment extends Fragment {
 
 
         listViewHistorical = view.findViewById(R.id.listViewHistorical);
-
+        String historical = Model.getInstance().getHistorical();
+        JSONArray jArray = null;
+        final ArrayList<String[]> arrayList = new ArrayList<String[]>();
         try {
-            String historical = Model.getInstance().getHistorical();
-            JSONArray jArray = new JSONArray(historical);
-            final ArrayList<String[]> arrayList = new ArrayList<String[]>();
-
-            for(int i=0; i<jArray.length(); i++){
+            jArray = new JSONArray(historical);
+            for(int i=0; i<jArray.length(); i++) {
                 JSONObject json_obj = jArray.getJSONObject(i);
                 String[] element = new String[3];
-                element[0] = json_obj.getString("fk_character");
-                element[1] = json_obj.getString("fk_user");
+                element[0] = json_obj.getString("playername");
+                element[1] = json_obj.getString("charactername");
                 element[2] = json_obj.getString("date");
 
                 arrayList.add(element);
             }
-
-            listViewHistorical.setAdapter(new CustomAdapterHistorical(getContext(), R.layout.raw_hist, arrayList));
         } catch (JSONException e) {
             e.printStackTrace();
         }
+        listViewHistorical.setAdapter(new CustomAdapterHistorical(getContext(), R.layout.raw_hist, arrayList));
+
+
 
         return view;
     }

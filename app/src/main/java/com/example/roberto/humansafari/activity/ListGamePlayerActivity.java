@@ -17,9 +17,11 @@ import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.adapter.CustomAdapterGames;
 import com.example.roberto.humansafari.R;
+import com.example.roberto.humansafari.adapter.CustomAdapterHistorical;
 
 import org.json.JSONArray;
 import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -125,7 +127,9 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                         Model.getInstance().setCharacters(response);
                         Model.getInstance().setDown("downChar", true);
                         //Una volta salvati i dati chiamo l'activity successiva
-                        startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                        if(Model.getInstance().getDown("downHist")) {
+                            startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -135,6 +139,25 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                     }
                 },
                 Volley.newRequestQueue(this));
+
+        ServerConnections.getHistorical(
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Model.getInstance().setHistorical(response);
+                        Model.getInstance().setDown("downHist", true);
+
+                        if(Model.getInstance().getDown("downChar")) {
+                            startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }, Volley.newRequestQueue(this));
 
     }
 }

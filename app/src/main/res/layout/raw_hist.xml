@@ -2,33 +2,46 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
     android:layout_marginTop="10dp">
     <ImageView
-        android:layout_margin="5dp"
+        android:layout_marginLeft="5dp"
         android:id="@+id/imageViewCharacter"
         android:layout_width="65dp"
         android:layout_height="65dp"
         android:src="@drawable/binocularflat"
-        android:layout_weight="0.30" />
+        android:layout_weight="0.25" />
 
     <TextView
         android:gravity="center"
-        android:layout_margin="5dp"
-        android:id="@+id/editTextNameUser"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewNameCharacter"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:fontFamily="cursive"
         android:text="name User"
         android:textSize="25sp"
-        android:layout_weight="0.35"/>
+        android:layout_weight="0.25"/>
 
     <TextView
-        android:id="@+id/editTextDate"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textViewNameUser"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
-        android:layout_margin="5dp"
-        android:layout_weight="0.35"
+        android:fontFamily="cursive"
+        android:text="name User"
+        android:textSize="25sp"
+        android:layout_weight="0.25"/>
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0.25"
         android:fontFamily="cursive"
         android:gravity="center"
         android:text="aaaa-mm-gg hh:mm:ss"

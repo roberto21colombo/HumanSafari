@@ -35,7 +35,9 @@ import java.util.ArrayList;
  */
 
 public class CustomAdapterHistorical extends ArrayAdapter<String[]>{
+    TextView textViewCharacterName;
     TextView textViewUserName;
+    TextView textViewDate;
 
     public CustomAdapterHistorical(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<String[]> objects) {
         super(context, resource, objects);
@@ -48,23 +50,19 @@ public class CustomAdapterHistorical extends ArrayAdapter<String[]>{
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         convertView = inflater.inflate(R.layout.raw_hist, null);
 
-
-        textViewUserName = convertView.findViewById(R.id.editTextNameUser);
-        TextView textViewDate = convertView.findViewById(R.id.editTextDate);
+        textViewCharacterName = convertView.findViewById(R.id.textViewNameCharacter);
+        textViewUserName = convertView.findViewById(R.id.textViewNameUser);
+        textViewDate = convertView.findViewById(R.id.textViewDate);
         ImageView imageView = convertView.findViewById(R.id.imageViewCharacter);
 
 
-
-        int idCharacter = Integer.parseInt(getItem(position)[0]);
-        int idUser = Integer.parseInt(getItem(position)[1]);
+        String nameUser = getItem(position)[0];
+        String nameCharacter = getItem(position)[1];
         String date = getItem(position)[2];
-
-        String nameUser = Model.getInstance().getUsers().get(idUser).getName();
-
-
-        Character character = Model.getInstance().getCharacterWithId(idCharacter);
+        Character character = Model.getInstance().getCharacter().get(Model.getInstance().getCharaterPositionWithName(getItem(position)[1]));
         String imgCharacter = character.getImgSrc();
 
+        textViewCharacterName.setText(nameCharacter);
         textViewUserName.setText(nameUser);
         textViewDate.setText(date);
         if(imgCharacter != "null") {
@@ -126,11 +124,10 @@ public class CustomAdapterHistorical extends ArrayAdapter<String[]>{
 
     private void setBackgroundView(int position, View view){
         if(position%2==0){
-            view.setBackgroundColor(Color.parseColor("#616161"));
+            view.setBackgroundColor(Color.parseColor("#BBDEFB"));
         }else{
-            view.setBackgroundColor(Color.parseColor("#9E9E9E"));
+            view.setBackgroundColor(Color.parseColor("#E3F2FD"));
         }
-
     }
 
     private Bitmap getCroppedBitmap(Bitmap bitmap) {
