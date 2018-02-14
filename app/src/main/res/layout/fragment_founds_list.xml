@@ -20,11 +20,13 @@
         android:baselineAlignBottom="false"
         android:contextClickable="false"
         android:cropToPadding="false"
-
         android:src="@drawable/refresh"
-        app:backgroundTint="@android:color/white"
+        android:tint="@android:color/transparent"
+        app:backgroundTint="@android:color/transparent"
         app:elevation="12dp"
         app:layout_anchor="@id/listViewHistorical"
         app:layout_anchorGravity="bottom|right"
-        />
+        app:rippleColor="@android:color/transparent"
+        app:srcCompat="@drawable/refresh"
+        tools:layout_editor_absoluteX="231dp" />
 </android.support.design.widget.CoordinatorLayout>

@@ -4,12 +4,23 @@ import android.content.Context;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.android.volley.AuthFailureError;
+import com.android.volley.NetworkResponse;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
+import com.android.volley.VolleyLog;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.nearby.connection.Payload;
+
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
+import java.nio.charset.Charset;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.Map;
 
 /**
  * Created by roberto on 21/11/17.
@@ -55,10 +66,23 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void addCharacter(String name, String point, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/addcharacter.php?name=" + name + "&point=" + point + "&game=" + Model.getInstance().getGameName();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+    public static void addCharacter(final String name, final String point, final String image, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        //String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/addcharacter.php?name=" + name + "&point=" + point + "&game=" + Model.getInstance().getGameName() + "&image=" + image;
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/addcharacter.php";
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, responseStringListener, responseErrorListener)
+
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("name", name);
+                params.put("point", point);
+                params.put("game", Model.getInstance().getGameName());
+                params.put("image", image);
+
+                return params;
+            }
+        };
         requestQueue.add(stringRequest);
     }
 
@@ -141,5 +165,6 @@ public class ServerConnections {
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
+
 
 }
