@@ -1,39 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="24"
     build-mode="COLD"
     density="xxhdpi"
     format="10"
+    ir-eligibility="COMPATIBLE"
     plugin-version="3.0.1"
-    timestamp="1518622364078"
+    timestamp="1518628695969"
     token="-9125923180666704299"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="503" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="38" />
     <task
         name="verifier"
-        duration="0" />
+        duration="3" />
 
     <artifact
-        location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+        location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1518621147998"
+        timestamp="1518623640470"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
-            type="SPLIT" />
         <artifact
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
@@ -62,6 +60,9 @@
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+        <artifact
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
@@ -70,10 +71,46 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1518622364078"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1518624814965"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1518626670622"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/outputs/apk/debug/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="METHOD_DELETED"
+        timestamp="1518628458053"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        ir-eligibility="COMPATIBLE"
+        timestamp="1518628695969"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
     </build>
 

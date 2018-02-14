@@ -25,6 +25,8 @@ import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.ServerConnections;
+import com.example.roberto.humansafari.activity.HomeActivity;
+import com.example.roberto.humansafari.activity.PlayerMainActivity;
 import com.example.roberto.humansafari.adapter.CustomAdapterMasterCharacters;
 import com.example.roberto.humansafari.adapter.CustomAdapterPlayerCharacters;
 import com.google.android.gms.common.ConnectionResult;
@@ -85,7 +87,7 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
         //TODO onclick sul personaggio, aprire mappa
     }
 
-    /*
+
     //Metodo che viene chiamato quando il qrcode legge qualcosa
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
@@ -102,16 +104,17 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
                 int indexCharacterList = Model.getInstance().getCharaterPositionWithName(nameCharacter);
 
                 //myGoogleApi = new MyGoogleApi(HomeActivity.this);
-                changePlayerScore(Integer.parseInt(pointCharacter));
-                changeCharacterPosition(indexCharacterList);
-                addFound(nameCharacter);
+                ((PlayerMainActivity)getActivity()).changePlayerScore(Integer.parseInt(pointCharacter));
+                ((PlayerMainActivity)getActivity()).changeCharacterPosition(indexCharacterList);
+                ((PlayerMainActivity)getActivity()).addFound(nameCharacter);
 
             }
         }
 
         super.onActivityResult(requestCode, resultCode, data);
     }
-*/
+
+
 
 
 

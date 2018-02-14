@@ -1,4 +1,4 @@
-#Sun Feb 11 00:22:23 CET 2018
+#Wed Feb 14 17:13:45 CET 2018
 base.0=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dexMerger/debug/9
 path.0=classes.dex
 renamed.0=classes.dex

@@ -57,7 +57,7 @@ public class CustomAdapterPlayerCharacters extends ArrayAdapter<Character>{
         name.setText(c.getName());
         points.setText("" + c.getPoints());
         if(c.getImgSrc() != "null") {
-            String url = "http://www.aclitriuggio.it/wp-pinguino/foto/" + c.getImgSrc();
+            String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/" + c.getImgSrc();
             new ImageDownloaderTask(new WeakReference(imageView)).execute(url);
         }
 

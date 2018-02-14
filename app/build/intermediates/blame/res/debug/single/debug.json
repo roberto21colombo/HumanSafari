@@ -3560,6 +3560,10 @@
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-11.0.0.aar/c65a21f7272f2881bf6751ee8a01bd50/res/drawable-mdpi-v4/cast_ic_notification_on.png"
     },
     {
+        "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout_fragment_player_map.xml.flat",
+        "source": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/res/layout/fragment_player_map.xml"
+    },
+    {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/color_abc_tint_seek_thumb.xml.flat",
         "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.0.0-alpha1.aar/9b93a358cbe2d11d9743d405ec381294/res/color/abc_tint_seek_thumb.xml"
     },

@@ -15,7 +15,6 @@
         android:layout_height="50dp"
         android:layout_marginLeft="10dp"
         android:layout_weight="0.25"
-        android:scaleType="centerCrop"
         android:src="@drawable/piero_pelu" />
 
     <TextView

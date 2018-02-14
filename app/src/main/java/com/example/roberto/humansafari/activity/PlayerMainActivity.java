@@ -11,7 +11,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
-import android.widget.AdapterView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -24,10 +23,8 @@ import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.adapter.SectionsPageAdapterMaster;
 import com.example.roberto.humansafari.adapter.SectionsPageAdapterPlayer;
 import com.example.roberto.humansafari.fragment.FoundsListFragment;
-import com.example.roberto.humansafari.fragment.MasterCharacterFragment;
-import com.example.roberto.humansafari.fragment.MasterMapsFragment;
-import com.example.roberto.humansafari.fragment.MasterPlayersFragment;
 import com.example.roberto.humansafari.fragment.PlayerCharacterFragment;
+import com.example.roberto.humansafari.fragment.PlayerMapFragment;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
@@ -78,7 +75,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
         SectionsPageAdapterMaster adapter = new SectionsPageAdapterMaster(getSupportFragmentManager());
         adapter.addFragment(new PlayerCharacterFragment(), "Lista");
         adapter.addFragment(new FoundsListFragment(), "Avvistamenti");
-        //adapter.addFragment(new MasterMapsFragment(), "Mappa");
+        adapter.addFragment(new PlayerMapFragment(), "Mappa");
         viewPager.setAdapter(adapter);
     }
 
@@ -130,7 +127,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
 
     public void changeCharacterPosition(int i) {
 
-        LatLng position = getPosition();
+        LatLng position = getMyPosition();
         Model.getInstance().getCharacter().get(i).setLastPosition(position);
         ServerConnections.changePosition(
                 new Response.Listener<String>() {
@@ -163,7 +160,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
                 }, Volley.newRequestQueue(this), nameCharacter);
     }
 
-    public LatLng getPosition() {
+    public LatLng getMyPosition() {
 
         if (userPermission && googlePlayServiceConnected) {
 

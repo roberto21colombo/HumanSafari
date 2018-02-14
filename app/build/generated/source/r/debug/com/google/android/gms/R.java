@@ -472,10 +472,10 @@ public final class R {
         public static final int cast_mini_controller = 0x7f0d002e;
         public static final int cast_tracks_chooser_dialog_layout = 0x7f0d002f;
         public static final int cast_tracks_chooser_dialog_row_layout = 0x7f0d0030;
-        public static final int place_autocomplete_fragment = 0x7f0d0059;
-        public static final int place_autocomplete_item_powered_by_google = 0x7f0d005a;
-        public static final int place_autocomplete_item_prediction = 0x7f0d005b;
-        public static final int place_autocomplete_progress = 0x7f0d005c;
+        public static final int place_autocomplete_fragment = 0x7f0d005a;
+        public static final int place_autocomplete_item_powered_by_google = 0x7f0d005b;
+        public static final int place_autocomplete_item_prediction = 0x7f0d005c;
+        public static final int place_autocomplete_progress = 0x7f0d005d;
     }
     public static final class string {
         public static final int cast_ad_label = 0x7f110023;
