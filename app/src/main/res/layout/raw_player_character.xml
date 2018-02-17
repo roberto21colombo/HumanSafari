@@ -44,9 +44,10 @@
         android:textSize="30sp" />
 
     <ImageView
+        android:id="@+id/imageViewCheckbox"
         android:layout_marginRight="10dp"
         android:layout_gravity="center"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        app:srcCompat="@android:drawable/checkbox_off_background" />
+        app:srcCompat="@drawable/checkboxoff" />
 </LinearLayout>

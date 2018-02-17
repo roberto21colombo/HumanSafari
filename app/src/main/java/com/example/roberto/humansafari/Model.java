@@ -142,6 +142,28 @@ public class Model
         return historical;
     }
 
+    public ArrayList<String[]> getHistoricalArray(){
+        String historical = getHistorical();
+        JSONArray jArray = null;
+        ArrayList<String[]> arrayList = new ArrayList<String[]>();
+        try {
+            jArray = new JSONArray(historical);
+            for(int i=0; i<jArray.length(); i++) {
+                JSONObject json_obj = jArray.getJSONObject(i);
+                String[] element = new String[3];
+                element[0] = json_obj.getString("playername");
+                element[1] = json_obj.getString("charactername");
+                element[2] = json_obj.getString("date");
+
+                arrayList.add(element);
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+
+        return arrayList;
+    }
+
     //Dato l'id di un personaggio ritorna l'oggetto character
     public Character getCharacterWithId(int id){
         for(Character c : alCharacter){

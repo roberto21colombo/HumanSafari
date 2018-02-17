@@ -1,15 +1,10 @@
 package com.example.roberto.humansafari.fragment;
 
 import android.content.Intent;
-import android.content.pm.PackageManager;
-import android.location.Location;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
-import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -17,22 +12,11 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
 
-import com.android.volley.Response;
-import com.android.volley.VolleyError;
-import com.android.volley.toolbox.StringRequest;
-import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
-import com.example.roberto.humansafari.ServerConnections;
-import com.example.roberto.humansafari.activity.HomeActivity;
 import com.example.roberto.humansafari.activity.PlayerMainActivity;
-import com.example.roberto.humansafari.adapter.CustomAdapterMasterCharacters;
 import com.example.roberto.humansafari.adapter.CustomAdapterPlayerCharacters;
-import com.google.android.gms.common.ConnectionResult;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationServices;
-import com.google.android.gms.maps.model.LatLng;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
 
@@ -43,11 +27,11 @@ import java.util.ArrayList;
  */
 
 public class PlayerCharacterFragment extends Fragment implements AdapterView.OnItemClickListener  {
-    private static final String TAG = "Lista";
+    private static final String TAG = "ListaCharacterPlayer";
 
-    ListView mListView;
+    public ListView mListView;
     FloatingActionButton btnFindCharacter;
-
+    public CustomAdapterPlayerCharacters mCustomAdapterPlayerCharacters = null;
 
 
 
@@ -75,7 +59,8 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
         });
         ArrayList<Character> mArrayList = Model.getInstance().getCharacter();
 
-        mListView.setAdapter(new CustomAdapterPlayerCharacters(getActivity(), R.layout.raw_player_character, mArrayList));
+        mCustomAdapterPlayerCharacters = new CustomAdapterPlayerCharacters(getActivity(), R.layout.raw_player_character, mArrayList);
+        mListView.setAdapter(mCustomAdapterPlayerCharacters);
         mListView.setOnItemClickListener(this);
 
 
@@ -88,34 +73,9 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
     }
 
 
-    //Metodo che viene chiamato quando il qrcode legge qualcosa
-    @Override
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
-        IntentResult result = IntentIntegrator.parseActivityResult(requestCode, resultCode, data);
-        if(result != null){
-            if(result.getContents()==null){
-                Toast.makeText(getContext(), "you cancelled scanning", Toast.LENGTH_SHORT).show();
-            }else{
-                Toast.makeText(getContext(), result.getContents(), Toast.LENGTH_LONG).show();
 
-                String nameCharacter = result.getContents().split(";")[0];
-                String pointCharacter = result.getContents().split(";")[1];
-
-                int indexCharacterList = Model.getInstance().getCharaterPositionWithName(nameCharacter);
-
-                //myGoogleApi = new MyGoogleApi(HomeActivity.this);
-                ((PlayerMainActivity)getActivity()).changePlayerScore(Integer.parseInt(pointCharacter));
-                ((PlayerMainActivity)getActivity()).changeCharacterPosition(indexCharacterList);
-                ((PlayerMainActivity)getActivity()).addFound(nameCharacter);
-
-            }
-        }
-
-        super.onActivityResult(requestCode, resultCode, data);
+    public void notifyCheckboxChanged(String name) {
+        mCustomAdapterPlayerCharacters.setFoundedTrue(name);
+        mCustomAdapterPlayerCharacters.notifyDataSetChanged();
     }
-
-
-
-
-
 }

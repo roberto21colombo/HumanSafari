@@ -22,6 +22,7 @@ public class Character {
     LatLng lastPosition = null;
     long time;
 
+    boolean founded = false;
     boolean catchable = true;
     long deltaTime;
 
@@ -107,5 +108,13 @@ public class Character {
 
     public void flipCatchable(){
         catchable = !catchable;
+    }
+
+    public boolean isFounded() {
+        return founded;
+    }
+
+    public void setFounded(boolean founded) {
+        this.founded = founded;
     }
 }

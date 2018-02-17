@@ -6,6 +6,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -52,8 +53,7 @@ public class FoundsListFragment extends Fragment {
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            Model.getInstance().setHistorical(response);
-                            mCustomAdapterHistorical.updateObject(getHistoricalArray(Model.getInstance().getHistorical()));
+                            mCustomAdapterHistorical.updateObject(Model.getInstance().getHistoricalArray());
                             mCustomAdapterHistorical.notifyDataSetChanged();
                             Toast.makeText(getContext(), "Avvistamenti Aggiornati", Toast.LENGTH_LONG).show();
                         }
@@ -67,9 +67,7 @@ public class FoundsListFragment extends Fragment {
             }
         });
 
-
-        String historical = Model.getInstance().getHistorical();
-        mCustomAdapterHistorical = new CustomAdapterHistorical(getContext(), R.layout.raw_hist, getHistoricalArray(historical));
+        mCustomAdapterHistorical = new CustomAdapterHistorical(getContext(), R.layout.raw_hist, Model.getInstance().getHistoricalArray());
         listViewHistorical.setAdapter(mCustomAdapterHistorical);
 
 
@@ -77,25 +75,6 @@ public class FoundsListFragment extends Fragment {
         return view;
     }
 
-    ArrayList<String[]> getHistoricalArray(String historical){
-        JSONArray jArray = null;
-        ArrayList<String[]> arrayList = new ArrayList<String[]>();
-        try {
-            jArray = new JSONArray(historical);
-            for(int i=0; i<jArray.length(); i++) {
-                JSONObject json_obj = jArray.getJSONObject(i);
-                String[] element = new String[3];
-                element[0] = json_obj.getString("playername");
-                element[1] = json_obj.getString("charactername");
-                element[2] = json_obj.getString("date");
 
-                arrayList.add(element);
-            }
-        } catch (JSONException e) {
-            e.printStackTrace();
-        }
-
-        return arrayList;
-    }
 
 }

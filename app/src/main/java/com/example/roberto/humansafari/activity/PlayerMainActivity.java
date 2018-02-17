@@ -1,5 +1,6 @@
 package com.example.roberto.humansafari.activity;
 
+import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
@@ -8,9 +9,11 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.Fragment;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +23,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.ServerConnections;
-import com.example.roberto.humansafari.adapter.SectionsPageAdapterMaster;
 import com.example.roberto.humansafari.adapter.SectionsPageAdapterPlayer;
 import com.example.roberto.humansafari.fragment.FoundsListFragment;
 import com.example.roberto.humansafari.fragment.PlayerCharacterFragment;
@@ -37,6 +39,8 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
     private static final String TAG = "PlayerMainActivity";
 
     public SectionsPageAdapterPlayer mSectionsPageAdapterPlayer;
+
+    public PlayerCharacterFragment playerCharacterFragment = null;
 
     private ViewPager mViewPager;
 
@@ -72,11 +76,13 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
     }
 
     public void setupViewPager(ViewPager viewPager){
-        SectionsPageAdapterMaster adapter = new SectionsPageAdapterMaster(getSupportFragmentManager());
-        adapter.addFragment(new PlayerCharacterFragment(), "Lista");
-        adapter.addFragment(new FoundsListFragment(), "Avvistamenti");
-        adapter.addFragment(new PlayerMapFragment(), "Mappa");
-        viewPager.setAdapter(adapter);
+        playerCharacterFragment = new PlayerCharacterFragment();
+
+        mSectionsPageAdapterPlayer = new SectionsPageAdapterPlayer(getSupportFragmentManager());
+        mSectionsPageAdapterPlayer.addFragment(playerCharacterFragment, "Lista");
+        mSectionsPageAdapterPlayer.addFragment(new FoundsListFragment(), "Avvistamenti");
+        mSectionsPageAdapterPlayer.addFragment(new PlayerMapFragment(), "Mappa");
+        viewPager.setAdapter(mSectionsPageAdapterPlayer);
     }
 
 
@@ -95,10 +101,15 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
 
                 int indexCharacterList = Model.getInstance().getCharaterPositionWithName(nameCharacter);
 
-                //myGoogleApi = new MyGoogleApi(HomeActivity.this);
+                //Setto a true la variabile founded del personaggio (funziona)
+                Model.getInstance().getCharacter().get(indexCharacterList).setFounded(true);
+
                 changePlayerScore(Integer.parseInt(pointCharacter));
                 changeCharacterPosition(indexCharacterList);
                 addFound(nameCharacter);
+                //TODO aggiornare la ListView per mettere la spunta
+                playerCharacterFragment.notifyCheckboxChanged(nameCharacter);
+
 
             }
         }

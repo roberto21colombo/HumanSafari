@@ -28,6 +28,7 @@ import java.io.InputStream;
 import java.lang.ref.WeakReference;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by roberto on 05/10/17.
@@ -35,9 +36,11 @@ import java.util.ArrayList;
 
 public class CustomAdapterPlayerCharacters extends ArrayAdapter<Character>{
     private TextView name;
+    ArrayList<Character> myobjects;
 
     public CustomAdapterPlayerCharacters(@NonNull Context context, @LayoutRes int resource, @NonNull ArrayList<Character> objects) {
         super(context, resource, objects);
+        this.myobjects = objects;
     }
 
     @NonNull
@@ -49,7 +52,8 @@ public class CustomAdapterPlayerCharacters extends ArrayAdapter<Character>{
 
         name = convertView.findViewById(R.id.editTextNameCharacter);
         TextView points = convertView.findViewById(R.id.editTextPoint);
-        ImageView imageView = convertView.findViewById(R.id.imageViewCharacter);
+        ImageView imageViewPhoto = convertView.findViewById(R.id.imageViewCharacter);
+        ImageView imageViewCheck = convertView.findViewById(R.id.imageViewCheckbox);
 
 
         final Character c = getItem(position);
@@ -58,7 +62,11 @@ public class CustomAdapterPlayerCharacters extends ArrayAdapter<Character>{
         points.setText("" + c.getPoints());
         if(c.getImgSrc() != "null") {
             String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/" + c.getImgSrc();
-            new ImageDownloaderTask(new WeakReference(imageView)).execute(url);
+            new ImageDownloaderTask(new WeakReference(imageViewPhoto)).execute(url);
+        }
+
+        if(c.isFounded()){
+            imageViewCheck.setBackgroundResource(R.drawable.checkboxon);
         }
 
 
@@ -68,6 +76,17 @@ public class CustomAdapterPlayerCharacters extends ArrayAdapter<Character>{
         return convertView;
     }
 
+
+    public void setFoundedTrue(String s){
+        for(Character c: myobjects){
+            int i = 0;
+            if(c.getName().equals(s)){
+                myobjects.get(i).setFounded(true);
+                break;
+            }
+            i++;
+        }
+    }
 
 
 

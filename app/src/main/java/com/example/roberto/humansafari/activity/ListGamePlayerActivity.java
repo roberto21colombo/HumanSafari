@@ -5,6 +5,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Display;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
@@ -13,6 +14,7 @@ import android.widget.TextView;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
+import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.adapter.CustomAdapterGames;
@@ -146,6 +148,19 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                 public void onResponse(String response) {
                     Model.getInstance().setHistorical(response);
                     Model.getInstance().setDown("downHist", true);
+
+                    ArrayList<Character> characters = Model.getInstance().getCharacter();
+                    for(String[] s: Model.getInstance().getHistoricalArray()){
+                        String player = s[0];
+                        if(player.equals(Model.getInstance().getPlayerName()))
+                        {
+                            String characterNameFounded = s[1];
+                            int i = Model.getInstance().getCharaterPositionWithName(characterNameFounded);
+
+                            characters.get(i).setFounded(true);
+                        }
+
+                    }
 
                     if(Model.getInstance().getDown("downChar")) {
                         startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));

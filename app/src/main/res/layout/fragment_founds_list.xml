@@ -16,17 +16,9 @@
         android:layout_width="121dp"
         android:layout_height="70dp"
         android:layout_margin="32dp"
-        android:adjustViewBounds="false"
-        android:baselineAlignBottom="false"
-        android:contextClickable="false"
-        android:cropToPadding="false"
         android:src="@drawable/refresh"
-        android:tint="@android:color/transparent"
-        app:backgroundTint="@android:color/transparent"
+        android:backgroundTint="@android:color/white"
         app:elevation="12dp"
         app:layout_anchor="@id/listViewHistorical"
-        app:layout_anchorGravity="bottom|right"
-        app:rippleColor="@android:color/transparent"
-        app:srcCompat="@drawable/refresh"
-        tools:layout_editor_absoluteX="231dp" />
+        app:layout_anchorGravity="bottom|right" />
 </android.support.design.widget.CoordinatorLayout>

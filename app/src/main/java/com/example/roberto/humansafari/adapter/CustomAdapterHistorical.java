@@ -63,14 +63,14 @@ public class CustomAdapterHistorical extends ArrayAdapter<String[]>{
         String nameUser = getItem(position)[0];
         String nameCharacter = getItem(position)[1];
         String date = getItem(position)[2];
-        Character character = Model.getInstance().getCharacter().get(Model.getInstance().getCharaterPositionWithName(getItem(position)[1]));
+        Character character = Model.getInstance().getCharacter().get(Model.getInstance().getCharaterPositionWithName(nameCharacter));
         String imgCharacter = character.getImgSrc();
 
         textViewCharacterName.setText(nameCharacter);
         textViewUserName.setText(nameUser);
         textViewDate.setText(date);
         if(imgCharacter != "null") {
-            String url = "http://www.aclitriuggio.it/wp-pinguino/foto/" + imgCharacter;
+            String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/photo/" + imgCharacter;
             new CustomAdapterHistorical.ImageDownloaderTask(new WeakReference(imageView)).execute(url);
         }
 

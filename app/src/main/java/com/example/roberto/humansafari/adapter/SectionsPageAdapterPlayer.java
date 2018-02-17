@@ -25,6 +25,17 @@ public class SectionsPageAdapterPlayer extends FragmentPagerAdapter {
         super(fm);
     }
 
+    public Fragment getFragmentByTitle(String title){
+        int i=0;
+        for(String s: mFragmentTitleList){
+            if(s.equals(title)){
+                return mFragmentList.get(i);
+            }
+            i++;
+        }
+        return null;
+    }
+
     @Override
     public CharSequence getPageTitle(int position) {
         return mFragmentTitleList.get(position);
