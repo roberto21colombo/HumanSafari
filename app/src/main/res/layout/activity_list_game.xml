@@ -20,15 +20,26 @@
         android:text="Unisciti ad una Partita"
         android:textSize="40dp" />
 
+
+
     <ListView
         android:layout_marginTop="20dp"
         android:id="@+id/lvGames"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-    </ListView>
 
+    </ListView>
     </LinearLayout>
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:id="@+id/progressBarGame"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true" />
+
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/btnNewCharacter"

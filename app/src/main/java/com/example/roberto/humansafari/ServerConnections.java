@@ -52,9 +52,9 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void getUserInfo(String name, String game, Response.Listener<String> responseStringLisener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+    public static void getUserInfo(Response.Listener<String> responseStringLisener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/getuserinfo.php?playername=" + name + "&gamename=" + game;
+                "/getuserinfo.php?playername=" + Model.getInstance().getPlayerName() + "&gamename=" + Model.getInstance().getGameName();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringLisener, responseErrorListener);
         requestQueue.add(stringRequest);
     }

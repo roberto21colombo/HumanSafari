@@ -174,13 +174,15 @@ public class Model
         return null;
     }
     //Dato il nome di un personaggio presente nella partita corrente, ritorna la sua posizione all'interno dell'arraylist
-    public int getCharaterPositionWithName(String name){
-        for(int i = 0; i<alCharacter.size(); i++){
-            if(alCharacter.get(i).getName().equals(name)){
-                return i;
+    public int getCharaterPositionWithName(String s){
+        int i;
+        for(i = 0; i<alCharacter.size(); i++){
+            String nameNextChar = alCharacter.get(i).getName();
+            if(s.equals(nameNextChar)){
+                break;
             }
         }
-        return -1;
+        return i;
     }
 
     public String getGameName() {

@@ -9,6 +9,7 @@ import android.view.Display;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 
 import com.android.volley.Response;
@@ -38,10 +39,14 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
     FloatingActionButton btnAddButton;
     ListView listViewGames;
 
+    Boolean isUserInfo = false, isCharacter = false, isHistorical = false;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_game);
+
+        findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
         listViewGames.setOnItemClickListener(this);
@@ -88,91 +93,107 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
         Model.getInstance().setPlayerName(name);
         Model.getInstance().setGameName(game);
 
-        ServerConnections.getUserInfo(name, game,
-            new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    Log.d("onResponse", response);
-                    try {
-                        JSONArray jsonArray = new JSONArray(response);
+        findViewById(R.id.progressBarGame).setVisibility(View.VISIBLE);
+        getUserInfo();
+        getCharacters();
+        getHistorical();
 
-                        String playerName = jsonArray.getString(0);
-                        String gameName = jsonArray.getString(1);
-                        int point = jsonArray.getInt(2);
+        new Thread(new Runnable() {
+            public void run() {
+                while(!isUserInfo || !isCharacter || !isHistorical) {}
+                startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+            }
+        }).start();
+    }
 
-                        Model.getInstance().setPlayerName(playerName);
-                        Model.getInstance().setGameName(gameName);
-                        Model.getInstance().setScore(point);
+    public void getUserInfo() {
+
+        ServerConnections.getUserInfo(
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("onResponse", response);
+                        try {
+                            JSONArray jsonArray = new JSONArray(response);
+
+                            String playerName = jsonArray.getString(0);
+                            String gameName = jsonArray.getString(1);
+                            int point = jsonArray.getInt(2);
+
+                            Model.getInstance().setPlayerName(playerName);
+                            Model.getInstance().setGameName(gameName);
+                            Model.getInstance().setScore(point);
 
 
-                    } catch (JSONException e) {
-                        e.printStackTrace();
-                    }
+                            isUserInfo = true;
 
-                }
-            },
-            new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Log.d("errorResponse", error.toString());
-                }
-            },
-            Volley.newRequestQueue(this));
-
-        //TODO Scaricare i personaggi relativi alla partita
-        ServerConnections.downloadCharacters(
-            new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    Log.d("onResponse", response);
-                    //Salvo le informazioni nel model
-                    Model.getInstance().setCharacters(response);
-                    Model.getInstance().setDown("downChar", true);
-                    //Una volta salvati i dati chiamo l'activity successiva
-                    if(Model.getInstance().getDown("downHist")) {
-                        startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
-                    }
-                }
-            },
-            new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
-                    Log.d("errorResponse", error.toString());
-                }
-            },
-            Volley.newRequestQueue(this));
-
-        ServerConnections.getHistorical(
-            new Response.Listener<String>() {
-                @Override
-                public void onResponse(String response) {
-                    Model.getInstance().setHistorical(response);
-                    Model.getInstance().setDown("downHist", true);
-
-                    ArrayList<Character> characters = Model.getInstance().getCharacter();
-                    for(String[] s: Model.getInstance().getHistoricalArray()){
-                        String player = s[0];
-                        if(player.equals(Model.getInstance().getPlayerName()))
-                        {
-                            String characterNameFounded = s[1];
-                            int i = Model.getInstance().getCharaterPositionWithName(characterNameFounded);
-
-                            characters.get(i).setFounded(true);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
                         }
 
                     }
-
-                    if(Model.getInstance().getDown("downChar")) {
-                        startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("errorResponse", error.toString());
                     }
-                }
-            },
-            new Response.ErrorListener() {
-                @Override
-                public void onErrorResponse(VolleyError error) {
+                },
+                Volley.newRequestQueue(this));
+    }
+    public void getCharacters(){
+        //TODO Scaricare i personaggi relativi alla partita
+        ServerConnections.downloadCharacters(
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("onResponse", response);
+                        //Salvo le informazioni nel model
+                        Model.getInstance().setCharacters(response);
 
-                }
-            }, Volley.newRequestQueue(this));
+                        //Una volta salvati i dati chiamo l'activity successiva
+                        isCharacter = true;
 
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("errorResponse", error.toString());
+                    }
+                },
+                Volley.newRequestQueue(this));
+    }
+    public void getHistorical(){
+        ServerConnections.getHistorical(
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Model.getInstance().setHistorical(response);
+
+                        ArrayList<Character> characters = Model.getInstance().getCharacter();
+                        for(String[] s: Model.getInstance().getHistoricalArray()){
+                            String player = s[0];
+                            if(player.equals(Model.getInstance().getPlayerName()))
+                            {
+                                String characterNameFounded = s[1];
+                                int i = Model.getInstance().getCharaterPositionWithName(characterNameFounded);
+
+                                characters.get(i).setFounded(true);
+                            }
+
+                        }
+
+                        isHistorical = true;
+
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+
+                    }
+                }, Volley.newRequestQueue(this));
     }
 }
