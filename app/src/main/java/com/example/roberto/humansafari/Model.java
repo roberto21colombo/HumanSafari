@@ -1,6 +1,8 @@
 package com.example.roberto.humansafari;
 
 
+import android.util.Log;
+
 import com.google.android.gms.maps.model.LatLng;
 
 import org.json.JSONArray;
@@ -217,6 +219,21 @@ public class Model
         //Creo il file corrispondente
         // /data/user/0/com.example.roberto.humansafari/files/myfile
         File file = new File(dir, fileName);
+    }
+
+    public void setCheckedMyFound(){
+        for(String[] s: getHistoricalArray()){
+            String player = s[0];
+            if(player.equals(getPlayerName()))
+            {
+                String characterNameFounded = s[1];
+                int i = getCharaterPositionWithName(characterNameFounded);
+                Log.d("Personaggio", characterNameFounded);
+                Log.d("PosizionePersonaggio", "+i");
+                alCharacter.get(i).setFounded(true);
+            }
+
+        }
     }
 
     public class CustomComparatorUsers implements Comparator<User> {

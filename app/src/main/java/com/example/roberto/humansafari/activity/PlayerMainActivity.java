@@ -72,7 +72,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
         tvPlayerName.setText(Model.getInstance().getPlayerName());
         tvScore.setText(Model.getInstance().getScore() + " Punti");
 
-
+        Model.getInstance().setCheckedMyFound();
     }
 
     public void setupViewPager(ViewPager viewPager){
@@ -115,6 +115,11 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
         }
 
         super.onActivityResult(requestCode, resultCode, data);
+    }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(PlayerMainActivity.this, ListGamePlayerActivity.class));
     }
 
 

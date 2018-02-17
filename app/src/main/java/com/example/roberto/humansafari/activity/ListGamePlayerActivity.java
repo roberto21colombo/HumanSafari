@@ -86,6 +86,11 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
     }
 
     @Override
+    public void onBackPressed() {
+        startActivity(new Intent(ListGamePlayerActivity.this, MainActivity.class));
+    }
+
+    @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         String name = ((TextView)view.findViewById(R.id.rawPlayer)).getText().toString();
         String game = ((TextView)view.findViewById(R.id.rawGameName)).getText().toString();
@@ -100,7 +105,12 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
 
         new Thread(new Runnable() {
             public void run() {
-                while(!isUserInfo || !isCharacter || !isHistorical) {}
+                isUserInfo = false; isCharacter = false; isHistorical = false;
+                while(!isUserInfo || !isCharacter || !isHistorical) {
+                    Log.d("UserInfo",""+isUserInfo);
+                    Log.d("Characters",""+isCharacter);
+                    Log.d("Historical",""+isHistorical);
+                }
                 startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
             }
         }).start();
@@ -115,18 +125,10 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                         Log.d("onResponse", response);
                         try {
                             JSONArray jsonArray = new JSONArray(response);
-
-                            String playerName = jsonArray.getString(0);
-                            String gameName = jsonArray.getString(1);
                             int point = jsonArray.getInt(2);
-
-                            Model.getInstance().setPlayerName(playerName);
-                            Model.getInstance().setGameName(gameName);
                             Model.getInstance().setScore(point);
 
-
                             isUserInfo = true;
-
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -147,14 +149,10 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
-                        Log.d("onResponse", response);
                         //Salvo le informazioni nel model
                         Model.getInstance().setCharacters(response);
-
                         //Una volta salvati i dati chiamo l'activity successiva
                         isCharacter = true;
-
-
                     }
                 },
                 new Response.ErrorListener() {
@@ -170,23 +168,9 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        //Aggiungo sul Model lo storico
                         Model.getInstance().setHistorical(response);
-
-                        ArrayList<Character> characters = Model.getInstance().getCharacter();
-                        for(String[] s: Model.getInstance().getHistoricalArray()){
-                            String player = s[0];
-                            if(player.equals(Model.getInstance().getPlayerName()))
-                            {
-                                String characterNameFounded = s[1];
-                                int i = Model.getInstance().getCharaterPositionWithName(characterNameFounded);
-
-                                characters.get(i).setFounded(true);
-                            }
-
-                        }
-
                         isHistorical = true;
-
                     }
                 },
                 new Response.ErrorListener() {
