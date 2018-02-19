@@ -40,13 +40,13 @@ public class ServerConnections {
 
     public static void changePosition(Response.Listener<String> responsStringListener, Response.ErrorListener errorListener, RequestQueue requestQueue, int i){
         Character c = Model.getInstance().getCharacter().get(i);
-        int id = c.getId();
+        String name = c.getName();
         //final String name = c.getName();
         double lat = c.getLastPosition().latitude;
         double lng = c.getLastPosition().longitude;
 
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/updatelastposition.php?id=" + id + "&lat=" + lat + "&lng=" + lng;
+                "/updatelastposition.php?name=" + name + "&game=" + Model.getInstance().getGameName() + "&lat=" + lat + "&lng=" + lng;
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responsStringListener, errorListener);
 
         requestQueue.add(stringRequest);

@@ -11,6 +11,7 @@ import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -103,6 +104,7 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
         getCharacters();
         getHistorical();
 
+        /*
         new Thread(new Runnable() {
             public void run() {
                 isUserInfo = false; isCharacter = false; isHistorical = false;
@@ -110,10 +112,13 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                     Log.d("UserInfo",""+isUserInfo);
                     Log.d("Characters",""+isCharacter);
                     Log.d("Historical",""+isHistorical);
+                    //Toast.makeText(ListGamePlayerActivity.this, " " + isUserInfo+ " "+ isCharacter + " " + isHistorical, Toast.LENGTH_SHORT).show();
+
                 }
                 startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
             }
         }).start();
+        */
     }
 
     public void getUserInfo() {
@@ -129,6 +134,10 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                             Model.getInstance().setScore(point);
 
                             isUserInfo = true;
+                            if(isUserInfo && isCharacter && isHistorical){
+                                findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
+                                startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -153,6 +162,10 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                         Model.getInstance().setCharacters(response);
                         //Una volta salvati i dati chiamo l'activity successiva
                         isCharacter = true;
+                        if(isUserInfo && isCharacter && isHistorical){
+                            findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
+                            startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -171,6 +184,10 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
                         //Aggiungo sul Model lo storico
                         Model.getInstance().setHistorical(response);
                         isHistorical = true;
+                        if(isUserInfo && isCharacter && isHistorical){
+                            findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
+                            startActivity(new Intent(ListGamePlayerActivity.this, PlayerMainActivity.class));
+                        }
                     }
                 },
                 new Response.ErrorListener() {
