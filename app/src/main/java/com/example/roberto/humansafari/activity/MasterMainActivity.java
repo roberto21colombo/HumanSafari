@@ -1,5 +1,6 @@
 package com.example.roberto.humansafari.activity;
 
+import android.content.Intent;
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 
@@ -41,6 +42,10 @@ public class MasterMainActivity extends AppCompatActivity {
         tvCodCharacter.setText(Model.getInstance().getCodCharacters());
     }
 
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(MasterMainActivity.this, ListGameMasterActivity.class));
+    }
     public void setupViewPager(ViewPager viewPager){
         SectionsPageAdapterMaster adapter = new SectionsPageAdapterMaster(getSupportFragmentManager());
         adapter.addFragment(new MasterCharacterFragment(), "Personaggi");

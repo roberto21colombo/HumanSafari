@@ -31,10 +31,14 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
     FloatingActionButton btnAddButton;
     ListView listViewGames;
 
+    Boolean isUserInfo = false, isCharacter = false, isHistorical = true;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_game);
+
+        findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
 
         listViewGames = (ListView) findViewById(R.id.lvGames);
         btnAddButton = (FloatingActionButton) findViewById(R.id.btnNewCharacter);
@@ -87,7 +91,33 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
         Model.getInstance().setGameName(gameName);
         Model.getInstance().setCodCharacters(codChar);
 
+        findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
+        getUserInfo();
+        getCharacters();
+    }
 
+    public void getUserInfo(){
+        ServerConnections.getUsers
+            (new Response.Listener<String>(){
+                @Override
+                public void onResponse(String response) {
+                    Model.getInstance().setUsers(response);
+                    isUserInfo = true;
+                    if(isCharacter && isUserInfo) {
+                        findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
+                        startActivity(new Intent(ListGameMasterActivity.this, MasterMainActivity.class));
+                    }
+                }
+            }, new Response.ErrorListener(){
+                @Override
+                public void onErrorResponse(VolleyError error) {
+
+                }
+            }, Volley.newRequestQueue(this)
+        );
+    }
+
+    public void getCharacters(){
         //Scarico le informazioni dei character
         ServerConnections.downloadCharacters(
                 new Response.Listener<String>() {
@@ -96,9 +126,11 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
                         Log.d("onResponse", response);
                         //Salvo le informazioni nel model
                         Model.getInstance().setCharacters(response);
-                        Model.getInstance().setDown("downChar", true);
-                        //Una volta salvati i dati chiamo l'activity successiva
-
+                        isCharacter = true;
+                        if(isCharacter && isUserInfo){
+                            findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
+                            startActivity(new Intent(ListGameMasterActivity.this, MasterMainActivity.class));
+                        }
                     }
                 },
                 new Response.ErrorListener() {
@@ -107,24 +139,7 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
                         Log.d("errorResponse", error.toString());
                     }
                 },
-                Volley.newRequestQueue(this));
-
-
-        ServerConnections.getUsers(new Response.Listener<String>(){
-            @Override
-            public void onResponse(String response) {
-                Model.getInstance().setUsers(response);
-
-                startActivity(new Intent(ListGameMasterActivity.this, MasterMainActivity.class));
-            }
-        }, new Response.ErrorListener(){
-            @Override
-            public void onErrorResponse(VolleyError error) {
-
-            }
-        }, Volley.newRequestQueue(this));
-        //TODO scarico le informazioni della partita: Giocatori
-        //TODO memorizzo Giocatori nel Model
-
+                Volley.newRequestQueue(this)
+        );
     }
 }

@@ -32,10 +32,10 @@ public class NewCharacterActivity extends AppCompatActivity {
     Button btnAddCharacter;
     ImageView ivPictures;
 
-    Bitmap fixBitmap;
+    Bitmap fixBitmap = null;
     ByteArrayOutputStream byteArrayOutputStream ;
     byte[] byteArray ;
-    String convertImage ;
+    String convertImage = "";
 
     final int IMG_REQUEST = 1;
 
@@ -69,10 +69,13 @@ public class NewCharacterActivity extends AppCompatActivity {
                 public void onClick(View view) {
                     final String name = edNameCharacter.getText().toString();
                     final String point = edPoint.getText().toString();
+                    //TODO controllare se una foto è stata selezionata o meno, altrimenti crasha
+                    if (fixBitmap != null){
+                        fixBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+                        byteArray = byteArrayOutputStream.toByteArray();
+                        convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
+                    }
 
-                    fixBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
-                    byteArray = byteArrayOutputStream.toByteArray();
-                    convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
 
                     ServerConnections.addCharacter(name, point, convertImage, new Response.Listener<String>() {
                         @Override
@@ -81,6 +84,7 @@ public class NewCharacterActivity extends AppCompatActivity {
                             //Salvo le informazioni nel model
                             Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point)));
                             Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
+
                             //Una volta salvati i dati torno all'activity precedente
                             startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
                         }
@@ -102,13 +106,23 @@ public class NewCharacterActivity extends AppCompatActivity {
                     final String name = edNameCharacter.getText().toString();
                     final String point = edPoint.getText().toString();
 
-                    ServerConnections.modCharacter(oldName, name, point, new Response.Listener<String>() {
+                    fixBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
+                    byteArray = byteArrayOutputStream.toByteArray();
+                    convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
+
+                    ServerConnections.modCharacter(oldName, name, point, convertImage, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
                             Log.d("onResponse", response);
                             //Salvo le informazioni nel model
-                            Model.getInstance().getCharacters().remove(charater);
-                            Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point)));
+                            Model.getInstance().getCharacterWithName(oldName).setName(name);
+                            Model.getInstance().getCharacterWithName(oldName).setPoints(Integer.parseInt(point));
+                            if(convertImage != null) {
+                                Model.getInstance().getCharacterWithName(oldName).updateImgSrc();
+                            }
+
+                            //Model.getInstance().getCharacters().remove(charater);
+                            //Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point), ));
                             Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
                             //Una volta salvati i dati torno all'activity precedente
                             startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
@@ -117,6 +131,8 @@ public class NewCharacterActivity extends AppCompatActivity {
                 }
             });
         }
+
+
     }
 
     @Override

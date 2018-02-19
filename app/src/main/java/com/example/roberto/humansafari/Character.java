@@ -77,8 +77,8 @@ public class Character {
         this.name = name;
     }
 
-    public void setImgSrc(int imgSrc) {
-        this.img = img;
+    public void updateImgSrc() {
+        this.img = "photo/" + Model.getInstance().getGameName() + "_" + name + ".jpg";
     }
 
     public void setPoints(int points) {

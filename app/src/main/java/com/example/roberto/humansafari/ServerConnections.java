@@ -67,7 +67,6 @@ public class ServerConnections {
     }
 
     public static void addCharacter(final String name, final String point, final String image, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
-        //String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/addcharacter.php?name=" + name + "&point=" + point + "&game=" + Model.getInstance().getGameName() + "&image=" + image;
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/addcharacter.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, responseStringListener, responseErrorListener)
 
@@ -86,10 +85,22 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void modCharacter(String oldName, String name, String point, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/modcharacter.php?oldname=" + oldName + "&name=" + name + "&point=" + point + "&game=" + Model.getInstance().getGameName();
-        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+    public static void modCharacter(final String oldName, final String name, final String point, final String image, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/modcharacter.php";
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url, responseStringListener, responseErrorListener)
+        {
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError{
+                Map<String, String> params = new HashMap<String, String>();
+                params.put("oldname", oldName);
+                params.put("name", name);
+                params.put("point", point);
+                params.put("image", image);
+                params.put("game", Model.getInstance().getGameName());
+
+                return params;
+            }
+        };
         requestQueue.add(stringRequest);
     }
 
