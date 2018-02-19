@@ -156,7 +156,7 @@ public class HomeActivity extends AppCompatActivity implements GoogleApiClient.C
     public void changeCharacterPosition(int i) {
 
         LatLng position = getPosition();
-        Model.getInstance().getCharacter().get(i).setLastPosition(position);
+        Model.getInstance().getCharacters().get(i).setLastPosition(position);
         ServerConnections.changePosition(
             new Response.Listener<String>() {
                 @Override

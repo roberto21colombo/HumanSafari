@@ -39,7 +39,7 @@ public class ServerConnections {
 
 
     public static void changePosition(Response.Listener<String> responsStringListener, Response.ErrorListener errorListener, RequestQueue requestQueue, int i){
-        Character c = Model.getInstance().getCharacter().get(i);
+        Character c = Model.getInstance().getCharacters().get(i);
         String name = c.getName();
         //final String name = c.getName();
         double lat = c.getLastPosition().latitude;
@@ -102,7 +102,7 @@ public class ServerConnections {
 
     public static void changeTime(int i, Context context){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
-                "/changetime.php?id=" + Model.getInstance().getCharacter().get(i).getId() + "&time=" + Model.getInstance().getCharacter().get(i).getTime();
+                "/changetime.php?id=" + Model.getInstance().getCharacters().get(i).getId() + "&time=" + Model.getInstance().getCharacters().get(i).getTime();
         RequestQueue requestQueue = Volley.newRequestQueue(context);
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, new Response.Listener<String>() {
             @Override

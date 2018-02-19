@@ -45,7 +45,7 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
 
 
         mListView = (ListView) findViewById(R.id.listViewCharacters);
-        mListView.setAdapter(new CustomAdapterMasterCharacters(this, R.layout.raw_master_character, Model.getInstance().getCharacter()));
+        mListView.setAdapter(new CustomAdapterMasterCharacters(this, R.layout.raw_master_character, Model.getInstance().getCharacters()));
         mListView.setOnItemClickListener(this);
 
 
@@ -54,7 +54,7 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        if (Model.getInstance().getCharacter().get(i).isCatchable()) {
+        if (Model.getInstance().getCharacters().get(i).isCatchable()) {
             changePlayerScore(i);
             changeLastCharacterPosition(i);
             //changeTimeAbleCharacter(i);
@@ -62,14 +62,14 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
 
             startActivity(new Intent(ListCharacterActivity.this, HomeActivity.class));
         } else {
-            long deltaTime = Model.getInstance().getCharacter().get(i).getDeltaTime();
+            long deltaTime = Model.getInstance().getCharacters().get(i).getDeltaTime();
             long seconds = TimeUnit.MILLISECONDS.toSeconds((int) deltaTime);
             Toast.makeText(this, "Devi attendere " + (-seconds) + " secondi.", Toast.LENGTH_LONG).show();
         }
     }
 
     public void changePlayerScore(int i) {
-        int characterPoint = Model.getInstance().getCharacter().get(i).getPoints();
+        int characterPoint = Model.getInstance().getCharacters().get(i).getPoints();
         int playerPoint = Model.getInstance().getScore();
         Model.getInstance().setScore(characterPoint + playerPoint);
         //ServerConnections.setScore(ListCharacterActivity.this);
@@ -96,7 +96,7 @@ public class ListCharacterActivity extends AppCompatActivity implements GoogleAp
             }
 
         }
-        Model.getInstance().getCharacter().get(i).setLastPosition(lastPosition);
+        Model.getInstance().getCharacters().get(i).setLastPosition(lastPosition);
         //ServerConnections.changePosition(i, ListCharacterActivity.this);
     }
 

@@ -5,6 +5,8 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -57,7 +59,7 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
                 integrator.initiateScan();
             }
         });
-        ArrayList<Character> mArrayList = Model.getInstance().getCharacter();
+        ArrayList<Character> mArrayList = Model.getInstance().getCharacters();
 
         mCustomAdapterPlayerCharacters = new CustomAdapterPlayerCharacters(getActivity(), R.layout.raw_player_character, mArrayList);
         mListView.setAdapter(mCustomAdapterPlayerCharacters);
@@ -70,6 +72,12 @@ public class PlayerCharacterFragment extends Fragment implements AdapterView.OnI
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
         //TODO onclick sul personaggio, aprire mappa
+        if(Model.getInstance().getCharacters().get(i).getLastPosition() != null) {
+            Model.getInstance().setCharacterSelectedMap(i);
+            ((PlayerMainActivity) getActivity()).tabLayout.getTabAt(2).select();
+        }else{
+            Toast.makeText(getContext(), "Personaggio non ancora trovato", Toast.LENGTH_LONG).show();
+        }
     }
 
 

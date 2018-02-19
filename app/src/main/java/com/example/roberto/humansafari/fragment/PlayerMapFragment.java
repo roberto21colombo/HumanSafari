@@ -33,6 +33,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
@@ -56,6 +57,7 @@ public class PlayerMapFragment extends Fragment implements OnMapReadyCallback, G
     private MapView mapView;
     private GoogleMap mGoogleMap;
 
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -66,7 +68,7 @@ public class PlayerMapFragment extends Fragment implements OnMapReadyCallback, G
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_player_map, container, false);
 
-        arrayListCharacter = Model.getInstance().getCharacter();
+        arrayListCharacter = Model.getInstance().getCharacters();
 
         if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(getContext()).addConnectionCallbacks(this)
@@ -108,12 +110,20 @@ public class PlayerMapFragment extends Fragment implements OnMapReadyCallback, G
     }
 
     public void markFriends(GoogleMap map){
+        Character characterSelected = Model.getInstance().getCharacterSelectedMap();
         for(Character c : arrayListCharacter){
             if(c.getLastPosition() != null) {
-                map.addMarker(new MarkerOptions().position(c.getLastPosition())
-                        .title(c.getName()));
+                if(!c.equals(characterSelected)){
+                    map.addMarker(new MarkerOptions().position(c.getLastPosition())
+                            .title(c.getName()));
+                }else {
+                    map.addMarker(new MarkerOptions().position(characterSelected.getLastPosition())
+                            .title(characterSelected.getName())
+                            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
+                }
             }
         }
+        Model.getInstance().setCharacterSelectedMap(-1);
     }
 
     public LatLngBounds getLatLngBound(){

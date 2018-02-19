@@ -79,8 +79,8 @@ public class NewCharacterActivity extends AppCompatActivity {
                         public void onResponse(String response) {
                             Log.d("onResponse", response);
                             //Salvo le informazioni nel model
-                            Model.getInstance().getCharacter().add(new Character(name, Integer.parseInt(point)));
-                            Collections.sort(Model.getInstance().getCharacter(), new CustomComparatorCharacter());
+                            Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point)));
+                            Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
                             //Una volta salvati i dati torno all'activity precedente
                             startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
                         }
@@ -88,7 +88,7 @@ public class NewCharacterActivity extends AppCompatActivity {
                 }
             });
         }else{
-            Character c = Model.getInstance().getCharacter().get(charater);
+            Character c = Model.getInstance().getCharacters().get(charater);
             final String oldName = c.getName();
 
             ((TextView)findViewById(R.id.tvTitle)).setText("Modifica Personaggio");
@@ -107,9 +107,9 @@ public class NewCharacterActivity extends AppCompatActivity {
                         public void onResponse(String response) {
                             Log.d("onResponse", response);
                             //Salvo le informazioni nel model
-                            Model.getInstance().getCharacter().remove(charater);
-                            Model.getInstance().getCharacter().add(new Character(name, Integer.parseInt(point)));
-                            Collections.sort(Model.getInstance().getCharacter(), new CustomComparatorCharacter());
+                            Model.getInstance().getCharacters().remove(charater);
+                            Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point)));
+                            Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
                             //Una volta salvati i dati torno all'activity precedente
                             startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
                         }

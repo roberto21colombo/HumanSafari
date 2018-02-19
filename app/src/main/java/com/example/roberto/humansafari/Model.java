@@ -34,6 +34,8 @@ public class Model
 
     private boolean downChar, downUsr, downHist;
 
+    private Character characterSelectedMap = null;
+
     private Model()
     {
         alCharacter = new ArrayList<Character>();
@@ -93,9 +95,20 @@ public class Model
         }
     }
 
-    public ArrayList<Character> getCharacter()
+    public ArrayList<Character> getCharacters()
     {
         return alCharacter;
+    }
+
+    public Character getCharacterWithName(String name){
+        int i;
+        for(i = 0; i<alCharacter.size(); i++){
+            String nameNextChar = alCharacter.get(i).getName();
+            if(name.equals(nameNextChar)){
+                break;
+            }
+        }
+        return alCharacter.get(i);
     }
 
     public int getScore(){
@@ -233,6 +246,18 @@ public class Model
                 alCharacter.get(i).setFounded(true);
             }
 
+        }
+    }
+
+    public Character getCharacterSelectedMap() {
+        return characterSelectedMap;
+    }
+
+    public void setCharacterSelectedMap(int i) {
+        if(i == -1){
+            characterSelectedMap = null;
+        }else {
+            characterSelectedMap = alCharacter.get(i);
         }
     }
 

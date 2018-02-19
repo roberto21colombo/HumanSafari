@@ -42,7 +42,7 @@ public class MasterCharacterFragment extends Fragment implements AdapterView.OnI
                 getActivity().startActivity(new Intent(getActivity(), NewCharacterActivity.class));
             }
         });
-        ArrayList<Character> mArrayList = Model.getInstance().getCharacter();
+        ArrayList<Character> mArrayList = Model.getInstance().getCharacters();
 
         mListView.setAdapter(new CustomAdapterMasterCharacters(getActivity(), R.layout.raw_master_character, mArrayList));
         mListView.setOnItemClickListener(this);

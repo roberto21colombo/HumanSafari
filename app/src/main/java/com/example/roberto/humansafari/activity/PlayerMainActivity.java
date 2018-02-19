@@ -43,6 +43,8 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
 
     TextView tvGameName, tvPlayerName, tvScore;
 
+    public TabLayout tabLayout;
+
     Boolean userPermission = false;
     Boolean googlePlayServiceConnected = false;
     GoogleApiClient mGoogleApiClient = null;
@@ -59,7 +61,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
         mViewPager = (ViewPager)findViewById(R.id.container);
         setupViewPager(mViewPager);
 
-        TabLayout tabLayout = (TabLayout)findViewById(R.id.tabs);
+        tabLayout = (TabLayout)findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(mViewPager);
 
         tvGameName = (TextView)findViewById(R.id.tvGameName);
@@ -99,7 +101,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
                 int indexCharacterList = Model.getInstance().getCharaterPositionWithName(nameCharacter);
 
                 //Setto a true la variabile founded del personaggio (funziona)
-                Model.getInstance().getCharacter().get(indexCharacterList).setFounded(true);
+                Model.getInstance().getCharacters().get(indexCharacterList).setFounded(true);
 
                 changePlayerScore(Integer.parseInt(pointCharacter));
                 changeCharacterPosition(indexCharacterList);
@@ -141,7 +143,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
     public void changeCharacterPosition(int i) {
 
         LatLng position = getMyPosition();
-        Model.getInstance().getCharacter().get(i).setLastPosition(position);
+        Model.getInstance().getCharacters().get(i).setLastPosition(position);
         ServerConnections.changePosition(
                 new Response.Listener<String>() {
                     @Override
