@@ -3,25 +3,19 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <ImageView
-        android:layout_margin="10dp"
-        android:id="@+id/imageViewCharacter"
-        android:layout_width="65dp"
-        android:layout_height="65dp"
-        android:src="@drawable/binocularflat"
-        android:layout_weight="0.25" />
 
     <TextView
         android:textColor="@android:color/black"
         android:gravity="center_vertical"
         android:layout_margin="10dp"
+        android:layout_marginLeft="30dp"
         android:id="@+id/editTextNameUser"
         android:layout_width="wrap_content"
         android:layout_height="65dp"
         android:fontFamily="cursive"
         android:text="mia text view"
         android:textSize="30sp"
-        android:layout_weight="0.5"/>
+        android:layout_weight="0.75"/>
 
     <TextView
         android:textColor="@android:color/black"

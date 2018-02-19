@@ -23,7 +23,7 @@ import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.adapter.SectionsPageAdapterPlayer;
 import com.example.roberto.humansafari.fragment.FoundsListFragment;
 import com.example.roberto.humansafari.fragment.PlayerCharacterFragment;
-import com.example.roberto.humansafari.fragment.PlayerMapFragment;
+import com.example.roberto.humansafari.fragment.MapFragment;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
@@ -80,7 +80,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
         mSectionsPageAdapterPlayer = new SectionsPageAdapterPlayer(getSupportFragmentManager());
         mSectionsPageAdapterPlayer.addFragment(playerCharacterFragment, "Lista");
         mSectionsPageAdapterPlayer.addFragment(new FoundsListFragment(), "Avvistamenti");
-        mSectionsPageAdapterPlayer.addFragment(new PlayerMapFragment(), "Mappa");
+        mSectionsPageAdapterPlayer.addFragment(new MapFragment(), "Mappa");
         viewPager.setAdapter(mSectionsPageAdapterPlayer);
     }
 
