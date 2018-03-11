@@ -177,5 +177,12 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void isGamePlayerExist(String playerName, String game, Response.Listener<String> responseStringListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari" +
+                "/isgameplayerexist.php?playername="+playerName+ "&game="+game;
+
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, null);
+        requestQueue.add(stringRequest);
+    }
 
 }

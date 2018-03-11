@@ -142,4 +142,9 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
                 Volley.newRequestQueue(this)
         );
     }
+
+    @Override
+    public void onBackPressed() {
+        startActivity(new Intent(ListGameMasterActivity.this, MainActivity.class));
+    }
 }

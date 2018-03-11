@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -42,8 +43,49 @@ public class JoinGameActivity extends AppCompatActivity implements View.OnClickL
     public void onClick(View view) {
         final String gameName = edGameName.getText().toString();
         final String playerName = edPlayerName.getText().toString();
-        String data = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) + "-" + (Calendar.getInstance().get(Calendar.MONTH)+1) + "-" + Calendar.getInstance().get(Calendar.YEAR);
+        final String data = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) + "-" + (Calendar.getInstance().get(Calendar.MONTH)+1) + "-" + Calendar.getInstance().get(Calendar.YEAR);
 
+
+
+        ServerConnections.isGamePlayerExist(playerName, gameName, new Response.Listener<String>(){
+            @Override
+            public void onResponse(String response) {
+                if(response.equals("game")){
+                    Toast.makeText(JoinGameActivity.this, "Partita non esitente", Toast.LENGTH_LONG).show();
+                }else if(response.equals("name")){
+                    Toast.makeText(JoinGameActivity.this, "Giocatore già esistente", Toast.LENGTH_LONG).show();
+                }else{
+                    aggiungiPartita(playerName, gameName, data);
+                }
+            }
+        }, Volley.newRequestQueue(this));
+    }
+
+
+    private void aggiungiPartita(final String gameName, final String playerName, final String data){
+        ServerConnections.addPlayer(playerName, gameName, new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        Log.d("onResponse", response);
+
+                        salvaInLocale(gameName, playerName, data);
+
+                        Model.getInstance().setPlayerName(playerName);
+                        Model.getInstance().setGameName(gameName);
+                        Intent intent = new Intent(JoinGameActivity.this, ListGamePlayerActivity.class);
+                        startActivity(intent);
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Log.d("errorResponse", error.toString());
+                    }
+                },
+                Volley.newRequestQueue(JoinGameActivity.this));
+    }
+
+    private void salvaInLocale(String gameName, String playerName, String data){
         //Creo il file corrispondente
         // /data/user/0/com.example.roberto.humansafari/files/myfile
         File file = new File(this.getFilesDir(), "myfile");
@@ -58,28 +100,7 @@ public class JoinGameActivity extends AppCompatActivity implements View.OnClickL
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        //TODO controllare che la partita esisti veramente e che non esistino altri giocatori con quel nome
-        ServerConnections.addPlayer(playerName, gameName, new Response.Listener<String>() {
-                    @Override
-                    public void onResponse(String response) {
-                        Log.d("onResponse", response);
-                        Model.getInstance().setPlayerName(playerName);
-                        Model.getInstance().setGameName(gameName);
-                        Intent intent = new Intent(JoinGameActivity.this, ListGamePlayerActivity.class);
-                        startActivity(intent);
-                    }
-                },
-                new Response.ErrorListener() {
-                    @Override
-                    public void onErrorResponse(VolleyError error) {
-                        Log.d("errorResponse", error.toString());
-                    }
-                },
-                Volley.newRequestQueue(this));
-
     }
-
 }
 
 
