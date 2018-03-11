@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Mar 11 13:47:07 CET 2018
+#Sun Mar 11 16:41:05 CET 2018
 2.base=/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/transforms/dexMerger/debug/31
 5.set=DEX
 0.path=classes.dex

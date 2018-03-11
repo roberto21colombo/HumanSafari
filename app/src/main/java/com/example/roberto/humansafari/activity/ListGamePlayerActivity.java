@@ -93,7 +93,7 @@ public class ListGamePlayerActivity extends AppCompatActivity implements Adapter
 
     @Override
     public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-        String name = ((TextView)view.findViewById(R.id.rawPlayer)).getText().toString();
+        String name = ((TextView)view.findViewById(R.id.rawPlayerName)).getText().toString();
         String game = ((TextView)view.findViewById(R.id.rawGameName)).getText().toString();
 
         Model.getInstance().setPlayerName(name);

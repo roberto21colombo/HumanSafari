@@ -39,11 +39,14 @@ public class JoinGameActivity extends AppCompatActivity implements View.OnClickL
     }
 
 
+    String gameName;
+    String playerName;
+    String data;
     @Override
     public void onClick(View view) {
-        final String gameName = edGameName.getText().toString();
-        final String playerName = edPlayerName.getText().toString();
-        final String data = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) + "-" + (Calendar.getInstance().get(Calendar.MONTH)+1) + "-" + Calendar.getInstance().get(Calendar.YEAR);
+        gameName= edGameName.getText().toString();
+        playerName = edPlayerName.getText().toString();
+        data = Calendar.getInstance().get(Calendar.DAY_OF_MONTH) + "-" + (Calendar.getInstance().get(Calendar.MONTH)+1) + "-" + Calendar.getInstance().get(Calendar.YEAR);
 
 
 
@@ -55,20 +58,20 @@ public class JoinGameActivity extends AppCompatActivity implements View.OnClickL
                 }else if(response.equals("name")){
                     Toast.makeText(JoinGameActivity.this, "Giocatore già esistente", Toast.LENGTH_LONG).show();
                 }else{
-                    aggiungiPartita(playerName, gameName, data);
+                    aggiungiPartita();
                 }
             }
         }, Volley.newRequestQueue(this));
     }
 
 
-    private void aggiungiPartita(final String gameName, final String playerName, final String data){
+    private void aggiungiPartita(){
         ServerConnections.addPlayer(playerName, gameName, new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
                         Log.d("onResponse", response);
 
-                        salvaInLocale(gameName, playerName, data);
+                        salvaInLocale();
 
                         Model.getInstance().setPlayerName(playerName);
                         Model.getInstance().setGameName(gameName);
@@ -85,7 +88,7 @@ public class JoinGameActivity extends AppCompatActivity implements View.OnClickL
                 Volley.newRequestQueue(JoinGameActivity.this));
     }
 
-    private void salvaInLocale(String gameName, String playerName, String data){
+    private void salvaInLocale(){
         //Creo il file corrispondente
         // /data/user/0/com.example.roberto.humansafari/files/myfile
         File file = new File(this.getFilesDir(), "myfile");

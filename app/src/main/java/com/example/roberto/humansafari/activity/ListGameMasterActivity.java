@@ -40,6 +40,7 @@ public class ListGameMasterActivity extends AppCompatActivity implements Adapter
 
         findViewById(R.id.progressBarGame).setVisibility(View.INVISIBLE);
 
+        ((TextView)findViewById(R.id.title)).setText("Gestisci una Partita");
         listViewGames = (ListView) findViewById(R.id.lvGames);
         btnAddButton = (FloatingActionButton) findViewById(R.id.btnNewCharacter);
         btnAddButton.setOnClickListener(new View.OnClickListener() {

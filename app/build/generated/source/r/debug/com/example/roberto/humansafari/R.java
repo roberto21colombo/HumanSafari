@@ -5224,7 +5224,7 @@ public final class R {
     public static final int radio=0x7f0a0112;
     public static final int rawDate=0x7f0a0113;
     public static final int rawGameName=0x7f0a0114;
-    public static final int rawPlayer=0x7f0a0115;
+    public static final int rawPlayerName=0x7f0a0115;
     public static final int rfc822=0x7f0a0116;
     public static final int right=0x7f0a0117;
     public static final int right_icon=0x7f0a0118;

@@ -1605,7 +1605,7 @@ int id progress_horizontal 0x7f0a0111
 int id radio 0x7f0a0112
 int id rawDate 0x7f0a0113
 int id rawGameName 0x7f0a0114
-int id rawPlayer 0x7f0a0115
+int id rawPlayerName 0x7f0a0115
 int id rfc822 0x7f0a0116
 int id right 0x7f0a0117
 int id right_icon 0x7f0a0118

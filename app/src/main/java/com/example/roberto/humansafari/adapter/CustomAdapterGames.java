@@ -35,7 +35,7 @@ public class CustomAdapterGames extends ArrayAdapter<String[]> {
         if(resource == R.layout.raw_game_player){
             convertView = inflater.inflate(R.layout.raw_game_player, null);
             TextView tvGame = convertView.findViewById(R.id.rawGameName);
-            TextView tvPlayer = convertView.findViewById(R.id.rawPlayer);
+            TextView tvPlayer = convertView.findViewById(R.id.rawPlayerName);
             TextView tvDate = convertView.findViewById(R.id.rawDate);
 
             String[] s = getItem(position);
