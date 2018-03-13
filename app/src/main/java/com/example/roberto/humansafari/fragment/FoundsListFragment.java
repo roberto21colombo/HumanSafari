@@ -1,12 +1,8 @@
 package com.example.roberto.humansafari.fragment;
 
-import android.content.Context;
-import android.content.Intent;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,14 +15,7 @@ import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.ServerConnections;
-import com.example.roberto.humansafari.activity.HomeActivity;
-import com.example.roberto.humansafari.activity.ListGamePlayerActivity;
-import com.example.roberto.humansafari.activity.PlayerMainActivity;
 import com.example.roberto.humansafari.adapter.CustomAdapterHistorical;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 

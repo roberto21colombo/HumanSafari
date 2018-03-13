@@ -1,11 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+<RelativeLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.roberto.humansafari.fragment.MapFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment.MapFragment"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+
+    </com.google.android.gms.maps.MapView>
+
+    <Button
+        android:id="@+id/btnSetBound"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ciso sono un fragment map!"/>
-
-</LinearLayout>
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:background="@android:color/white"
+        android:text="Definisci Campo di Gioco"
+        android:textColor="#2195f1"
+        android:textSize="20dp"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="302dp" />
+</RelativeLayout>

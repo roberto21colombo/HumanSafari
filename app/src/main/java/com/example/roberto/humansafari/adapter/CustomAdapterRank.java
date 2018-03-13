@@ -36,7 +36,7 @@ public class CustomAdapterRank extends ArrayAdapter<User>{
 
         TextView name = convertView.findViewById(R.id.editTextNameUser);
         TextView score = convertView.findViewById(R.id.editTextScore);
-        ImageView image = convertView.findViewById(R.id.imageView);
+        //ImageView image = convertView.findViewById(R.id.imageView);
 
 
         User u = getItem(position);

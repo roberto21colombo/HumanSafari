@@ -36,6 +36,8 @@ public class Model
 
     private Character characterSelectedMap = null;
 
+    private ArrayList<LatLng> boundPoints;
+
     private Model()
     {
         alCharacter = new ArrayList<Character>();
@@ -259,6 +261,14 @@ public class Model
         }else {
             characterSelectedMap = alCharacter.get(i);
         }
+    }
+
+    public ArrayList<LatLng> getBoundPoints() {
+        return boundPoints;
+    }
+
+    public void setBoundPoints(ArrayList<LatLng> boundPoints) {
+        this.boundPoints = boundPoints;
     }
 
     public class CustomComparatorUsers implements Comparator<User> {

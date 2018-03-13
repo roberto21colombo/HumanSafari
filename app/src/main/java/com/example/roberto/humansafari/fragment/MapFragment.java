@@ -2,6 +2,7 @@ package com.example.roberto.humansafari.fragment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.location.Location;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -15,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
+import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -35,9 +37,13 @@ import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
+import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.android.gms.maps.model.PolygonOptions;
+import com.google.android.gms.maps.model.Polyline;
+import com.google.android.gms.maps.model.PolylineOptions;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.zxing.integration.android.IntentIntegrator;
 import com.google.zxing.integration.android.IntentResult;
@@ -48,7 +54,7 @@ import java.util.ArrayList;
  * Created by roberto on 16/01/18.
  */
 
-public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
+public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener, View.OnClickListener, GoogleMap.OnMapClickListener{
     Boolean googlePlayServiceConnected = false;
     GoogleApiClient mGoogleApiClient = null;
 
@@ -57,7 +63,9 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private  View mView;
     private MapView mapView;
     private GoogleMap mGoogleMap;
+    private Button btnDefineBound;
 
+    private ArrayList<LatLng> boundPoints= null;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -67,7 +75,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        mView = inflater.inflate(R.layout.fragment_player_map, container, false);
+        mView = inflater.inflate(R.layout.fragment_master_map, container, false);
+
+        boundPoints = new ArrayList<LatLng>();
+
+        btnDefineBound = mView.findViewById(R.id.btnSetBound);
+        btnDefineBound.setOnClickListener(this);
 
         arrayListCharacter = Model.getInstance().getCharacters();
 
@@ -90,16 +103,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     @SuppressLint("MissingPermission")
     @Override
-    public void onMapReady(GoogleMap map) {
+    public void onMapReady(final GoogleMap map) {
+        mGoogleMap = map;
         Log.d("MapActivity","On map ready");
         Toast toast = Toast.makeText(getActivity(), "Map Ready", Toast.LENGTH_LONG);
         toast.show();
 
         MapsInitializer.initialize(getContext());
-        mGoogleMap = map;
-        map.setMapType(GoogleMap.MAP_TYPE_NORMAL);
-        map.setMyLocationEnabled(true);
-        markFriends(map);
+        mGoogleMap.setMapType(GoogleMap.MAP_TYPE_NORMAL);
+        mGoogleMap.setMyLocationEnabled(true);
+        markFriends(mGoogleMap);
 
         LatLngBounds bounds = getLatLngBound();
 
@@ -107,7 +120,39 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         int height = getResources().getDisplayMetrics().heightPixels;
         int padding = (int) (width * 0.25); // offset from edges of the map 12% of screen
 
-        map.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, width, height, padding));
+        mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, width, height, padding));
+        mGoogleMap.setOnMapClickListener(this);
+
+        drawPolylineBound();
+
+    }
+
+    @Override
+    public void onMapClick(LatLng latLng) {
+        mGoogleMap.clear();
+        mGoogleMap.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.fromResource(R.drawable.cast_ic_stop_circle_filled_grey600)).anchor(0.5f, 0.5f));
+        boundPoints.add(latLng);
+        if(boundPoints.size()>=2){
+            //disegna Polyline
+            final PolylineOptions polylineOptions = new PolylineOptions();
+            int i;
+            for(i=0; i<boundPoints.size(); i++){
+                polylineOptions.add(boundPoints.get(i)).color(Color.BLACK).width(5);
+            }
+            mGoogleMap.addPolyline(polylineOptions);
+
+            //disegna ultimo polyline
+            mGoogleMap.addPolyline(new PolylineOptions().add(boundPoints.get(0)).add(boundPoints.get(boundPoints.size()-1)).color(Color.GRAY));
+        }
+    }
+
+    @Override
+    public void onClick(View view) {
+        //TODO Attivare/Disattivare pulsante definisci confini se non ci sono selezionati punti sulla mappa
+        Model.getInstance().setBoundPoints(boundPoints);
+        mGoogleMap.clear();
+        drawPolylineBound();
+        boundPoints.clear();
     }
 
     public void markFriends(GoogleMap map){
@@ -146,6 +191,17 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
             }
         }
         return builder.build();
+    }
+
+    private void drawPolylineBound(){
+        ArrayList<LatLng> boundPoints = Model.getInstance().getBoundPoints();
+        PolygonOptions polygonOptions = new PolygonOptions();
+        if(boundPoints!=null){
+            for(int i=0; i<boundPoints.size(); i++){
+                polygonOptions.add(boundPoints.get(i));
+            }
+            mGoogleMap.addPolygon(polygonOptions);
+        }
     }
 
     @Override
