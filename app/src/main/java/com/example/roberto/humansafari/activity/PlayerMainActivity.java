@@ -38,6 +38,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
     public SectionsPageAdapterPlayer mSectionsPageAdapterPlayer;
 
     public PlayerCharacterFragment playerCharacterFragment = null;
+    public FoundsListFragment foundsListFragment = null;
 
     private ViewPager mViewPager;
 
@@ -59,6 +60,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
 
         mSectionsPageAdapterPlayer = new SectionsPageAdapterPlayer(getSupportFragmentManager());
         mViewPager = (ViewPager)findViewById(R.id.container);
+
         setupViewPager(mViewPager);
 
         tabLayout = (TabLayout)findViewById(R.id.tabs);
@@ -76,10 +78,11 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
 
     public void setupViewPager(ViewPager viewPager){
         playerCharacterFragment = new PlayerCharacterFragment();
+        foundsListFragment = new FoundsListFragment();
 
         mSectionsPageAdapterPlayer = new SectionsPageAdapterPlayer(getSupportFragmentManager());
         mSectionsPageAdapterPlayer.addFragment(playerCharacterFragment, "Lista");
-        mSectionsPageAdapterPlayer.addFragment(new FoundsListFragment(), "Avvistamenti");
+        mSectionsPageAdapterPlayer.addFragment(foundsListFragment, "Avvistamenti");
         mSectionsPageAdapterPlayer.addFragment(new MapFragment(), "Mappa");
         viewPager.setAdapter(mSectionsPageAdapterPlayer);
     }
@@ -106,7 +109,7 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
                 changePlayerScore(Integer.parseInt(pointCharacter));
                 changeCharacterPosition(indexCharacterList);
                 addFound(nameCharacter);
-                //TODO aggiornare la ListView per mettere la spunta
+                
                 playerCharacterFragment.notifyCheckboxChanged(nameCharacter);
 
 

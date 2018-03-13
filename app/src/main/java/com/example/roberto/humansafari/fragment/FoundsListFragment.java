@@ -46,6 +46,13 @@ public class FoundsListFragment extends Fragment {
 
         listViewHistorical = view.findViewById(R.id.listViewHistorical);
         btnRefreshFound = view.findViewById(R.id.btnRefreshFound);
+
+
+        ArrayList<String[]> arrayList = Model.getInstance().getHistoricalArray();
+
+        mCustomAdapterHistorical = new CustomAdapterHistorical(getContext(), R.layout.raw_hist, arrayList);
+        listViewHistorical.setAdapter(mCustomAdapterHistorical);
+
         btnRefreshFound.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -67,8 +74,7 @@ public class FoundsListFragment extends Fragment {
             }
         });
 
-        mCustomAdapterHistorical = new CustomAdapterHistorical(getContext(), R.layout.raw_hist, Model.getInstance().getHistoricalArray());
-        listViewHistorical.setAdapter(mCustomAdapterHistorical);
+
 
 
 

@@ -131,7 +131,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
         //aggiungo la mia posizione
-        builder.include(((MasterMainActivity)getActivity()).getMyPosition());
+
+        if(getActivity().getLocalClassName().equals("activity.PlayerMainActivity")){
+            builder.include(((PlayerMainActivity)getActivity()).getMyPosition());
+        }else{
+            builder.include(((MasterMainActivity)getActivity()).getMyPosition());
+        }
+
         //aggiungo la posizione dei character trovati
         for (Character character : arrayListCharacter) {
             LatLng latLng = character.getLastPosition();
