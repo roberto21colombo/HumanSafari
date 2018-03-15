@@ -58,7 +58,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAHOh_Sg8o32duEkeWUK34g3epYjGEzhT8" />
 
-        <activity android:name="com.example.roberto.humansafari.activity.LoginActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.MapActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.FoundHistoricalActivity" />
         <activity android:name="com.example.roberto.humansafari.activity.JoinGameActivity" />

@@ -17,7 +17,6 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAHOh_Sg8o32duEkeWUK34g3epYjGEzhT8" />
 
-        <activity android:name=".activity.LoginActivity" />
         <activity android:name=".activity.MapActivity" />
         <activity android:name=".activity.FoundHistoricalActivity" />
         <activity android:name=".activity.JoinGameActivity" />
@@ -37,6 +36,7 @@
         <activity android:name=".activity.NewCharacterActivity" />
         <activity android:name=".activity.CharacterLogin" />
         <activity android:name=".activity.QrcodeActivity"></activity>
+
     </application>
 
 </manifest>

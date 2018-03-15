@@ -1,54 +1,47 @@
 package com.example.roberto.humansafari.fragment;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.graphics.Color;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.Toast;
 
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.Volley;
 import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
+import com.example.roberto.humansafari.ServerConnections;
 import com.example.roberto.humansafari.activity.MasterMainActivity;
 import com.example.roberto.humansafari.activity.PlayerMainActivity;
-import com.example.roberto.humansafari.adapter.CustomAdapterPlayerCharacters;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.FusedLocationProviderClient;
+import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
-import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
-import com.google.android.gms.maps.model.CircleOptions;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.LatLngBounds;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolygonOptions;
-import com.google.android.gms.maps.model.Polyline;
 import com.google.android.gms.maps.model.PolylineOptions;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.zxing.integration.android.IntentIntegrator;
-import com.google.zxing.integration.android.IntentResult;
 
 import java.util.ArrayList;
+import java.util.StringTokenizer;
 
 /**
  * Created by roberto on 16/01/18.
@@ -58,6 +51,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     Boolean googlePlayServiceConnected = false;
     GoogleApiClient mGoogleApiClient = null;
 
+    LocationManager locationManager;
+
     ArrayList<Character> arrayListCharacter = null;
 
     private  View mView;
@@ -66,6 +61,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private Button btnDefineBound;
 
     private ArrayList<LatLng> boundPoints= null;
+
+    private boolean isPlayerActivity;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -77,10 +74,20 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_master_map, container, false);
 
+        isPlayerActivity = getActivity().getLocalClassName().equals("activity.PlayerMainActivity");
+
         boundPoints = new ArrayList<LatLng>();
+        downloadMapBound();
 
         btnDefineBound = mView.findViewById(R.id.btnSetBound);
-        btnDefineBound.setOnClickListener(this);
+        if(isPlayerActivity) {
+            btnDefineBound.setVisibility(View.INVISIBLE);
+        }else {
+            btnDefineBound.setVisibility(View.VISIBLE);
+            btnDefineBound.setEnabled(false);
+            btnDefineBound.setOnClickListener(this);
+        }
+
 
         arrayListCharacter = Model.getInstance().getCharacters();
 
@@ -114,21 +121,56 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         mGoogleMap.setMyLocationEnabled(true);
         markFriends(mGoogleMap);
 
-        LatLngBounds bounds = getLatLngBound();
+        LatLngBounds bounds = getLatLngBoundLastFound();
 
         int width = getResources().getDisplayMetrics().widthPixels;
         int height = getResources().getDisplayMetrics().heightPixels;
         int padding = (int) (width * 0.25); // offset from edges of the map 12% of screen
 
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, width, height, padding));
-        mGoogleMap.setOnMapClickListener(this);
+
+        if(!isPlayerActivity) {
+            mGoogleMap.setOnMapClickListener(this);
+        }
+
 
         drawPolylineBound();
+        locationManager = (LocationManager) getContext().getSystemService(getContext().LOCATION_SERVICE);
+        locationManager.requestLocationUpdates("gps", 1000, 1, new android.location.LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                LatLng mLatLng = new LatLng(location.getLatitude(), location.getLongitude());
+                boolean isContained = contains(mLatLng);
+                //TODO Mandare notifica
+                if(isContained){
+                    Log.d("Fencing", "Dentro");
+                    Toast.makeText(getContext(), "Sei Dentro", Toast.LENGTH_SHORT).show();
+                }else {
+                    Log.d("Fencing", "Fuori");
+                    Toast.makeText(getContext(), "Sei Fuori", Toast.LENGTH_SHORT).show();
+                }
+            }
 
+            @Override
+            public void onStatusChanged(String s, int i, Bundle bundle) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String s) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String s) {
+
+            }
+        });
     }
 
     @Override
     public void onMapClick(LatLng latLng) {
+        btnDefineBound.setEnabled(true);
         mGoogleMap.clear();
         mGoogleMap.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.fromResource(R.drawable.cast_ic_stop_circle_filled_grey600)).anchor(0.5f, 0.5f));
         boundPoints.add(latLng);
@@ -148,11 +190,25 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     @Override
     public void onClick(View view) {
-        //TODO Attivare/Disattivare pulsante definisci confini se non ci sono selezionati punti sulla mappa
+        btnDefineBound.setEnabled(false);
         Model.getInstance().setBoundPoints(boundPoints);
+        boundPoints.clear();
+
         mGoogleMap.clear();
         drawPolylineBound();
-        boundPoints.clear();
+
+        //UploadOnServerMapBound
+        ServerConnections.setMapBound(new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }, Volley.newRequestQueue(getContext()));
     }
 
     public void markFriends(GoogleMap map){
@@ -172,12 +228,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         Model.getInstance().setCharacterSelectedMap(-1);
     }
 
-    public LatLngBounds getLatLngBound(){
+    public LatLngBounds getLatLngBoundLastFound(){
 
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
         //aggiungo la mia posizione
 
-        if(getActivity().getLocalClassName().equals("activity.PlayerMainActivity")){
+        if(isPlayerActivity){
             builder.include(((PlayerMainActivity)getActivity()).getMyPosition());
         }else{
             builder.include(((MasterMainActivity)getActivity()).getMyPosition());
@@ -196,12 +252,35 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private void drawPolylineBound(){
         ArrayList<LatLng> boundPoints = Model.getInstance().getBoundPoints();
         PolygonOptions polygonOptions = new PolygonOptions();
-        if(boundPoints!=null){
+        if(boundPoints.size()>0){
             for(int i=0; i<boundPoints.size(); i++){
                 polygonOptions.add(boundPoints.get(i));
             }
             mGoogleMap.addPolygon(polygonOptions);
         }
+    }
+
+    public void downloadMapBound(){
+        ServerConnections.getMapBound(new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+                ArrayList<LatLng> boundPoints = new ArrayList<LatLng>();
+
+                StringTokenizer stringTokenizer = new StringTokenizer(response, ";");
+                while (stringTokenizer.hasMoreElements()){
+                    String[] stringLatLng =stringTokenizer.nextElement().toString().split(",");
+                    LatLng latLng = new LatLng(Double.parseDouble(stringLatLng[0]), Double.parseDouble(stringLatLng[1]));
+                    boundPoints.add(latLng);
+                }
+
+                Model.getInstance().setBoundPoints(boundPoints);
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }, Volley.newRequestQueue(getContext()));
     }
 
     @Override
@@ -219,4 +298,18 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         googlePlayServiceConnected = false;
     }
 
+
+    public boolean contains(LatLng myLatLng) {
+        int i;
+        int j;
+        ArrayList<LatLng> boundPoints = Model.getInstance().getBoundPoints();
+        boolean result = false;
+        for (i = 0, j = boundPoints.size() - 1; i < boundPoints.size(); j = i++) {
+            if ((boundPoints.get(i).latitude > myLatLng.latitude) != (boundPoints.get(j).latitude > myLatLng.latitude) &&
+                    (myLatLng.longitude < (boundPoints.get(j).longitude - boundPoints.get(i).longitude) * (myLatLng.latitude - boundPoints.get(i).latitude) / (boundPoints.get(j).latitude-boundPoints.get(i).latitude) + boundPoints.get(i).longitude)) {
+                result = !result;
+            }
+        }
+        return result;
+    }
 }

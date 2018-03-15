@@ -42,6 +42,7 @@ public class Model
     {
         alCharacter = new ArrayList<Character>();
         alUsers = new ArrayList<User>();
+        boundPoints = new ArrayList<LatLng>();
 
     }
 
@@ -267,8 +268,16 @@ public class Model
         return boundPoints;
     }
 
+    public String getBoundPointsSerialized(){
+        String s = new SerializeObject().boundPointsToString();
+        return s;
+    }
+
     public void setBoundPoints(ArrayList<LatLng> boundPoints) {
-        this.boundPoints = boundPoints;
+        this.boundPoints = new ArrayList<LatLng>();
+        for(int i=0; i< boundPoints.size(); i++){
+            this.boundPoints.add(boundPoints.get(i));
+        }
     }
 
     public class CustomComparatorUsers implements Comparator<User> {
@@ -286,8 +295,22 @@ public class Model
         }
     }
 
+    private class SerializeObject{
 
+        public String boundPointsToString(){
+            StringBuilder stringBuilder = new StringBuilder();
+            for(int i = 0; i<boundPoints.size(); i++){
+                LatLng latLng = boundPoints.get(i);
+                stringBuilder.append(latLng.latitude);
+                stringBuilder.append(",");
+                stringBuilder.append(latLng.longitude);
+                stringBuilder.append(";");
+            }
+            return (stringBuilder.toString());
+        }
+    }
 
 }
+
 
 

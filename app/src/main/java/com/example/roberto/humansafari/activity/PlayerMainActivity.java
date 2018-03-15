@@ -26,6 +26,10 @@ import com.example.roberto.humansafari.fragment.PlayerCharacterFragment;
 import com.example.roberto.humansafari.fragment.MapFragment;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.Geofence;
+import com.google.android.gms.location.GeofencingClient;
+import com.google.android.gms.location.LocationCallback;
+import com.google.android.gms.location.LocationResult;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.zxing.integration.android.IntentIntegrator;
@@ -49,6 +53,9 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
     Boolean userPermission = false;
     Boolean googlePlayServiceConnected = false;
     GoogleApiClient mGoogleApiClient = null;
+
+    private GeofencingClient mGeofencingClient;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +81,10 @@ public class PlayerMainActivity extends AppCompatActivity implements GoogleApiCl
         tvScore.setText(Model.getInstance().getScore() + " Punti");
 
         Model.getInstance().setCheckedMyFound();
+
+
+
+
     }
 
     public void setupViewPager(ViewPager viewPager){
