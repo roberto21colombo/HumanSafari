@@ -4,17 +4,7 @@
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/res/values-land/values-land.xml",
-                    "from": {
-                        "startLines": "2,3,4,5",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,125,189,260",
-                        "endColumns": "69,63,70,67",
-                        "endOffsets": "120,184,255,323"
-                    }
-                },
-                {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/values-land/values-land.xml",
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/082c992a6c5bac5ba23396b0e63215bf/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",
@@ -31,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-11.0.0.aar/75ac9d22f51b4bf666b9999d4b8225fc/res/values-land/values.xml",
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.1.aar/74798309a291c947f7f02364e8fa20b4/res/values-land/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9",
                         "startColumns": "0,0,0,0,0,0",
@@ -45,6 +35,16 @@
                         "startOffsets": "328,413,497,571,644,743",
                         "endColumns": "84,83,73,72,98,94",
                         "endOffsets": "408,492,566,639,738,833"
+                    }
+                },
+                {
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/res/values-land/values-land.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,125,189,260",
+                        "endColumns": "69,63,70,67",
+                        "endOffsets": "120,184,255,323"
                     }
                 },
                 {

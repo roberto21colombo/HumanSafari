@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "599442241581",
+    "firebase_url": "https://human-safari.firebaseio.com",
+    "project_id": "human-safari",
+    "storage_bucket": "human-safari.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599442241581:android:baecd8e007931b13",
+        "android_client_info": {
+          "package_name": "com.example.roberto.humansafari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "599442241581-je830uik65370a5hper9umhsamromajs.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.roberto.humansafari",
+            "certificate_hash": "208dc07e9666e583764d21072200510569dfb898"
+          }
+        },
+        {
+          "client_id": "599442241581-ivs6ksjpjbu48ou6a2rku1f42hvutf8j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUPHbLfFJIxxecn44SR0eEqT_lBdWaiMY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "599442241581-ivs6ksjpjbu48ou6a2rku1f42hvutf8j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

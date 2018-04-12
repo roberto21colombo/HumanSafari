@@ -4,7 +4,7 @@
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental/mergeReleaseResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-25.2.0.aar/bdd8ef40a55483ac90c1268d5ffe332a/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/22a5e8f62ca576ba8e4e1c4be7a1cbea/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

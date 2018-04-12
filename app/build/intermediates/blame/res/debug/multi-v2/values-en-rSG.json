@@ -4,13 +4,13 @@
             "outputFile": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
             "map": [
                 {
-                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-wallet-11.0.0.aar/3a8fc76d09d13f1525ace448098b4004/res/values-en-rSG/values.xml",
+                    "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-wallet-12.0.1.aar/f1407402c2f53de07470ae1545d2f6ff/res/values-en-rSG/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
-                        "startOffsets": "244",
+                        "startOffsets": "206",
                         "endColumns": "99",
-                        "endOffsets": "343"
+                        "endOffsets": "305"
                     },
                     "to": {
                         "startLines": "2",

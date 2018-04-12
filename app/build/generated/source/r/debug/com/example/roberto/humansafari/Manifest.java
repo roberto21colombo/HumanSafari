@@ -9,6 +9,9 @@ package com.example.roberto.humansafari;
 
 public final class Manifest {
   public static final class permission {
+    /**
+     * Create a unique permission for your app and use it so only your app can receive your OneSignal messages.
+     */
     public static final String C2D_MESSAGE="com.example.roberto.humansafari.permission.C2D_MESSAGE";
   }
 

@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/HumanSafari.iml" filepath="$PROJECT_DIR$/HumanSafari.iml" />
       <module fileurl="file://$PROJECT_DIR$/HumanSafary.iml" filepath="$PROJECT_DIR$/HumanSafary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

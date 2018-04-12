@@ -13,7 +13,7 @@
 -printconfiguration '/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/multi-dex/release/components.flags'
 
 
-# Referenced at /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/manifests/full/release/AndroidManifest.xml:47
+# Referenced at /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/manifests/full/release/AndroidManifest.xml:49
 -keep class android.support.multidex.MultiDexApplication {
     <init>(...);
 }

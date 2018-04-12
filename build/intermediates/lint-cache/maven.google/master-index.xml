@@ -36,4 +36,7 @@
   <com.android.installreferrer/>
   <com.google.ar/>
   <androidx.core/>
+  <com.google.android.things/>
+  <com.android.tools.build.jetifier/>
+  <tools.base.build-system.debug/>
 </metadata>
