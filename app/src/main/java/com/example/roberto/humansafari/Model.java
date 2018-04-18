@@ -38,6 +38,8 @@ public class Model
 
     private ArrayList<LatLng> boundPoints;
 
+    private boolean isIn = true;
+
     private Model()
     {
         alCharacter = new ArrayList<Character>();
@@ -278,6 +280,14 @@ public class Model
         for(int i=0; i< boundPoints.size(); i++){
             this.boundPoints.add(boundPoints.get(i));
         }
+    }
+
+    public boolean isIn() {
+        return isIn;
+    }
+
+    public void setIn(boolean in) {
+        isIn = in;
     }
 
     public class CustomComparatorUsers implements Comparator<User> {

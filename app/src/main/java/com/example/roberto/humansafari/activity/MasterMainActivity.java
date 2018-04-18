@@ -25,6 +25,7 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.model.LatLng;
+import com.onesignal.OneSignal;
 
 public class MasterMainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
 
@@ -58,6 +59,12 @@ public class MasterMainActivity extends AppCompatActivity implements GoogleApiCl
         tvCodCharacter = (TextView)findViewById(R.id.tvCodCharacter);
         tvGameName.setText(Model.getInstance().getGameName());
         tvCodCharacter.setText(Model.getInstance().getCodCharacters());
+
+        // OneSignal Initialization
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
     }
 
     @Override

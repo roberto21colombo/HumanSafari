@@ -155,8 +155,8 @@
     <orderEntry type="library" name="com.android.support:design-26.1.0" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-wallet-12.0.1" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-ads-lite-12.0.1" level="project" />
+    <orderEntry type="library" name="com.onesignal:OneSignal-3.8.4" level="project" />
     <orderEntry type="library" name="com.google.firebase:firebase-database-connection-license-12.0.1" level="project" />
-    <orderEntry type="library" name="com.onesignal:OneSignal-3.8.3" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-identity-12.0.1" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-location-license-12.0.1" level="project" />
     <orderEntry type="library" name="com.google.android.gms:play-services-games-license-12.0.1" level="project" />

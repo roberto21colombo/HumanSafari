@@ -153,7 +153,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/layout_onesignal_bgimage_notif_layout.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/layout/onesignal_bgimage_notif_layout.xml"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/layout/onesignal_bgimage_notif_layout.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-ldrtl-xxhdpi-v17_abc_ic_menu_copy_mtrl_am_alpha.png.flat",
@@ -969,7 +969,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/drawable-xxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-xxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_quantum_ic_keyboard_arrow_down_white_36.png.flat",
@@ -1861,7 +1861,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/drawable-mdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-mdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-mdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
@@ -2845,7 +2845,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/raw_consumer_onesignal_keep.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/raw/consumer_onesignal_keep.xml"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/raw/consumer_onesignal_keep.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_design_ic_visibility.png.flat",
@@ -2865,7 +2865,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/drawable-xxxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-xxxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xxhdpi-v4_ic_audiotrack_light.png.flat",
@@ -4165,7 +4165,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/drawable-xhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-xhdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/anim_design_bottom_sheet_slide_in.xml.flat",
@@ -4397,7 +4397,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-hdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.3.aar/04c7804b17a3ee270dab2e88e1dbf170/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4_cast_abc_scrubber_control_off_mtrl_alpha.png.flat",

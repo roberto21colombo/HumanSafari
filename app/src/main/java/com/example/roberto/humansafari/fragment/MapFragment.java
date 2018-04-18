@@ -15,6 +15,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
@@ -40,7 +41,11 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
+import java.io.OutputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.Scanner;
 import java.util.StringTokenizer;
 
 /**
@@ -139,15 +144,22 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         locationManager.requestLocationUpdates("gps", 1000, 1, new android.location.LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
+                boolean isIn = Model.getInstance().isIn();
                 LatLng mLatLng = new LatLng(location.getLatitude(), location.getLongitude());
                 boolean isContained = contains(mLatLng);
-                //TODO Mandare notifica
+
                 if(isContained){
                     Log.d("Fencing", "Dentro");
                     Toast.makeText(getContext(), "Sei Dentro", Toast.LENGTH_SHORT).show();
+                    Model.getInstance().setIn(true);
                 }else {
                     Log.d("Fencing", "Fuori");
                     Toast.makeText(getContext(), "Sei Fuori", Toast.LENGTH_SHORT).show();
+                    if(isIn==true){
+                        sendNotification();
+                    }Model.getInstance().setIn(false);
+
+
                 }
             }
 
@@ -260,6 +272,21 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         }
     }
 
+    public void sendNotification(){
+
+        ServerConnections.sendNotification(new Response.Listener<String>() {
+            @Override
+            public void onResponse(String response) {
+            Toast.makeText(getContext(), "Ho inviato la notifica", Toast.LENGTH_SHORT).show();
+            }
+        }, new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError error) {
+
+            }
+        }, Volley.newRequestQueue(getContext()));
+    }
+
     public void downloadMapBound(){
         ServerConnections.getMapBound(new Response.Listener<String>() {
             @Override
@@ -312,4 +339,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         }
         return result;
     }
+
+
 }

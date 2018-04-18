@@ -199,4 +199,10 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
+    public static void sendNotification(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/sendnotification.php";
+        StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
+        requestQueue.add(stringRequest);
+    }
+
 }
