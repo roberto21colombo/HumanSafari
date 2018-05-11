@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
 MERGED from [com.android.support:design:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/09dff5546742bb79960f1317d723e1db/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-12.0.1.aar/c9f622296f505c8e2738813a26fce77a/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.1.aar/74798309a291c947f7f02364e8fa20b4/AndroidManifest.xml:2:1-14:12
@@ -129,20 +129,20 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] 
 MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/83bf92d25ebd2e5886e5d11883bf625f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wallet-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-12.0.1.aar/ddc8064809fb4e3faca9bc9b8641b8bc/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.1.aar/9b408d4ee79ba8c30ad575dab2b7035f/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
 	package
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:4:5-46
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-54:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:3:5-63
@@ -205,7 +205,7 @@ MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/cac
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:22-76
 application
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:10:5-52:19
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:10:5-50:19
 MERGED from [com.android.support:design:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/09dff5546742bb79960f1317d723e1db/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/09dff5546742bb79960f1317d723e1db/AndroidManifest.xml:25:5-29:19
 MERGED from [com.google.android.gms:play-services:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-12.0.1.aar/c9f622296f505c8e2738813a26fce77a/AndroidManifest.xml:5:5-20
@@ -452,88 +452,80 @@ ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:19:13-68
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:18:13-58
-activity#com.example.roberto.humansafari.activity.MapActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:9-58
+activity#com.example.roberto.humansafari.activity.player.JoinGameActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:9-70
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:19-55
-activity#com.example.roberto.humansafari.activity.FoundHistoricalActivity
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:21:19-67
+activity#com.example.roberto.humansafari.activity.master.ListRankActivity
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:22:9-70
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:22:19-67
-activity#com.example.roberto.humansafari.activity.JoinGameActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:9-63
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:19-60
-activity#com.example.roberto.humansafari.activity.ListRankActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:9-63
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:19-60
 activity#com.example.roberto.humansafari.activity.MainActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:25:9-31:20
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:9-29:20
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:25:19-56
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:23:19-56
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:26:13-30:29
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:17-69
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:25-66
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:29:17-77
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:29:27-74
-activity#com.example.roberto.humansafari.activity.ListGamePlayerActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:32:9-69
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:27:27-74
+activity#com.example.roberto.humansafari.activity.player.ListGamePlayerActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:30:9-76
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:32:19-66
-activity#com.example.roberto.humansafari.activity.ListGameMasterActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:33:9-69
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:30:19-73
+activity#com.example.roberto.humansafari.activity.master.ListGameMasterActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:31:9-76
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:33:19-66
-activity#com.example.roberto.humansafari.activity.CreateGameActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:9-65
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:31:19-73
+activity#com.example.roberto.humansafari.activity.master.CreateGameActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:32:9-72
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:19-62
-activity#com.example.roberto.humansafari.activity.MasterMainActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:9-64
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:32:19-69
+activity#com.example.roberto.humansafari.activity.master.MasterMainActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:33:9-71
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:19-62
-activity#com.example.roberto.humansafari.activity.PlayerMainActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-64
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:33:19-69
+activity#com.example.roberto.humansafari.activity.player.PlayerMainActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:9-71
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:19-62
-activity#com.example.roberto.humansafari.activity.NewCharacterActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:9-67
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:34:19-69
+activity#com.example.roberto.humansafari.activity.master.NewCharacterActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:9-74
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:19-64
-activity#com.example.roberto.humansafari.activity.CharacterLogin
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:38:9-61
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:35:19-71
+activity#com.example.roberto.humansafari.activity.character.CharacterLogin
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:9-71
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:38:19-58
-activity#com.example.roberto.humansafari.activity.QrcodeActivity
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:9-60
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:36:19-68
+activity#com.example.roberto.humansafari.activity.character.QrcodeActivity
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:9-70
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:19-58
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:19-68
 service#com.example.roberto.humansafari.MessageReceiver
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:9-45:19
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:9-43:19
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:18-49
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:18-49
 intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:42:13-44:29
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:40:13-42:29
 action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:43:17-78
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:17-78
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:43:25-75
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:25-75
 service#com.example.roberto.humansafari.InstanceIdService
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:46:9-50:19
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:44:9-48:19
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:46:18-51
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:44:18-51
 intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:47:13-49:29
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:45:13-47:29
 action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:48:17-80
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:46:17-80
 	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:48:25-77
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:46:25-77
 uses-sdk
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml

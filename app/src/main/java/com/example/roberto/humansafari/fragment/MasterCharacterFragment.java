@@ -14,7 +14,7 @@ import android.widget.ListView;
 import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
-import com.example.roberto.humansafari.activity.NewCharacterActivity;
+import com.example.roberto.humansafari.activity.master.NewCharacterActivity;
 import com.example.roberto.humansafari.adapter.CustomAdapterMasterCharacters;
 
 import java.util.ArrayList;

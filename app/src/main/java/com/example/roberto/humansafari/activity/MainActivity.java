@@ -7,6 +7,9 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.roberto.humansafari.R;
+import com.example.roberto.humansafari.activity.character.CharacterLogin;
+import com.example.roberto.humansafari.activity.master.ListGameMasterActivity;
+import com.example.roberto.humansafari.activity.player.ListGamePlayerActivity;
 import com.onesignal.OneSignal;
 
 public class MainActivity extends AppCompatActivity {

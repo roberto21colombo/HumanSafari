@@ -9,13 +9,13 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.util.Log;
+import android.view.Display;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.Volley;
@@ -23,11 +23,10 @@ import com.example.roberto.humansafari.Character;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.ServerConnections;
-import com.example.roberto.humansafari.activity.MasterMainActivity;
-import com.example.roberto.humansafari.activity.PlayerMainActivity;
+import com.example.roberto.humansafari.activity.master.MasterMainActivity;
+import com.example.roberto.humansafari.activity.player.PlayerMainActivity;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationListener;
 import com.google.android.gms.location.LocationServices;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -41,11 +40,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.gms.maps.model.PolygonOptions;
 import com.google.android.gms.maps.model.PolylineOptions;
 
-import java.io.OutputStream;
-import java.net.HttpURLConnection;
-import java.net.URL;
 import java.util.ArrayList;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 /**
@@ -67,8 +62,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     private ArrayList<LatLng> boundPoints= null;
 
-    private boolean isPlayerActivity;
-
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -78,16 +71,16 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         mView = inflater.inflate(R.layout.fragment_master_map, container, false);
-
-        isPlayerActivity = getActivity().getLocalClassName().equals("activity.PlayerMainActivity");
-
         boundPoints = new ArrayList<LatLng>();
+        btnDefineBound = mView.findViewById(R.id.btnSetBound);
+
+        //Scarica e disegna i confini della mappa definiti dal master
         downloadMapBound();
 
-        btnDefineBound = mView.findViewById(R.id.btnSetBound);
-        if(isPlayerActivity) {
+        if(Model.getInstance().getUserType().equals(Model.UserType.PLAYER)) {
             btnDefineBound.setVisibility(View.INVISIBLE);
-        }else {
+            btnDefineBound.setEnabled(true);
+        }else if(Model.getInstance().getUserType().equals(Model.UserType.MASTER)){
             btnDefineBound.setVisibility(View.VISIBLE);
             btnDefineBound.setEnabled(false);
             btnDefineBound.setOnClickListener(this);
@@ -134,7 +127,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         mGoogleMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, width, height, padding));
 
-        if(!isPlayerActivity) {
+        if(!Model.getInstance().getUserType().equals(Model.UserType.PLAYER)) {
             mGoogleMap.setOnMapClickListener(this);
         }
 
@@ -144,22 +137,25 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         locationManager.requestLocationUpdates("gps", 1000, 1, new android.location.LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
-                boolean isIn = Model.getInstance().isIn();
-                LatLng mLatLng = new LatLng(location.getLatitude(), location.getLongitude());
-                boolean isContained = contains(mLatLng);
 
-                if(isContained){
-                    Log.d("Fencing", "Dentro");
-                    Toast.makeText(getContext(), "Sei Dentro", Toast.LENGTH_SHORT).show();
-                    Model.getInstance().setIn(true);
-                }else {
-                    Log.d("Fencing", "Fuori");
-                    Toast.makeText(getContext(), "Sei Fuori", Toast.LENGTH_SHORT).show();
-                    if(isIn==true){
-                        sendNotification();
-                    }Model.getInstance().setIn(false);
+                if(Model.getInstance().getUserType().equals(Model.UserType.PLAYER)) {
 
+                    boolean isIn = Model.getInstance().isIn();
+                    LatLng mLatLng = new LatLng(location.getLatitude(), location.getLongitude());
+                    boolean isContained = contains(mLatLng);
 
+                    if (isContained) {
+                        Log.d("Fencing", "Dentro");
+                        //Toast.makeText(getContext(), "Sei Dentro", Toast.LENGTH_SHORT).show();
+                        Model.getInstance().setIn(true);
+                    } else {
+                        Log.d("Fencing", "Fuori");
+                        //Toast.makeText(getContext(), "Sei Fuori", Toast.LENGTH_SHORT).show();
+                        if (isIn == true) {
+                            sendNotification();
+                        }
+                        Model.getInstance().setIn(false);
+                    }
                 }
             }
 
@@ -240,12 +236,12 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         Model.getInstance().setCharacterSelectedMap(-1);
     }
 
+    //ritorna il bound della mappa con la mia posizione e la posizione dei character trovati
     public LatLngBounds getLatLngBoundLastFound(){
-
         LatLngBounds.Builder builder = new LatLngBounds.Builder();
         //aggiungo la mia posizione
 
-        if(isPlayerActivity){
+        if(Model.getInstance().getUserType().equals(Model.UserType.PLAYER)){
             builder.include(((PlayerMainActivity)getActivity()).getMyPosition());
         }else{
             builder.include(((MasterMainActivity)getActivity()).getMyPosition());

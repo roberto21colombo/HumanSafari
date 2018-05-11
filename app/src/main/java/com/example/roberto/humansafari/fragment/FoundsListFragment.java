@@ -39,8 +39,11 @@ public class FoundsListFragment extends Fragment {
 
         ArrayList<String[]> arrayList = Model.getInstance().getHistoricalArray();
 
-        mCustomAdapterHistorical = new CustomAdapterHistorical(getContext(), R.layout.raw_hist, arrayList);
-        listViewHistorical.setAdapter(mCustomAdapterHistorical);
+        if(arrayList.size()>0){
+            mCustomAdapterHistorical = new CustomAdapterHistorical(getContext(), R.layout.raw_hist, arrayList);
+            listViewHistorical.setAdapter(mCustomAdapterHistorical);
+        }
+
 
         btnRefreshFound.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,9 +52,15 @@ public class FoundsListFragment extends Fragment {
                     new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
-                            mCustomAdapterHistorical.updateObject(Model.getInstance().getHistoricalArray());
-                            mCustomAdapterHistorical.notifyDataSetChanged();
-                            Toast.makeText(getContext(), "Avvistamenti Aggiornati", Toast.LENGTH_LONG).show();
+                            ArrayList<String[]> arrayList = Model.getInstance().getHistoricalArray();
+                            if(arrayList.size() > 0){
+                                mCustomAdapterHistorical.updateObject(arrayList);
+                                mCustomAdapterHistorical.notifyDataSetChanged();
+                                Toast.makeText(getContext(), "Avvistamenti Aggiornati", Toast.LENGTH_LONG).show();
+                            }else{
+                                Toast.makeText(getContext(), "Ancora nessun Avvistamento", Toast.LENGTH_LONG).show();
+                            }
+
                         }
                     },
                     new Response.ErrorListener() {

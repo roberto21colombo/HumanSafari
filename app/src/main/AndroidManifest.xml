@@ -18,10 +18,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAHOh_Sg8o32duEkeWUK34g3epYjGEzhT8" />
 
-        <activity android:name=".activity.MapActivity" />
-        <activity android:name=".activity.FoundHistoricalActivity" />
-        <activity android:name=".activity.JoinGameActivity" />
-        <activity android:name=".activity.ListRankActivity" />
+        <activity android:name=".activity.player.JoinGameActivity" />
+        <activity android:name=".activity.master.ListRankActivity" />
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -29,14 +27,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ListGamePlayerActivity" />
-        <activity android:name=".activity.ListGameMasterActivity" />
-        <activity android:name=".activity.CreateGameActivity" />
-        <activity android:name=".activity.MasterMainActivity"/>
-        <activity android:name=".activity.PlayerMainActivity"/>
-        <activity android:name=".activity.NewCharacterActivity" />
-        <activity android:name=".activity.CharacterLogin" />
-        <activity android:name=".activity.QrcodeActivity"/>
+        <activity android:name=".activity.player.ListGamePlayerActivity" />
+        <activity android:name=".activity.master.ListGameMasterActivity" />
+        <activity android:name=".activity.master.CreateGameActivity" />
+        <activity android:name=".activity.master.MasterMainActivity"/>
+        <activity android:name=".activity.player.PlayerMainActivity"/>
+        <activity android:name=".activity.master.NewCharacterActivity" />
+        <activity android:name=".activity.character.CharacterLogin" />
+        <activity android:name=".activity.character.QrcodeActivity"/>
 
         <service android:name=".MessageReceiver">
             <intent-filter>

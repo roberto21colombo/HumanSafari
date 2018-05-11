@@ -34,6 +34,8 @@ public class Model
 
     private boolean downChar, downUsr, downHist;
 
+    private String userType;
+
     private Character characterSelectedMap = null;
 
     private ArrayList<LatLng> boundPoints;
@@ -282,6 +284,14 @@ public class Model
         }
     }
 
+    public String getUserType() {
+        return userType;
+    }
+
+    public void setUserType(String userType) {
+        this.userType = userType;
+    }
+
     public boolean isIn() {
         return isIn;
     }
@@ -318,6 +328,12 @@ public class Model
             }
             return (stringBuilder.toString());
         }
+    }
+
+    public class UserType {
+        public static final String PLAYER = "player";
+        public static final String MASTER = "master";
+        public static final String CHARACTER = "character";
     }
 
 }

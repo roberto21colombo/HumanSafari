@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.example.roberto.humansafari.activity.PlayerMainActivity"
+    tools:context="com.example.roberto.humansafari.activity.player.PlayerMainActivity"
     android:background="#2195f2">
 
     <android.support.design.widget.AppBarLayout

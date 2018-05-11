@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 
-import com.example.roberto.humansafari.activity.MasterMainActivity;
+import com.example.roberto.humansafari.activity.master.MasterMainActivity;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
