@@ -49,7 +49,7 @@ public class MessageReceiver extends FirebaseMessagingService {
                 .setContentText(msg)
                 .setContentTitle(title)
                 .setContentIntent(pendingIntent)
-                .setSmallIcon(R.mipmap.ic_launcher_round)
+                .setSmallIcon(R.mipmap.ic_launcher_logo)
                 .build();
 
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
