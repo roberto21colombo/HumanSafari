@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
 MERGED from [com.android.support:design:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/09dff5546742bb79960f1317d723e1db/AndroidManifest.xml:17:1-31:12
 MERGED from [com.google.android.gms:play-services:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-12.0.1.aar/c9f622296f505c8e2738813a26fce77a/AndroidManifest.xml:2:1-6:12
 MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.1.aar/74798309a291c947f7f02364e8fa20b4/AndroidManifest.xml:2:1-14:12
@@ -12,7 +12,6 @@ MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/roberto/.gradle/c
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/AndroidManifest.xml:17:1-31:12
 MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:2:1-108:12
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.android.gms:play-services-ads:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.1.aar/3560ec9fac5646c2f012427b6a2850ff/AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/9309600a1d3556fd6a8937c022d176a3/AndroidManifest.xml:17:1-47:12
@@ -51,7 +50,7 @@ MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/roberto/.g
 MERGED from [com.google.firebase:firebase-crash:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/d5056febe1e53b0f2bb6f21ebd4bf95a/AndroidManifest.xml:17:1-27:12
 MERGED from [com.google.firebase:firebase-database:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.1.aar/51160848b8c8a65cf46f5c5dfceadf57/AndroidManifest.xml:2:1-8:12
 MERGED from [com.google.firebase:firebase-database-connection:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.1.aar/2066e076e7b00875c63746562aa3d2cc/AndroidManifest.xml:2:1-8:12
-MERGED from [com.google.firebase:firebase-core:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/88b5bf827dd3e318550d9a4e5fdf2450/AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/d11b89f2d25b1bd2b9c2d89f0822cca7/AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/11d83c7119282fee3f2524c21660ed28/AndroidManifest.xml:17:1-54:12
 MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-12.0.1.aar/0ddc30d24cf26bb60174cfb0e5c129aa/AndroidManifest.xml:17:1-40:12
@@ -78,7 +77,6 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /Users/roberto/.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/f9be54dfe5ba8ef5e1d6e0bd2646a87b/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:customtabs:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/167aefb376bffbd509a1968d1dd824dd/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-compat:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8662893ec22048657341bc70740f551b/AndroidManifest.xml:17:1-31:12
-MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:17:1-24:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f57bb2923432a5b4cd4215e3551726b2/AndroidManifest.xml:17:1-30:12
 MERGED from [com.google.android.gms:play-services-ads-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-license-12.0.1.aar/54dc7dcde5ba3e3c997f686df83bf2b3/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-ads-lite-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-license-12.0.1.aar/65da3032188b956d38961668e9c86133/AndroidManifest.xml:17:1-24:12
@@ -101,6 +99,7 @@ MERGED from [com.google.firebase:firebase-database-connection-license:12.0.1] /U
 MERGED from [com.google.firebase:firebase-database-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-database-license-12.0.1.aar/b99e68e4caaa9460d48ce5f7c57a90c9/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.1.aar/d6f15965fd0e2e4a39bf0e381537225b/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/3de4441213e2fa26dc7cb8aa86f970f3/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.1.aar/a62a66113c56817594dd5cfe0eb28252/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-storage-common-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.1.aar/134798aedd28978e52260372a85acd3d/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-common-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-common-license-12.0.1.aar/218aca7ba631760ed53c9b4a8456c43e/AndroidManifest.xml:17:1-24:12
@@ -129,20 +128,20 @@ MERGED from [com.google.android.gms:play-services-vision-common-license:12.0.1] 
 MERGED from [com.google.android.gms:play-services-vision-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-vision-license-12.0.1.aar/83bf92d25ebd2e5886e5d11883bf625f/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wallet-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-wallet-license-12.0.1.aar/ddc8064809fb4e3faca9bc9b8641b8bc/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-wearable-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-wearable-license-12.0.1.aar/9b408d4ee79ba8c30ad575dab2b7035f/AndroidManifest.xml:17:1-24:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
-INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
+INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
 	package
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:4:5-46
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-52:12
+		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:2:1-42:12
 		INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:3:5-63
@@ -205,7 +204,7 @@ MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/cac
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:22-76
 application
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:10:5-50:19
+ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:10:5-40:19
 MERGED from [com.android.support:design:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/09dff5546742bb79960f1317d723e1db/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/09dff5546742bb79960f1317d723e1db/AndroidManifest.xml:25:5-29:19
 MERGED from [com.google.android.gms:play-services:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-12.0.1.aar/c9f622296f505c8e2738813a26fce77a/AndroidManifest.xml:5:5-20
@@ -222,8 +221,6 @@ MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transf
 MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:49:5-106:19
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:22:5-35:19
-MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/9309600a1d3556fd6a8937c022d176a3/AndroidManifest.xml:29:5-45:19
@@ -284,8 +281,8 @@ MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/roberto/.g
 MERGED from [com.google.android.gms:play-services-base:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/0ed815ea3249e01ecfe9a7560247e046/AndroidManifest.xml:22:5-27:19
 MERGED from [com.google.firebase:firebase-crash:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/d5056febe1e53b0f2bb6f21ebd4bf95a/AndroidManifest.xml:24:5-25:19
 MERGED from [com.google.firebase:firebase-crash:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-crash-12.0.1.aar/d5056febe1e53b0f2bb6f21ebd4bf95a/AndroidManifest.xml:24:5-25:19
-MERGED from [com.google.firebase:firebase-core:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/88b5bf827dd3e318550d9a4e5fdf2450/AndroidManifest.xml:5:5-20
-MERGED from [com.google.firebase:firebase-core:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/88b5bf827dd3e318550d9a4e5fdf2450/AndroidManifest.xml:5:5-20
+MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/d11b89f2d25b1bd2b9c2d89f0822cca7/AndroidManifest.xml:26:5-45:19
 MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/d11b89f2d25b1bd2b9c2d89f0822cca7/AndroidManifest.xml:26:5-45:19
 MERGED from [com.google.firebase:firebase-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/11d83c7119282fee3f2524c21660ed28/AndroidManifest.xml:27:5-52:19
@@ -332,8 +329,6 @@ MERGED from [com.android.support:customtabs:26.1.0] /Users/roberto/.gradle/cache
 MERGED from [com.android.support:customtabs:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/167aefb376bffbd509a1968d1dd824dd/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-compat:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8662893ec22048657341bc70740f551b/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:support-compat:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8662893ec22048657341bc70740f551b/AndroidManifest.xml:25:5-29:19
-MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:22:5-20
-MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:22:5-20
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f57bb2923432a5b4cd4215e3551726b2/AndroidManifest.xml:24:5-28:19
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f57bb2923432a5b4cd4215e3551726b2/AndroidManifest.xml:24:5-28:19
 MERGED from [com.google.android.gms:play-services-ads-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-license-12.0.1.aar/54dc7dcde5ba3e3c997f686df83bf2b3/AndroidManifest.xml:22:5-20
@@ -378,6 +373,8 @@ MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.1] /Users/r
 MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.1.aar/d6f15965fd0e2e4a39bf0e381537225b/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/3de4441213e2fa26dc7cb8aa86f970f3/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/3de4441213e2fa26dc7cb8aa86f970f3/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.1.aar/a62a66113c56817594dd5cfe0eb28252/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.1.aar/a62a66113c56817594dd5cfe0eb28252/AndroidManifest.xml:22:5-20
 MERGED from [com.google.firebase:firebase-storage-common-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.1.aar/134798aedd28978e52260372a85acd3d/AndroidManifest.xml:22:5-20
@@ -506,26 +503,6 @@ activity#com.example.roberto.humansafari.activity.character.QrcodeActivity
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:9-70
 	android:name
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:37:19-68
-service#com.example.roberto.humansafari.MessageReceiver
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:9-43:19
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:39:18-49
-intent-filter#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:40:13-42:29
-action#com.google.firebase.MESSAGING_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:17-78
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:41:25-75
-service#com.example.roberto.humansafari.InstanceIdService
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:44:9-48:19
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:44:18-51
-intent-filter#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:45:13-47:29
-action#com.google.firebase.INSTANCE_ID_EVENT
-ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:46:17-80
-	android:name
-		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:46:25-77
 uses-sdk
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml
@@ -546,8 +523,6 @@ MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transf
 MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.1.aar/3560ec9fac5646c2f012427b6a2850ff/AndroidManifest.xml:21:5-23:62
 MERGED from [com.google.android.gms:play-services-ads:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.1.aar/3560ec9fac5646c2f012427b6a2850ff/AndroidManifest.xml:21:5-23:62
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:20:5-44
@@ -624,8 +599,8 @@ MERGED from [com.google.firebase:firebase-database:12.0.1] /Users/roberto/.gradl
 MERGED from [com.google.firebase:firebase-database:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-database-12.0.1.aar/51160848b8c8a65cf46f5c5dfceadf57/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-database-connection:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.1.aar/2066e076e7b00875c63746562aa3d2cc/AndroidManifest.xml:6:5-44
 MERGED from [com.google.firebase:firebase-database-connection:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-database-connection-12.0.1.aar/2066e076e7b00875c63746562aa3d2cc/AndroidManifest.xml:6:5-44
-MERGED from [com.google.firebase:firebase-core:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/88b5bf827dd3e318550d9a4e5fdf2450/AndroidManifest.xml:4:5-43
-MERGED from [com.google.firebase:firebase-core:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-core-12.0.1.aar/88b5bf827dd3e318550d9a4e5fdf2450/AndroidManifest.xml:4:5-43
+MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/d11b89f2d25b1bd2b9c2d89f0822cca7/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/d11b89f2d25b1bd2b9c2d89f0822cca7/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-analytics-12.0.1.aar/11d83c7119282fee3f2524c21660ed28/AndroidManifest.xml:20:5-44
@@ -678,8 +653,6 @@ MERGED from [com.android.support:customtabs:26.1.0] /Users/roberto/.gradle/cache
 MERGED from [com.android.support:customtabs:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/customtabs-26.1.0.aar/167aefb376bffbd509a1968d1dd824dd/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8662893ec22048657341bc70740f551b/AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-compat:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/8662893ec22048657341bc70740f551b/AndroidManifest.xml:21:5-23:58
-MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:20:5-44
-MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f57bb2923432a5b4cd4215e3551726b2/AndroidManifest.xml:20:5-22:41
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/f57bb2923432a5b4cd4215e3551726b2/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.gms:play-services-ads-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-license-12.0.1.aar/54dc7dcde5ba3e3c997f686df83bf2b3/AndroidManifest.xml:20:5-44
@@ -724,6 +697,8 @@ MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.1] /Users/r
 MERGED from [com.google.firebase:firebase-dynamic-links-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-dynamic-links-license-12.0.1.aar/d6f15965fd0e2e4a39bf0e381537225b/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/3de4441213e2fa26dc7cb8aa86f970f3/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-iid-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-license-12.0.1.aar/3de4441213e2fa26dc7cb8aa86f970f3/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-license-12.0.1.aar/00c24902116be37f007a61878332d28e/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.1.aar/a62a66113c56817594dd5cfe0eb28252/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-storage-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-license-12.0.1.aar/a62a66113c56817594dd5cfe0eb28252/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-storage-common-license:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-storage-common-license-12.0.1.aar/134798aedd28978e52260372a85acd3d/AndroidManifest.xml:20:5-44
@@ -1078,12 +1053,6 @@ action#android.intent.action.MY_PACKAGE_REPLACED
 ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:103:17-84
 	android:name
 		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:103:25-81
-service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:28:9-34:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:30:13-36
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:29:13-82
 activity#com.google.android.gms.ads.AdActivity
 ADDED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:29:9-33:64
 	android:exported
@@ -1184,6 +1153,20 @@ ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/roberto/.gr
 		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/0ed815ea3249e01ecfe9a7560247e046/AndroidManifest.xml:26:13-72
 	android:name
 		ADDED from [com.google.android.gms:play-services-base:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-base-12.0.1.aar/0ed815ea3249e01ecfe9a7560247e046/AndroidManifest.xml:24:13-79
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:29:13-82
+intent-filter#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:31:13-33:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:31:28-51
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:32:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:32:25-75
 service#com.google.android.gms.tagmanager.TagManagerService
 ADDED from [com.google.android.gms:play-services-tagmanager-api:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-tagmanager-api-12.0.1.aar/d11b89f2d25b1bd2b9c2d89f0822cca7/AndroidManifest.xml:27:9-30:40
 	android:enabled
@@ -1274,6 +1257,14 @@ ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/cach
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:52:13-36
 	android:name
 		ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:51:13-77
+intent-filter#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:54:25-77
 provider#com.google.firebase.provider.FirebaseInitProvider
 ADDED from [com.google.firebase:firebase-common:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-common-12.0.1.aar/b2f01e615cf85cf0e897a7a23d28abcd/AndroidManifest.xml:8:9-12:39
 	android:authorities

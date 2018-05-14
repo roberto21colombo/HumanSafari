@@ -180,7 +180,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     public void onMapClick(LatLng latLng) {
         btnDefineBound.setEnabled(true);
         mGoogleMap.clear();
-        mGoogleMap.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.fromResource(R.drawable.cast_ic_stop_circle_filled_grey600)).anchor(0.5f, 0.5f));
+        mGoogleMap.addMarker(new MarkerOptions().position(latLng).icon(BitmapDescriptorFactory.fromResource(R.drawable.cast_abc_scrubber_control_off_mtrl_alpha)).anchor(0.5f, 0.5f));
         boundPoints.add(latLng);
         if(boundPoints.size()>=2){
             //disegna Polyline

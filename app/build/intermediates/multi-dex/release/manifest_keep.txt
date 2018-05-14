@@ -1,3 +1,0 @@
-# Referenced at /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/manifests/full/release/AndroidManifest.xml:49
--keep class android.support.multidex.MultiDexApplication { <init>(...); }
-

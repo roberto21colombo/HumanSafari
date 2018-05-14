@@ -28,8 +28,6 @@ import com.onesignal.OneSignal;
 
 public class MasterMainActivity extends AppCompatActivity implements GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener{
 
-    private static final String TAG = "MasterMainActivity";
-
     public SectionsPageAdapterMaster mSectionsPageAdapterMaster;
 
     private ViewPager mViewPager;
@@ -43,6 +41,8 @@ public class MasterMainActivity extends AppCompatActivity implements GoogleApiCl
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_master_main);
+
+        OneSignal.sendTag("class", Model.getInstance().getGameName());
 
         Model.getInstance().setUserType(Model.UserType.MASTER);
 
@@ -61,15 +61,11 @@ public class MasterMainActivity extends AppCompatActivity implements GoogleApiCl
         tvGameName.setText(Model.getInstance().getGameName());
         tvCodCharacter.setText(Model.getInstance().getCodCharacters());
 
-        // OneSignal Initialization
-        OneSignal.startInit(this)
-                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
-                .unsubscribeWhenNotificationsAreDisabled(true)
-                .init();
     }
 
     @Override
     public void onBackPressed() {
+        OneSignal.deleteTag("class");
         startActivity(new Intent(MasterMainActivity.this, ListGameMasterActivity.class));
     }
     public void setupViewPager(ViewPager viewPager){

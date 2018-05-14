@@ -22,7 +22,6 @@ import com.example.roberto.humansafari.CustomComparatorCharacter;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.ServerConnections;
-import com.google.firebase.appindexing.internal.Thing;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
