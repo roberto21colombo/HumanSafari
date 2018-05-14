@@ -200,7 +200,7 @@ public class ServerConnections {
     }
 
     public static void sendNotification(Response.Listener<String> responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
-        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/sendnotification.php";
+        String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/sendnotification.php?playername=" + Model.getInstance().getPlayerName() + "&gamename=" + Model.getInstance().getGameName();
         StringRequest stringRequest = new StringRequest(Request.Method.GET, url, responseStringListener, responseErrorListener);
         requestQueue.add(stringRequest);
     }
