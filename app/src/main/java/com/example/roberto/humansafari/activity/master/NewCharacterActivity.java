@@ -13,6 +13,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
@@ -21,6 +22,7 @@ import com.example.roberto.humansafari.CustomComparatorCharacter;
 import com.example.roberto.humansafari.Model;
 import com.example.roberto.humansafari.R;
 import com.example.roberto.humansafari.ServerConnections;
+import com.google.firebase.appindexing.internal.Thing;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
@@ -83,64 +85,62 @@ public class NewCharacterActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                btnAddCharacter.setClickable(false);
-                findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
-
-
-                //nuovo
-                if( nModChar == -1){
-
-                    //prendo nome, punteggio, immagine
-                    final String name = edNameCharacter.getText().toString();
-                    final String point = edPoint.getText().toString();
-                    //TODO controllare se una foto è stata selezionata o meno, altrimenti crasha
-                    if (fixBitmap != null){
-                        fixBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
-                        byteArray = byteArrayOutputStream.toByteArray();
-                        convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
-                    }
-
-                    //aggiungo il personaggio al DB
-                    ServerConnections.addCharacter(name, point, convertImage, new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            Log.d("onResponse", response);
-                            //Salvo le informazioni nel model
-                            Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point)));
-                            Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
-
-                            //Una volta salvati i dati torno all'activity precedente
-                            startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
-                        }
-                    }, null, Volley.newRequestQueue(NewCharacterActivity.this));
-
-                }else{
-
-                    final String name = edNameCharacter.getText().toString();
-                    final String point = edPoint.getText().toString();
-
+                //prendo nome, punteggio, immagine
+                final String name = edNameCharacter.getText().toString();
+                final String point = edPoint.getText().toString();
+                if (fixBitmap != null){
                     fixBitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
                     byteArray = byteArrayOutputStream.toByteArray();
                     convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
-
-                    final String oldName = Model.getInstance().getCharacters().get(nModChar).getName();
-                    ServerConnections.modCharacter(oldName, name, point, convertImage, new Response.Listener<String>() {
-                        @Override
-                        public void onResponse(String response) {
-                            Log.d("onResponse", response);
-                            //Salvo le informazioni nel model
-                            Model.getInstance().getCharacterWithName(oldName).setName(name);
-                            Model.getInstance().getCharacterWithName(oldName).setPoints(Integer.parseInt(point));
-                            if(convertImage != null) {
-                                Model.getInstance().getCharacterWithName(oldName).updateImgSrc();
-                            }
-
-                            Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
-                            //Una volta salvati i dati torno all'activity precedente
-                            startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
-                        }
-                    }, null, Volley.newRequestQueue(NewCharacterActivity.this));
+                }else{
+                    //TODO controllare se una foto è stata selezionata o meno, altrimenti crasha
                 }
+
+                //controllo se name e point sono inseriti
+                if(!(name==null || name.equals("") || point==null || point.equals(""))){
+                    //Disabilito pulsante, mostro progress bar
+                    btnAddCharacter.setClickable(false);
+                    findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
+
+                    //nuovo
+                    if( nModChar == -1){
+                        //aggiungo il personaggio al DB
+                        ServerConnections.addCharacter(name, point, convertImage, new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                Log.d("onResponse", response);
+                                //Salvo le informazioni nel model
+                                Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point)));
+                                Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
+
+                                //Una volta salvati i dati torno all'activity precedente
+                                startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
+                            }
+                        }, null, Volley.newRequestQueue(NewCharacterActivity.this));
+
+                    }else{
+                        final String oldName = Model.getInstance().getCharacters().get(nModChar).getName();
+                        ServerConnections.modCharacter(oldName, name, point, convertImage, new Response.Listener<String>() {
+                            @Override
+                            public void onResponse(String response) {
+                                Log.d("onResponse", response);
+                                //Salvo le informazioni nel model
+                                Model.getInstance().getCharacterWithName(oldName).setName(name);
+                                Model.getInstance().getCharacterWithName(oldName).setPoints(Integer.parseInt(point));
+                                if(convertImage != null) {
+                                    Model.getInstance().getCharacterWithName(oldName).updateImgSrc();
+                                }
+
+                                Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
+                                //Una volta salvati i dati torno all'activity precedente
+                                startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
+                            }
+                        }, null, Volley.newRequestQueue(NewCharacterActivity.this));
+                    }
+                }else{
+                    Toast.makeText(getBaseContext(), "Nome Nome e Testo Obbligaotori", Toast.LENGTH_LONG).show();
+                }
+
             }
         });
 
