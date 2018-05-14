@@ -10,7 +10,7 @@ MERGED from [com.google.android.gms:play-services-cast-framework:12.0.1] /Users/
 MERGED from [com.google.android.gms:play-services-cast:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-12.0.1.aar/1fc2e2ae7c0a10ee9fe58b6a01f0e2f1/AndroidManifest.xml:17:1-24:12
 MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/082c992a6c5bac5ba23396b0e63215bf/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/AndroidManifest.xml:17:1-31:12
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:2:1-108:12
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:2:1-108:12
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:17:1-28:12
 MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:17:1-37:12
 MERGED from [com.google.android.gms:play-services-ads:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-12.0.1.aar/3560ec9fac5646c2f012427b6a2850ff/AndroidManifest.xml:17:1-25:12
@@ -152,8 +152,8 @@ ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.INTERNET
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:7:5-67
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:17:5-67
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:17:5-67
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:17:5-67
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:17:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:23:5-67
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/9309600a1d3556fd6a8937c022d176a3/AndroidManifest.xml:23:5-67
@@ -182,8 +182,8 @@ MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/cac
 		ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from /Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/src/main/AndroidManifest.xml:8:5-79
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:25:5-79
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:25:5-79
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:25:5-79
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:25:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-ads-lite:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-ads-lite-12.0.1.aar/42ad3f27e8d618f342b5cbc6a3d97e0c/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/9309600a1d3556fd6a8937c022d176a3/AndroidManifest.xml:24:5-79
@@ -218,8 +218,8 @@ MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/roberto/.gradle/c
 MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/082c992a6c5bac5ba23396b0e63215bf/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/AndroidManifest.xml:25:5-29:19
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:49:5-106:19
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:49:5-106:19
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:49:5-106:19
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:49:5-106:19
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:22:5-35:19
@@ -542,8 +542,8 @@ MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/roberto/.gradle/c
 MERGED from [com.android.support:mediarouter-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/mediarouter-v7-26.1.0.aar/082c992a6c5bac5ba23396b0e63215bf/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/AndroidManifest.xml:21:5-23:78
 MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/98451f7fba602110a0c2089f3e5e97e0/AndroidManifest.xml:21:5-23:78
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:5:5-44
-MERGED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:5:5-44
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:5:5-44
+MERGED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:5:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/8307b65dbfbbc15e71d5ca62fefbbb46/AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:20:5-44
@@ -841,35 +841,35 @@ ADDED from [com.google.android.gms:play-services-cast-framework:12.0.1] /Users/r
 	android:name
 		ADDED from [com.google.android.gms:play-services-cast-framework:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-cast-framework-12.0.1.aar/74798309a291c947f7f02364e8fa20b4/AndroidManifest.xml:11:18-90
 permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:8:5-10:47
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:8:5-10:47
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:28:5-30:47
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:10:9-44
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:10:9-44
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:9:9-63
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:9:9-63
 permission#com.example.roberto.humansafari.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:8:5-10:47
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:8:5-10:47
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:28:5-30:47
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:28:5-30:47
 	android:protectionLevel
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:10:9-44
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:10:9-44
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:9:9-63
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:9:9-63
 uses-permission#${applicationId}.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:12:5-79
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:32:5-79
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:12:22-76
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:12:22-76
 uses-permission#com.example.roberto.humansafari.permission.C2D_MESSAGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:12:5-79
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:12:5-79
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:32:5-79
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:32:5-79
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:12:22-76
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:12:22-76
 uses-permission#com.google.android.c2dm.permission.RECEIVE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:18:5-82
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:18:5-82
 MERGED from [com.google.android.gms:play-services-gcm:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/0ca4bc8931706a9e40e3cccf288840ab/AndroidManifest.xml:23:5-82
 MERGED from [com.google.android.gms:play-services-gcm:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-gcm-12.0.1.aar/0ca4bc8931706a9e40e3cccf288840ab/AndroidManifest.xml:23:5-82
 MERGED from [com.google.android.gms:play-services-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-iid-12.0.1.aar/c728a8a114fe33c359b7c8cf653dcc53/AndroidManifest.xml:23:5-82
@@ -877,9 +877,9 @@ MERGED from [com.google.android.gms:play-services-iid:12.0.1] /Users/roberto/.gr
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:26:5-82
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:26:5-82
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:18:22-79
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:18:22-79
 uses-permission#android.permission.WAKE_LOCK
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:19:5-68
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:19:5-68
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/9309600a1d3556fd6a8937c022d176a3/AndroidManifest.xml:27:5-68
 MERGED from [com.google.android.gms:play-services-analytics:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-12.0.1.aar/9309600a1d3556fd6a8937c022d176a3/AndroidManifest.xml:27:5-68
 MERGED from [com.google.android.gms:play-services-analytics-impl:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/play-services-analytics-impl-12.0.1.aar/44b0f9187c3e6744dbc4e56f24864ad5/AndroidManifest.xml:27:5-68
@@ -891,193 +891,193 @@ MERGED from [com.google.firebase:firebase-analytics-impl:12.0.1] /Users/roberto/
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:24:5-68
 MERGED from [com.google.firebase:firebase-iid:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-iid-12.0.1.aar/35d1d4e7a6fa4cf54cc3523e251c1c3e/AndroidManifest.xml:24:5-68
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:19:22-65
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:19:22-65
 uses-permission#android.permission.VIBRATE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:24:5-66
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:24:5-66
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:24:22-63
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:24:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:30:5-81
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:30:5-81
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:30:22-78
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:30:22-78
 uses-permission#com.sec.android.provider.badge.permission.READ
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:32:5-86
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:32:5-86
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:32:22-83
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:32:22-83
 uses-permission#com.sec.android.provider.badge.permission.WRITE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:33:5-87
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:33:5-87
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:33:22-84
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:33:22-84
 uses-permission#com.htc.launcher.permission.READ_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:34:5-81
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:34:5-81
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:34:22-78
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:34:22-78
 uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:35:5-83
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:35:5-83
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:35:22-80
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:35:22-80
 uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:36:5-88
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:36:5-88
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:36:22-85
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:36:22-85
 uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:37:5-92
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:37:5-92
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:37:22-89
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:37:22-89
 uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:38:5-84
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:38:5-84
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:38:22-81
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:38:22-81
 uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:39:5-83
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:39:5-83
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:39:22-80
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:39:22-80
 uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:40:5-91
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:40:5-91
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:40:22-88
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:40:22-88
 uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:41:5-92
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:41:5-92
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:41:22-89
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:41:22-89
 uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:42:5-93
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:42:5-93
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:42:22-90
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:42:22-90
 uses-permission#android.permission.READ_APP_BADGE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:43:5-73
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:43:5-73
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:43:22-70
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:43:22-70
 uses-permission#com.oppo.launcher.permission.READ_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:44:5-82
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:44:5-82
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:44:22-79
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:44:22-79
 uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:45:5-83
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:45:5-83
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:45:22-80
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:45:22-80
 uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:46:5-88
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:46:5-88
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:46:22-85
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:46:22-85
 uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:47:5-89
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:47:5-89
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:47:22-86
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:47:22-86
 meta-data#onesignal_app_id
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:50:9-52:51
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:50:9-52:51
 	android:value
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:52:13-48
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:52:13-48
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:51:13-44
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:51:13-44
 meta-data#onesignal_google_project_number
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:54:9-56:70
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:54:9-56:70
 	android:value
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:56:13-67
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:56:13-67
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:55:13-59
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:55:13-59
 receiver#com.onesignal.GcmBroadcastReceiver
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:58:9-68:20
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:58:9-68:20
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:60:13-73
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:60:13-73
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:59:13-62
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:59:13-62
 intent-filter#${applicationId}+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:63:13-67:29
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:63:13-67:29
 	android:priority
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:63:28-50
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:63:28-50
 intent-filter#com.example.roberto.humansafari+com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:63:13-67:29
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:63:13-67:29
 	android:priority
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:63:28-50
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:63:28-50
 action#com.google.android.c2dm.intent.RECEIVE
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:64:17-81
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:64:17-81
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:64:25-78
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:64:25-78
 category#${applicationId}
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:66:17-61
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:66:17-61
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:66:27-58
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:66:27-58
 category#com.example.roberto.humansafari
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:66:17-61
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:66:17-61
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:66:27-58
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:66:27-58
 receiver#com.onesignal.NotificationOpenedReceiver
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:69:9-77
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:69:9-77
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:69:19-74
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:69:19-74
 service#com.onesignal.GcmIntentService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:71:9-66
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:71:9-66
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:71:18-63
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:71:18-63
 service#com.onesignal.GcmIntentJobService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:72:9-74:72
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:72:9-74:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:74:13-69
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:74:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:73:13-61
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:73:13-61
 service#com.onesignal.RestoreJobService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:75:9-77:72
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:75:9-77:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:77:13-69
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:77:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:76:13-59
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:76:13-59
 service#com.onesignal.RestoreKickoffJobService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:78:9-80:72
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:78:9-80:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:80:13-69
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:80:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:79:13-66
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:79:13-66
 service#com.onesignal.SyncService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:81:9-83:43
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:81:9-83:43
 	android:stopWithTask
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:83:13-40
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:83:13-40
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:82:13-53
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:82:13-53
 service#com.onesignal.SyncJobService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:84:9-86:72
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:84:9-86:72
 	android:permission
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:86:13-69
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:86:13-69
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:85:13-56
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:85:13-56
 activity#com.onesignal.PermissionsActivity
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:88:9-90:75
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:88:9-90:75
 	android:theme
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:90:13-72
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:90:13-72
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:89:13-61
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:89:13-61
 service#com.onesignal.NotificationRestoreService
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:92:9-76
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:92:9-76
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:92:18-73
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:92:18-73
 receiver#com.onesignal.BootUpReceiver
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:94:9-100:20
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:94:9-100:20
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:94:19-62
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:94:19-62
 intent-filter#android.intent.action.ACTION_BOOT_COMPLETED+android.intent.action.BOOT_COMPLETED+android.intent.action.QUICKBOOT_POWERON
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:95:13-99:29
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:95:13-99:29
 action#android.intent.action.ACTION_BOOT_COMPLETED
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:96:17-86
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:96:17-86
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:96:25-83
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:96:25-83
 action#android.intent.action.BOOT_COMPLETED
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:97:17-79
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:97:17-79
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:97:25-76
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:97:25-76
 action#android.intent.action.QUICKBOOT_POWERON
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:98:17-82
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:98:17-82
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:98:25-79
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:98:25-79
 receiver#com.onesignal.UpgradeReceiver
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:101:9-105:20
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:101:9-105:20
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:101:19-63
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:101:19-63
 intent-filter#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:102:13-104:29
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:102:13-104:29
 action#android.intent.action.MY_PACKAGE_REPLACED
-ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:103:17-84
+ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:103:17-84
 	android:name
-		ADDED from [com.onesignal:OneSignal:3.8.4] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/AndroidManifest.xml:103:25-81
+		ADDED from [com.onesignal:OneSignal:3.9.0] /Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/AndroidManifest.xml:103:25-81
 service#com.google.firebase.messaging.FirebaseMessagingService
 ADDED from [com.google.firebase:firebase-messaging:12.0.1] /Users/roberto/.gradle/caches/transforms-1/files-1.1/firebase-messaging-12.0.1.aar/640116032cabc30e9b6c828e03ee566d/AndroidManifest.xml:28:9-34:19
 	android:exported

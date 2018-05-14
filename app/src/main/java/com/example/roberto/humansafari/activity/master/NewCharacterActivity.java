@@ -50,6 +50,22 @@ public class NewCharacterActivity extends AppCompatActivity {
         edPoint = (EditText)findViewById(R.id.etPointCharacter);
         btnAddCharacter = (Button)findViewById(R.id.btnAddCharacter);
 
+        findViewById(R.id.loadingPanel).setVisibility(View.GONE);
+        btnAddCharacter.setClickable(true);
+
+        //Prendo la posizione nel vettore del character da modificare, se è -1 vuol dire che è nuovo
+        final int nModChar = getIntent().getIntExtra("character", -1);
+        //se sono in 'modifica personaggio' cambio la label dell'interfaccia
+        if(nModChar != -1){
+            Character c = Model.getInstance().getCharacters().get(nModChar);
+
+            ((TextView)findViewById(R.id.tvTitle)).setText("Modifica Personaggio");
+            edNameCharacter.setText(c.getName());
+            edPoint.setText(""+c.getPoints());
+            btnAddCharacter.setText("Modifica");
+        }
+
+
         byteArrayOutputStream = new ByteArrayOutputStream();
         ivPictures.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -60,13 +76,21 @@ public class NewCharacterActivity extends AppCompatActivity {
                 startActivityForResult(intent, IMG_REQUEST);
             }
         });
+
+        //Setto due onclick listener diversi, se sto modificando o se sto creando da 0
         //controllo se sto modificando o creando da zero
-        final int charater = getIntent().getIntExtra("character", -1);
-        //nuovo
-        if( charater == -1){
-            btnAddCharacter.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
+        btnAddCharacter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                btnAddCharacter.setClickable(false);
+                findViewById(R.id.loadingPanel).setVisibility(View.VISIBLE);
+
+
+                //nuovo
+                if( nModChar == -1){
+
+                    //prendo nome, punteggio, immagine
                     final String name = edNameCharacter.getText().toString();
                     final String point = edPoint.getText().toString();
                     //TODO controllare se una foto è stata selezionata o meno, altrimenti crasha
@@ -76,7 +100,7 @@ public class NewCharacterActivity extends AppCompatActivity {
                         convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
                     }
 
-
+                    //aggiungo il personaggio al DB
                     ServerConnections.addCharacter(name, point, convertImage, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -89,20 +113,9 @@ public class NewCharacterActivity extends AppCompatActivity {
                             startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
                         }
                     }, null, Volley.newRequestQueue(NewCharacterActivity.this));
-                }
-            });
-        }else{
-            Character c = Model.getInstance().getCharacters().get(charater);
-            final String oldName = c.getName();
 
-            ((TextView)findViewById(R.id.tvTitle)).setText("Modifica Personaggio");
-            edNameCharacter.setText(c.getName());
-            edPoint.setText(""+c.getPoints());
-            btnAddCharacter.setText("Modifica");
+                }else{
 
-            btnAddCharacter.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View view) {
                     final String name = edNameCharacter.getText().toString();
                     final String point = edPoint.getText().toString();
 
@@ -110,6 +123,7 @@ public class NewCharacterActivity extends AppCompatActivity {
                     byteArray = byteArrayOutputStream.toByteArray();
                     convertImage = Base64.encodeToString(byteArray, Base64.DEFAULT);
 
+                    final String oldName = Model.getInstance().getCharacters().get(nModChar).getName();
                     ServerConnections.modCharacter(oldName, name, point, convertImage, new Response.Listener<String>() {
                         @Override
                         public void onResponse(String response) {
@@ -121,17 +135,14 @@ public class NewCharacterActivity extends AppCompatActivity {
                                 Model.getInstance().getCharacterWithName(oldName).updateImgSrc();
                             }
 
-                            //Model.getInstance().getCharacters().remove(charater);
-                            //Model.getInstance().getCharacters().add(new Character(name, Integer.parseInt(point), ));
                             Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());
                             //Una volta salvati i dati torno all'activity precedente
                             startActivity(new Intent(NewCharacterActivity.this, MasterMainActivity.class));
                         }
                     }, null, Volley.newRequestQueue(NewCharacterActivity.this));
                 }
-            });
-        }
-
+            }
+        });
 
     }
 

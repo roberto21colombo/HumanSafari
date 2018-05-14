@@ -5,7 +5,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-xxxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/drawable-xxxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_mr_button_connecting_09_dark.png.flat",
@@ -1025,7 +1025,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-xhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/drawable-xhdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
@@ -1065,7 +1065,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/drawable-hdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable_cast_ic_notification_skip_next.xml.flat",
@@ -1105,7 +1105,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-xxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/drawable-xxhdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_quantum_ic_cast_connected_white_24.png.flat",
@@ -1521,7 +1521,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_os_notification_fallback_white_24dp.png.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/drawable-mdpi-v4/ic_os_notification_fallback_white_24dp.png"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/drawable-mdpi-v4/ic_os_notification_fallback_white_24dp.png"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_ic_vol_type_speaker_light.png.flat",
@@ -3993,7 +3993,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/layout_onesignal_bgimage_notif_layout.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/layout/onesignal_bgimage_notif_layout.xml"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/layout/onesignal_bgimage_notif_layout.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_places_ic_clear.png.flat",
@@ -4713,7 +4713,7 @@
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/raw_consumer_onesignal_keep.xml.flat",
-        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.8.4.aar/4955021ae94f609832af6cba6bde4dd2/res/raw/consumer_onesignal_keep.xml"
+        "source": "/Users/roberto/.gradle/caches/transforms-1/files-1.1/OneSignal-3.9.0.aar/8cdc780e7dfb7a3f854a74d2f4fdedf5/res/raw/consumer_onesignal_keep.xml"
     },
     {
         "merged": "/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_common_google_signin_btn_text_dark_normal_background.9.png.flat",
