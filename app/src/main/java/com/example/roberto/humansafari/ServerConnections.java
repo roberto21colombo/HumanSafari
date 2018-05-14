@@ -85,14 +85,14 @@ public class ServerConnections {
         requestQueue.add(stringRequest);
     }
 
-    public static void modCharacter(final String oldName, final String name, final String point, final String image, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
+    public static void modCharacter(final String idCharacter, final String name, final String point, final String image, Response.Listener responseStringListener, Response.ErrorListener responseErrorListener, RequestQueue requestQueue){
         String url = "http://www.aclitriuggio.it/wp-pinguino/humansafari/modcharacter.php";
         StringRequest stringRequest = new StringRequest(Request.Method.POST, url, responseStringListener, responseErrorListener)
         {
             @Override
             protected Map<String, String> getParams() throws AuthFailureError{
                 Map<String, String> params = new HashMap<String, String>();
-                params.put("oldname", oldName);
+                params.put("idcharacter", idCharacter);
                 params.put("name", name);
                 params.put("point", point);
                 params.put("image", image);

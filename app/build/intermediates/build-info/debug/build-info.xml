@@ -5,27 +5,30 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="FIELD_TYPE_CHANGE"
     plugin-version="3.0.1"
-    timestamp="1526289798850"
+    timestamp="1526291655520"
     token="-9125923180666704299"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="653" />
+        duration="1180" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="63" />
+        duration="69" />
     <task
         name="verifier"
-        duration="10" />
+        duration="17" />
 
     <artifact
         location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+        type="SPLIT" />
+    <artifact
+        location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
         type="SPLIT" />
 
     <build
@@ -80,11 +83,14 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1526289798850"
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1526291655520"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
+            type="SPLIT" />
+        <artifact
+            location="/Users/roberto/MEGA/Università Statale/Mobile Computing/HumanSafari/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
     </build>
 

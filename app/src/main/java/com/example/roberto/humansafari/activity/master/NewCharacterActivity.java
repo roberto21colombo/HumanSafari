@@ -119,16 +119,16 @@ public class NewCharacterActivity extends AppCompatActivity {
                         }, null, Volley.newRequestQueue(NewCharacterActivity.this));
 
                     }else{
-                        final String oldName = Model.getInstance().getCharacters().get(nModChar).getName();
-                        ServerConnections.modCharacter(oldName, name, point, convertImage, new Response.Listener<String>() {
+                        final int idCharacter = Model.getInstance().getCharacters().get(nModChar).getId();
+                        ServerConnections.modCharacter(""+idCharacter, name, point, convertImage, new Response.Listener<String>() {
                             @Override
                             public void onResponse(String response) {
                                 Log.d("onResponse", response);
                                 //Salvo le informazioni nel model
-                                Model.getInstance().getCharacterWithName(oldName).setName(name);
-                                Model.getInstance().getCharacterWithName(oldName).setPoints(Integer.parseInt(point));
+                                Model.getInstance().getCharacterWithId(idCharacter).setName(name);
+                                Model.getInstance().getCharacterWithId(idCharacter).setPoints(Integer.parseInt(point));
                                 if(convertImage != null) {
-                                    Model.getInstance().getCharacterWithName(oldName).updateImgSrc();
+                                    Model.getInstance().getCharacterWithId(idCharacter).updateImgSrc();
                                 }
 
                                 Collections.sort(Model.getInstance().getCharacters(), new CustomComparatorCharacter());

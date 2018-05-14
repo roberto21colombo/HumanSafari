@@ -118,6 +118,7 @@ public class Model
         return alCharacter.get(i);
     }
 
+
     public int getScore(){
         return score;
     }
